@@ -100,6 +100,137 @@
             border-color: var(--color-accent);
             color: var(--color-accent);
         }
+
+        /* The Shift Section */
+        .section-shift {
+            background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+            padding: var(--space-20) 0;
+        }
+
+        .shift-options {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-8);
+            margin: var(--space-12) 0;
+        }
+
+        .shift-option {
+            padding: var(--space-8);
+            border-radius: var(--radius-xl);
+            text-align: center;
+            max-width: 280px;
+        }
+
+        .shift-option h4 {
+            font-size: var(--text-sm);
+            font-weight: var(--font-semibold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-2);
+        }
+
+        .shift-option p {
+            font-size: var(--text-lg);
+            line-height: 1.5;
+        }
+
+        .shift-option-old {
+            background: var(--color-gray-100);
+            border: 1px solid var(--color-gray-300);
+        }
+
+        .shift-option-old h4 {
+            color: var(--color-gray-500);
+        }
+
+        .shift-option-old p {
+            color: var(--color-gray-600);
+        }
+
+        .shift-option-new {
+            background: var(--color-accent-light);
+            border: 2px solid var(--color-accent);
+        }
+
+        .shift-option-new h4 {
+            color: var(--color-accent);
+        }
+
+        .shift-option-new p {
+            color: var(--color-gray-900);
+            font-weight: var(--font-semibold);
+        }
+
+        .shift-divider {
+            font-size: var(--text-lg);
+            color: var(--color-gray-400);
+            font-style: italic;
+        }
+
+        .shift-warning {
+            text-align: center;
+            font-size: var(--text-lg);
+            font-weight: var(--font-semibold);
+            color: var(--color-gray-900);
+            margin-top: var(--space-8);
+        }
+
+        @media (max-width: 640px) {
+            .shift-options {
+                flex-direction: column;
+                gap: var(--space-4);
+            }
+
+            .shift-option {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        /* Speed Stats Section */
+        .speed-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-6);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .speed-stat {
+            padding: var(--space-6);
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+
+        .speed-label {
+            font-size: var(--text-sm);
+            color: var(--color-gray-500);
+            margin-bottom: var(--space-2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .speed-value {
+            font-size: var(--text-2xl);
+            font-weight: var(--font-bold);
+        }
+
+        .speed-old {
+            color: var(--color-gray-400);
+            text-decoration: line-through;
+        }
+
+        .speed-new {
+            color: var(--color-accent);
+        }
+
+        @media (max-width: 640px) {
+            .speed-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -301,6 +432,65 @@
                         <div class="testimonial-name" data-i18n="testimonials.name">Michael Chen</div>
                         <div class="testimonial-role" data-i18n="testimonials.role">CEO, TechForce Solutions - 45 employees, $8M ARR</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Shift Section - Urgency Messaging -->
+    <section class="section section-shift">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow" style="color: var(--color-accent);">THE SHIFT IS HERE</span>
+                <h2 class="section-title">Every 2-3 years, this industry transforms.</h2>
+                <p class="section-subtitle" style="font-size: var(--text-xl); max-width: 700px;">This is the biggest shift yet. MSPs are struggling. Competition is fierce. Your operating model that's been around since Windows XP is obsolete.</p>
+            </div>
+            <div class="shift-options">
+                <div class="shift-option shift-option-old">
+                    <h4>Option 1</h4>
+                    <p>Hunker down and do what you've always done</p>
+                </div>
+                <div class="shift-divider">or</div>
+                <div class="shift-option shift-option-new">
+                    <h4>Option 2</h4>
+                    <p>Jump in</p>
+                </div>
+            </div>
+            <p class="shift-warning">There is no third option. Those who don't jump become obsolete.</p>
+        </div>
+    </section>
+
+    <!-- Speed Stats Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">SPEED IS THE ONLY MOAT</span>
+                <h2 class="section-title">Your roadmap is our Tuesday.</h2>
+            </div>
+            <div class="speed-grid">
+                <div class="speed-stat">
+                    <div class="speed-label">Traditional Enterprise Team</div>
+                    <div class="speed-value speed-old">47 engineers</div>
+                </div>
+                <div class="speed-stat">
+                    <div class="speed-label">MSPI Operator</div>
+                    <div class="speed-value speed-new">1 person + AI</div>
+                </div>
+                <div class="speed-stat">
+                    <div class="speed-label">Traditional Dev Timeline</div>
+                    <div class="speed-value speed-old">18 months</div>
+                </div>
+                <div class="speed-stat">
+                    <div class="speed-label">MSPI Implementation</div>
+                    <div class="speed-value speed-new">Started after breakfast</div>
+                </div>
+                <div class="speed-stat">
+                    <div class="speed-label">Your Vendor's Feature Requests</div>
+                    <div class="speed-value speed-old">Sitting for 6 months</div>
+                </div>
+                <div class="speed-stat">
+                    <div class="speed-label">Your MSPI Capability</div>
+                    <div class="speed-value speed-new">Built by Tuesday</div>
                 </div>
             </div>
         </div>

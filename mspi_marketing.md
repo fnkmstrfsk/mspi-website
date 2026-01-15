@@ -143,3 +143,91 @@ A fleet of specialized AI agents working 24/7:
 - "Meet the Slivers" (AI-focused)
 - "Get ISO 27001 Certified" (compliance-focused)
 - "Start Cultivating" (revenue-focused)
+
+---
+
+## Market Intelligence (From Palya Transcript Jan 12, 2026)
+
+### MSP Market Reality
+
+> "MSPs are falling apart. There's so many MSPs are just not... the competition is so fierce."
+
+**Key Observations:**
+- MSPs are struggling across the board
+- Even established companies like AllOne having issues (not paying commissions)
+- If you can get to the right people, it's an easy sell
+- Industry shifts every 2-3 years - this is the biggest shift yet
+
+### The Aggressive Positioning (Twitter Spirit)
+
+From a viral tweet that captures the mindset:
+
+> "Your entire engineering team, 47 people. Me, one guy who is visibly unwell.
+> Your dev timeline, 18 months. Mine. I started after breakfast.
+> There is no moat. There is no defensibility.
+> Your roadmap is my Tuesday. Your product is my template.
+> I cannot be stopped. I cannot be reasoned with."
+
+**How to apply this:**
+- Speed is the differentiator
+- One person + AI vs. 47-person team
+- 18 months of roadmap = one Tuesday
+- Clone competitors' back-end in an afternoon
+- Undercut pricing by 80%
+
+### Blue Ocean Concern (Competitive Advantage)
+
+MSPs will ask: "How long until you sell this to my competitors?"
+
+**Reality:**
+- This isn't "another tool bolting onto the stack"
+- Autotask/ConnectWise are universal - that's accepted
+- But this could be SO transformative that exclusivity matters
+- Consider: Regional exclusivity? Time-limited advantage?
+
+**Counter-positioning:**
+- If you don't adopt, your competitors will
+- The question isn't "will my competitors get this" - it's "do I get it first"
+- Trunk slammers without wherewithal to implement will be left in dust
+
+### Speed Proof Points
+
+**Ninja RMM Discord Analysis:**
+- Scraped 6 months of community discussions
+- Identified 315 feature requests
+- Only went from 290 to 315 over 6 months
+- Shows vendors aren't moving fast - MSPI fills the gap
+
+**Business Setup Automation:**
+- 60-70 task backlog from spreadsheet
+- AI converted to GitHub issues, progressed autonomously
+- Closed 15 business tasks overnight
+- Generated NDA/MSA with correct legal details automatically
+
+### Target Segments
+
+1. **Traditional MSPs** - Full platform deployment
+2. **Project-Only IT Companies** - A la carte modules (billing, documentation)
+3. **Companies with AI Budgets** - $10M construction company example
+4. **MSPs Considering Exit** - Acquisition opportunity
+
+### Sales Strategy: Executive Briefing
+
+> "Get them in the room... put like, get the sock puppets out and say, this is what's going to happen"
+
+- Jim has people lined up for executive briefings
+- Focus on decision-makers, not technicians
+- Demo the transformation, not the features
+
+### The Shift Messaging
+
+> "Either you're hunkering down and doing what you're doing or you got to jump in. You got to jump in."
+
+> "Anyone that doesn't jump in is going to be obsolete."
+
+> "Every couple 2-3 years, the whole thing shifts, man. This is definitely a big shift."
+
+**Use this urgency:**
+- Not a feature upgrade - a fundamental shift
+- Hunkering down = death
+- Jump in or become obsolete
