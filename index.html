@@ -101,90 +101,178 @@
             color: var(--color-accent);
         }
 
-        /* The Shift Section */
-        .section-shift {
-            background: linear-gradient(180deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+        /* Day in the Life Section */
+        .section-dayinlife {
+            background: linear-gradient(180deg, var(--color-white) 0%, var(--color-gray-50) 100%);
             padding: var(--space-20) 0;
         }
 
-        .shift-options {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .day-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: var(--space-8);
             margin: var(--space-12) 0;
         }
 
-        .shift-option {
+        .day-card {
             padding: var(--space-8);
             border-radius: var(--radius-xl);
-            text-align: center;
-            max-width: 280px;
         }
 
-        .shift-option h4 {
-            font-size: var(--text-sm);
-            font-weight: var(--font-semibold);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-2);
-        }
-
-        .shift-option p {
+        .day-card h4 {
+            font-family: var(--font-display);
             font-size: var(--text-lg);
-            line-height: 1.5;
+            font-weight: var(--font-semibold);
+            margin-bottom: var(--space-4);
         }
 
-        .shift-option-old {
-            background: var(--color-gray-100);
-            border: 1px solid var(--color-gray-300);
+        .day-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .shift-option-old h4 {
-            color: var(--color-gray-500);
+        .day-card li {
+            padding: var(--space-3) 0;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            line-height: 1.6;
         }
 
-        .shift-option-old p {
-            color: var(--color-gray-600);
+        .day-card li:last-child {
+            border-bottom: none;
         }
 
-        .shift-option-new {
+        .day-problem {
+            background: var(--color-gray-50);
+            border: 1px solid var(--color-gray-200);
+        }
+
+        .day-problem h4 {
+            color: var(--color-gray-700);
+        }
+
+        .day-harvest {
             background: var(--color-accent-light);
             border: 2px solid var(--color-accent);
         }
 
-        .shift-option-new h4 {
+        .day-harvest h4 {
             color: var(--color-accent);
         }
 
-        .shift-option-new p {
-            color: var(--color-gray-900);
+        .harvest-report {
+            font-family: var(--font-mono, 'SF Mono', Monaco, monospace);
+            font-size: var(--text-sm);
+        }
+
+        .harvest-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-3) 0;
+            border-bottom: 1px solid rgba(6, 214, 160, 0.2);
+        }
+
+        .harvest-item:last-child {
+            border-bottom: none;
+        }
+
+        .harvest-label {
+            font-weight: var(--font-medium);
+            color: var(--color-gray-700);
+        }
+
+        .harvest-value {
             font-weight: var(--font-semibold);
+            color: var(--color-gray-900);
         }
 
-        .shift-divider {
+        .harvest-total {
+            margin-top: var(--space-4);
+            padding-top: var(--space-4);
+            border-top: 2px solid var(--color-accent);
             font-size: var(--text-lg);
-            color: var(--color-gray-400);
-            font-style: italic;
+            font-weight: var(--font-bold);
+            color: var(--color-accent);
+            text-align: right;
         }
 
-        .shift-warning {
+        .day-conclusion {
             text-align: center;
-            font-size: var(--text-lg);
-            font-weight: var(--font-semibold);
+            font-size: var(--text-xl);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .day-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Comparison Section */
+        .comparison-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .comparison-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+        }
+
+        .comparison-old, .comparison-new {
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            text-align: center;
+        }
+
+        .comparison-old {
+            background: var(--color-gray-100);
+            color: var(--color-gray-500);
+        }
+
+        .comparison-new {
+            background: var(--color-accent-light);
             color: var(--color-gray-900);
-            margin-top: var(--space-8);
+            font-weight: var(--font-medium);
+        }
+
+        .comparison-label {
+            display: block;
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-1);
+            opacity: 0.7;
+        }
+
+        .comparison-value {
+            display: block;
+            font-size: var(--text-base);
+        }
+
+        .comparison-time {
+            display: block;
+            font-size: var(--text-2xl);
+            font-weight: var(--font-bold);
+            margin-top: var(--space-2);
+        }
+
+        .comparison-old .comparison-time {
+            color: var(--color-gray-400);
+        }
+
+        .comparison-new .comparison-time {
+            color: var(--color-accent);
         }
 
         @media (max-width: 640px) {
-            .shift-options {
-                flex-direction: column;
-                gap: var(--space-4);
-            }
-
-            .shift-option {
-                max-width: 100%;
-                width: 100%;
+            .comparison-item {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -394,26 +482,99 @@
         </div>
     </section>
 
-    <!-- The Shift Section - Urgency Messaging -->
-    <section class="section section-shift">
+    <!-- Day in the Life Section -->
+    <section class="section section-dayinlife">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow" style="color: var(--color-accent);">THE SHIFT IS HERE</span>
-                <h2 class="section-title">Every 2-3 years, this industry transforms.</h2>
-                <p class="section-subtitle" style="font-size: var(--text-xl); max-width: 700px;">This is the biggest shift yet. MSPs are struggling. Competition is fierce. Your operating model that's been around since Windows XP is obsolete.</p>
+                <span class="section-eyebrow">HOW IT WORKS IN PRACTICE</span>
+                <h2 class="section-title">6:47 AM. Your Slivers have already been working.</h2>
+                <p class="section-subtitle">Yesterday was busy. Three technicians in the field. Two emergency calls. Microsoft pushed license changes. Here's what your Slivers caught overnight:</p>
             </div>
-            <div class="shift-options">
-                <div class="shift-option shift-option-old">
-                    <h4>Option 1</h4>
-                    <p>Hunker down and do what you've always done</p>
+
+            <div class="day-grid">
+                <div class="day-card day-problem">
+                    <h4>What Happened Yesterday</h4>
+                    <ul>
+                        <li><strong>Jake took an emergency call.</strong> Fixed a corrupted Windows profile in 47 minutes. His next call was already ringing. He forgot to log the ticket.</li>
+                        <li><strong>Microsoft pushed license changes</strong> across three accounts. One added seats, one reduced, one upgraded tiers.</li>
+                        <li><strong>Jake worked 3 hours 33 minutes</strong> on a server emergency. Logged 3 hours—rounding down to be "fair."</li>
+                    </ul>
                 </div>
-                <div class="shift-divider">or</div>
-                <div class="shift-option shift-option-new">
-                    <h4>Option 2</h4>
-                    <p>Jump in</p>
+
+                <div class="day-card day-harvest">
+                    <h4>Your Morning Harvest Report</h4>
+                    <div class="harvest-report">
+                        <div class="harvest-item">
+                            <span class="harvest-label">Unticketed Work</span>
+                            <span class="harvest-value">47 min session found</span>
+                        </div>
+                        <div class="harvest-item">
+                            <span class="harvest-label">License True-Up</span>
+                            <span class="harvest-value">+$126.00</span>
+                        </div>
+                        <div class="harvest-item">
+                            <span class="harvest-label">Documentation Gap</span>
+                            <span class="harvest-value">33 min @ $175/hr</span>
+                        </div>
+                        <div class="harvest-item">
+                            <span class="harvest-label">Credit to Issue</span>
+                            <span class="harvest-value">-$18.00 (proactive)</span>
+                        </div>
+                        <div class="harvest-total">Harvestable: $2,681.50</div>
+                    </div>
                 </div>
             </div>
-            <p class="shift-warning">There is no third option. Those who don't jump become obsolete.</p>
+
+            <p class="day-conclusion">Friday reconciliation is now a Tuesday morning coffee ritual. <strong>Five minutes.</strong> Approve, approve, review, approve. The Slivers cultivate. You harvest.</p>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">THE TRANSFORMATION</span>
+                <h2 class="section-title">From forensic to continuous</h2>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <div class="comparison-old">
+                        <span class="comparison-label">Traditional</span>
+                        <span class="comparison-value">Friday reconciliation</span>
+                        <span class="comparison-time">4 hours</span>
+                    </div>
+                    <div class="comparison-new">
+                        <span class="comparison-label">With MSPI</span>
+                        <span class="comparison-value">Daily harvest review</span>
+                        <span class="comparison-time">5 minutes</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-old">
+                        <span class="comparison-value">Find problems after 30 days</span>
+                    </div>
+                    <div class="comparison-new">
+                        <span class="comparison-value">Catch gaps at 1 day old</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-old">
+                        <span class="comparison-value">Technicians round down</span>
+                    </div>
+                    <div class="comparison-new">
+                        <span class="comparison-value">Every minute documented</span>
+                    </div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-old">
+                        <span class="comparison-value">License changes slip through</span>
+                    </div>
+                    <div class="comparison-new">
+                        <span class="comparison-value">Auto-detected and drafted</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
