@@ -373,10 +373,18 @@ strong, .font-bold {
   cursor: pointer;
   padding: var(--space-2);
   color: var(--color-gray-700);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.nav-toggle:hover {
+  background: var(--color-gray-100);
 }
 
 .nav-toggle svg {
   display: block;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {

@@ -406,27 +406,19 @@
                     font-size: 16px;
                 }
 
-                /* Mobile adjustments */
+                /* Mobile adjustments - position below nav */
                 @media (max-width: 768px) {
                     .language-selector {
-                        bottom: auto;
-                        top: 20px;
+                        bottom: 20px;
+                        top: auto;
                         right: 20px;
                     }
 
                     .lang-dropdown {
-                        bottom: auto;
-                        top: 100%;
-                        margin-top: 8px;
-                        margin-bottom: 0;
-                    }
-                }
-
-                /* Hide on pages with fixed nav at bottom */
-                @media (max-width: 600px) {
-                    .language-selector {
-                        bottom: 80px;
-                        right: 20px;
+                        bottom: 100%;
+                        top: auto;
+                        margin-bottom: 8px;
+                        margin-top: 0;
                     }
                 }
             `;
