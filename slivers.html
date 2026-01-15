@@ -1137,24 +1137,7 @@
     </footer>
 
     <script>
-        // Navigation scroll effect
-        const nav = document.querySelector('.nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Cultivation cycle animation
+        // Cultivation cycle animation (slivers page only)
         const cycleSteps = document.querySelectorAll('.cycle-step');
         let currentStep = 2; // Start with 'detect' active
 
@@ -1185,7 +1168,7 @@
         });
     </script>
 
-    <!-- Analytics & i18n -->
+    <script src="/js/navigation.js"></script>
     <script src="/js/analytics.js"></script>
     <script src="/js/i18n.js"></script>
 </body>

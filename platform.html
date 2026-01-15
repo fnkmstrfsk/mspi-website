@@ -363,7 +363,7 @@
         </section>
 
         <!-- Revenue & Billing (Modules 1-4) -->
-        <section class="module-category section">
+        <section class="module-category section" id="revenue">
             <div class="container">
                 <div class="category-header">
                     <span class="category-number">01</span>
@@ -418,7 +418,7 @@
         </section>
 
         <!-- Service Operations (Modules 5-8) -->
-        <section class="module-category section">
+        <section class="module-category section" id="autopilot">
             <div class="container">
                 <div class="category-header">
                     <span class="category-number">02</span>
@@ -473,7 +473,7 @@
         </section>
 
         <!-- Compliance & Security (Modules 9-12) -->
-        <section class="module-category section">
+        <section class="module-category section" id="compliance">
             <div class="container">
                 <div class="category-header">
                     <span class="category-number">03</span>
@@ -528,7 +528,7 @@
         </section>
 
         <!-- Strategy & Advisory (Modules 13-17) -->
-        <section class="module-category section">
+        <section class="module-category section" id="vcaio">
             <div class="container">
                 <div class="category-header">
                     <span class="category-number">04</span>
@@ -738,28 +738,7 @@
 
     <!-- Scripts -->
     <script>
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-        }
-
-        // Scroll effect for nav
-        const nav = document.querySelector('.nav');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Intersection Observer for animations
+        // Intersection Observer for animations (platform page only)
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -778,7 +757,7 @@
         });
     </script>
 
-    <!-- Analytics & i18n -->
+    <script src="/js/navigation.js"></script>
     <script src="/js/analytics.js"></script>
     <script src="/js/i18n.js"></script>
 </body>
