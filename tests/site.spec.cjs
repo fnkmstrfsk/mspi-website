@@ -291,7 +291,11 @@ test.describe('Links', () => {
   });
 });
 
+// Visual regression tests are skipped in CI because screenshots differ between macOS and Linux
+// Run locally with: npm run test:e2e:ui to update snapshots
 test.describe('Visual Regression', () => {
+  test.skip(!!process.env.CI, 'Visual regression tests are skipped in CI due to OS differences');
+
   test('homepage should match snapshot', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
