@@ -117,6 +117,11 @@
         .day-card {
             padding: var(--space-8);
             border-radius: var(--radius-xl);
+            transition: transform var(--transition-base), box-shadow var(--transition-base);
+        }
+
+        .day-card:hover {
+            transform: translateY(-4px);
         }
 
         .day-card h4 {
@@ -147,8 +152,17 @@
             border: 1px solid var(--color-gray-200);
         }
 
+        .day-problem:hover {
+            box-shadow: var(--shadow-md);
+        }
+
         .day-problem h4 {
             color: var(--color-gray-700);
+        }
+
+        .day-problem h4::before {
+            content: '⚠️';
+            margin-right: var(--space-2);
         }
 
         .day-harvest {
@@ -156,8 +170,18 @@
             border: 2px solid var(--color-accent);
         }
 
+        .day-harvest:hover {
+            box-shadow: var(--shadow-accent-lg);
+        }
+
         .day-harvest h4 {
             color: var(--color-accent);
+        }
+
+        .day-harvest h4::before {
+            content: '✓';
+            margin-right: var(--space-2);
+            font-weight: var(--font-bold);
         }
 
         .harvest-report {
@@ -195,6 +219,12 @@
             font-weight: var(--font-bold);
             color: var(--color-accent);
             text-align: right;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { text-shadow: 0 0 0 transparent; }
+            50% { text-shadow: 0 0 10px rgba(6, 214, 160, 0.5); }
         }
 
         .day-conclusion {
@@ -219,26 +249,46 @@
 
         .comparison-item {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr auto 1fr;
             gap: var(--space-4);
             margin-bottom: var(--space-4);
+            align-items: center;
+        }
+
+        .comparison-arrow {
+            font-size: var(--text-xl);
+            color: var(--color-accent);
+            animation: arrow-pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes arrow-pulse {
+            0%, 100% { transform: translateX(0); opacity: 0.7; }
+            50% { transform: translateX(4px); opacity: 1; }
         }
 
         .comparison-old, .comparison-new {
             padding: var(--space-6);
             border-radius: var(--radius-lg);
             text-align: center;
+            transition: transform var(--transition-base);
+        }
+
+        .comparison-old:hover, .comparison-new:hover {
+            transform: scale(1.02);
         }
 
         .comparison-old {
             background: var(--color-gray-100);
             color: var(--color-gray-500);
+            text-decoration: line-through;
+            text-decoration-color: var(--color-gray-300);
         }
 
         .comparison-new {
             background: var(--color-accent-light);
             color: var(--color-gray-900);
             font-weight: var(--font-medium);
+            border: 2px solid var(--color-accent);
         }
 
         .comparison-label {
@@ -273,6 +323,16 @@
         @media (max-width: 640px) {
             .comparison-item {
                 grid-template-columns: 1fr;
+            }
+
+            .comparison-arrow {
+                transform: rotate(90deg);
+                margin: var(--space-2) 0;
+            }
+
+            @keyframes arrow-pulse {
+                0%, 100% { transform: rotate(90deg) translateX(0); opacity: 0.7; }
+                50% { transform: rotate(90deg) translateX(4px); opacity: 1; }
             }
         }
 
@@ -544,6 +604,7 @@
                         <span class="comparison-value">Friday reconciliation</span>
                         <span class="comparison-time">4 hours</span>
                     </div>
+                    <span class="comparison-arrow">→</span>
                     <div class="comparison-new">
                         <span class="comparison-label">With MSPI</span>
                         <span class="comparison-value">Daily harvest review</span>
@@ -554,6 +615,7 @@
                     <div class="comparison-old">
                         <span class="comparison-value">Find problems after 30 days</span>
                     </div>
+                    <span class="comparison-arrow">→</span>
                     <div class="comparison-new">
                         <span class="comparison-value">Catch gaps at 1 day old</span>
                     </div>
@@ -562,6 +624,7 @@
                     <div class="comparison-old">
                         <span class="comparison-value">Technicians round down</span>
                     </div>
+                    <span class="comparison-arrow">→</span>
                     <div class="comparison-new">
                         <span class="comparison-value">Every minute documented</span>
                     </div>
@@ -570,6 +633,7 @@
                     <div class="comparison-old">
                         <span class="comparison-value">License changes slip through</span>
                     </div>
+                    <span class="comparison-arrow">→</span>
                     <div class="comparison-new">
                         <span class="comparison-value">Auto-detected and drafted</span>
                     </div>
