@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "title": "MSPI — Intelligentie Vermenigvuldigd",
+    "description": "MSPI transformeert MSP-operaties door AI-gestuurde intelligentie. Van factureringsoptimalisatie tot agentische serviceverlening."
+  },
+  "nav": {
+    "platform": "Platform",
+    "slivers": "Slivers",
+    "manifesto": "Manifest",
+    "demo": "Demo Aanvragen",
+    "back": "Terug"
+  },
+  "home": {
+    "badge": "ISO 27001 Gecertificeerd",
+    "formula": "MSP + AI = MSP<sup>i</sup>",
+    "tagline": "Intelligentie Vermenigvuldigd",
+    "problem": {
+      "line1": "Niet-gefactureerde uren. Licentiedrift. Scope creep.",
+      "line2": "De gemiddelde MSP verliest <strong>8-12% van factureerbare omzet</strong>.",
+      "line3": "Uw tools praten niet met elkaar. Uw data is verspreid. <strong>U verliest geld.</strong>"
+    },
+    "metrics": {
+      "revenue": "Omzet Teruggewonnen",
+      "tickets": "Tickets Auto-Getrieerd",
+      "hours": "Wekelijks Bespaard"
+    },
+    "cycle": {
+      "title": "De Cultivatiecyclus",
+      "sense": "waarnemen",
+      "senseDesc": "ophalen uit alle bronnen",
+      "unify": "unificeren",
+      "unifyDesc": "entiteiten matchen",
+      "detect": "detecteren",
+      "detectDesc": "gaten & lekken vinden",
+      "validate": "valideren",
+      "validateDesc": "nauwkeurigheid verifiëren",
+      "harvest": "oogsten",
+      "harvestDesc": "omzet vastleggen"
+    },
+    "integrations": "Verbindt met uw stack",
+    "sliversHint": "Een vloot van <span>Slivers</span> die uw omzettuin verzorgt"
+  },
+  "platform": {
+    "architecture": "Architectuur",
+    "title": "Het MSPI Platform",
+    "subtitle": "18 geïntegreerde modules. Eén uniforme intelligentielaag. Elke MSP-operatie getransformeerd.",
+    "description": "Een compleet AI-gestuurd besturingssysteem voor MSP's",
+    "core": {
+      "badge": "Module 00",
+      "title": "Kernplatform",
+      "description": "De fundamentlaag: identiteitsgerichte tenancy, canonieke datagraph, beleidsvangrails en de orkestratielaag die elke andere module aandrijft.",
+      "features": {
+        "identity": "Identiteit & Tenancy",
+        "connector": "Connector Hub",
+        "dataGraph": "Data Graph",
+        "policy": "Beleidslaag",
+        "orchestration": "Orkestratie"
+      }
+    },
+    "modulesIntro": {
+      "title": "Operationele Modules",
+      "subtitle": "Elke module cumuleert de intelligentie van alle andere"
+    },
+    "modules": {
+      "m01": {
+        "name": "Omzetintelligentie",
+        "description": "De winstmotor. Licentieafstemming, contractlekdetectie, factureringsintegriteitsautomatisering. Elke euro gevonden, elke marge beschermd.",
+        "features": ["Licentieafstemming", "Contractanalyse", "Cloud FinOps"]
+      },
+      "m02": {
+        "name": "Datakwaliteitsfabriek",
+        "description": "De hygiënemotor. Deduplicatie, entiteitsresolutie, verouderde asset-opruiming. Schone data is de basis van accurate intelligentie.",
+        "features": ["Deduplicatie", "Entiteitsresolutie", "Datascoring"]
+      },
+      "m03": {
+        "name": "Service Desk Autopiloot",
+        "description": "De arbeidsbesparder. AI-gestuurde triage, vaardigheidsgerichte dispatch, technicus-copiloot, agentische oplossing. Tickets die zichzelf oplossen.",
+        "features": ["AI-Triage", "Slimme Routering", "Auto-Remediatie"]
+      },
+      "m04": {
+        "name": "Technische Servicelevering",
+        "description": "Vlootcommando & controle. Alertaggregatie, driftdetectie, patchbeheer, back-upverificatie. Elk apparaat, elk systeem, elk moment.",
+        "features": ["Alertbeheer", "Driftdetectie", "Patchcompliance"]
+      },
+      "m05": {
+        "name": "Klantervaringsportaal",
+        "description": "Het gezicht van uw MSP. Merkzelfservice, goedkeuringsworkflows, executive dashboards. Transparantie die vertrouwen bouwt.",
+        "features": ["Zelfservice", "Goedkeuringen", "Exec Dashboards"]
+      },
+      "m06": {
+        "name": "Identiteit & Beveiliging",
+        "description": "Het schild. ITDR, SSPM, continue risicoscoring, incidentresponsorkestatie. Beveiligingshouding die nooit slaapt.",
+        "features": ["ITDR", "SSPM", "Risicoscoring"]
+      },
+      "m07": {
+        "name": "Compliancefabriek",
+        "description": "Auditbestendig. Framework-mapping, automatische bewijsverzameling, continue compliancehouding. Real-time, niet point-in-time.",
+        "features": ["Framework Mapping", "Bewijskluis", "Auditpakketten"]
+      },
+      "m08": {
+        "name": "Documentatiefabriek",
+        "description": "Het brein. Dynamische docs die zichzelf updaten, SOP-generatie uit oplossingen, kennisbank die automatisch groeit.",
+        "features": ["Dynamische Docs", "SOP Generator", "Auto-KB"]
+      },
+      "m09": {
+        "name": "Levenscyclusfabriek",
+        "description": "Onboarding tot offboarding. 30-dagen sprinttracking, provisioneringsworkflows, standaardadoptie. Elke transitie afgehandeld.",
+        "features": ["Onboarding", "Provisioning", "Migratie"]
+      },
+      "m10": {
+        "name": "Strategie Studio",
+        "description": "De upmarket-motor. vCIO-automatisering, QBR-narratiefgeneratie, AI-advies (vCAIO), roadmapplanning. Strategie die schaalt.",
+        "features": ["QBR Automatisering", "vCIO Tools", "AI Advies"]
+      },
+      "m11": {
+        "name": "Asset Levenscyclus",
+        "description": "Hardware & software. Garantietracking, vernieuwingsvoorspelling, verwijderingscompliance. Elk asset verantwoord.",
+        "features": ["Garantie", "Vernieuwingscycli", "Verwijdering"]
+      },
+      "m12": {
+        "name": "Klantsucces",
+        "description": "De retentiemotor. Accountgezondheidsscore, churnvoorspelling, verlengingsbeheer. Relaties die cumuleren.",
+        "features": ["Gezondheidsscore", "Churndetectie", "Verlengingen"]
+      },
+      "m13": {
+        "name": "Uitbreidingstoolkit",
+        "description": "Verkoop- & marketingoutputs. Upsell-radar, voorstelgeneratie, casestudyautomatisering. Groei van binnenuit.",
+        "features": ["Upsell Radar", "Voorstellen", "Casestudies"]
+      },
+      "m14": {
+        "name": "Inkoop",
+        "description": "De commerciële motor. Leverancierscatalogus, inkoopworkflows, margetracking. Elke aankoop geoptimaliseerd.",
+        "features": ["Leverancierscatalogus", "Prijsvergelijking", "Fulfilment"]
+      },
+      "m15": {
+        "name": "Mensen & Uitvoering",
+        "description": "Interne MSP-operaties. Rolscorekaarten, wervingsplaybooks, operationele cadans. Uw team, versterkt.",
+        "features": ["Rolscorekaarten", "Werving", "Cadans"]
+      },
+      "m16": {
+        "name": "Rapportage & Analytics",
+        "description": "Uniforme BI. Aangepaste rapportbouwer, benchmarkpakketten, voorspellende analytics. Data die beslissingen drijft.",
+        "features": ["Rapportbouwer", "Benchmarks", "Voorspellend"]
+      },
+      "m17": {
+        "name": "Marketplace",
+        "description": "De ecosysteemgracht. Templatebibliotheek, communitypatronen, partnerintegraties. Intelligentie die cumuleert over de industrie.",
+        "features": ["Templates", "Community", "Extensies"]
+      }
+    },
+    "differentiators": {
+      "title": "Belangrijkste Onderscheiders",
+      "identity": {
+        "title": "Identiteitsgerichte Architectuur",
+        "description": "Cross-tenant RBAC + delegatie met Entra/Okta native integratie. Beveiliging die schaalt."
+      },
+      "dataGraph": {
+        "title": "Canonieke Data Graph",
+        "description": "Gebruiker ↔ Apparaat ↔ Licentie ↔ Ticket ↔ Alert ↔ Contract relaties mogelijk maken cross-domein intelligentie."
+      },
+      "roi": {
+        "title": "ROI-Instrumentatie",
+        "description": "Touches, bespaarde minuten en gevonden/beschermde omzet automatisch bijgehouden. Waarde die u kunt bewijzen."
+      },
+      "agentic": {
+        "title": "Agentische Oplossing",
+        "description": "AI voert goedgekeurde runbooks uit vóór menselijke betrokkenheid, met juiste vangrails. Automatisering die handelt."
+      },
+      "compliance": {
+        "title": "Continue Compliance",
+        "description": "Real-time houding, geen point-in-time audits. Automatische bewijsverzameling met versheidsregistratie."
+      },
+      "documentation": {
+        "title": "Dynamische Documentatie",
+        "description": "Assets updaten hun eigen documentatiepagina's automatisch. Kennis die zichzelf onderhoudt."
+      }
+    },
+    "iso": {
+      "title": "AI op Rails",
+      "subtitle": "ISO 27001 Gecertificeerd",
+      "description": "MSPI is <span class=\"emphasis\">ISO 27001 gecertificeerd</span>. Elke dienst die we leveren, elke infrastructuur die we beheren, elk resultaat dat we bereiken—allemaal binnen een continu, internationaal erkend informatiebeveiligingsmanagementsysteem.",
+      "theirApproach": "Hun Aanpak",
+      "theirApproachDesc": "SOC 2 attestatie. Een momentopname. Compliance-theater dat verloopt zodra de auditor vertrekt.",
+      "mspiApproach": "MSPI Aanpak",
+      "mspiApproachDesc": "ISO 27001. Continu ISMS. Enterprise-grade beveiligingsgovernance uitgebreid naar elke klant. Wij verschijnen bij audits.",
+      "quote": "Wij geven u de Ferrari en laten u vol gas geven zonder doodsangst, omdat we hem op <span class=\"emphasis\">redundante veiligheidsrails</span> hebben gezet. Dat is wat echte fiduciairs doen—ze beschermen hun klanten tegen bekende en onbekende gevaren."
+    },
+    "cta": {
+      "title": "Intelligentie die cumuleert",
+      "description": "Elke module voedt elke andere. Het geheel overstijgt de som der delen.",
+      "readManifesto": "Lees Manifest"
+    },
+    "footer": "MSPI × 18 Modules"
+  },
+  "slivers": {
+    "agents": "AI-Agenten",
+    "title": "Slivers",
+    "subtitle": "Een vloot van gespecialiseerde AI-agenten die uw omzettuin verzorgt",
+    "intro": {
+      "forensic": "forensisch",
+      "cultivation": "cultivatie",
+      "description": "Traditionele MSP-facturering is {{forensic}}—maandelijkse afstemming, jagen op verloren omzet in oude records. Het Sliver-model is {{cultivation}}—dagelijkse verzorging van de omzettuin."
+    },
+    "model": {
+      "label": "Het Model",
+      "title": "Cultivatie, Geen Forensisch",
+      "description": "Slivers werken continu—veranderingen waarnemen, entiteiten unificeren over systemen, kansen detecteren, bevindingen valideren en de dagelijkse oogst presenteren voor menselijke goedkeuring.",
+      "traditional": "Traditioneel",
+      "traditionalValue": "Maandelijkse afstemming",
+      "mspi": "MSPI",
+      "mspiValue": "Dagelijkse cultivatie"
+    },
+    "cycle": {
+      "sense": "Waarnemen",
+      "senseDesc": "Ophalen uit alle bronnen",
+      "unify": "Unificeren",
+      "unifyDesc": "Entiteiten matchen over systemen",
+      "detect": "Detecteren",
+      "detectDesc": "Gaten & kansen vinden",
+      "validate": "Valideren",
+      "validateDesc": "Verifiëren met 3-model consensus",
+      "harvest": "Oogsten",
+      "harvestDesc": "Elke verschuldigde euro vastleggen"
+    },
+    "layers": {
+      "layer1": "Laag 1",
+      "layer2": "Laag 2",
+      "layer3": "Laag 3",
+      "layer4": "Laag 4",
+      "layer5": "Laag 5"
+    },
+    "categories": {
+      "sensors": "Sensoren",
+      "sensorsDesc": "— Data-inname uit bronsystemen",
+      "infrastructure": "Infrastructuur",
+      "infrastructureDesc": "— Entiteitsresolutie en correlatie",
+      "operational": "Operationeel",
+      "operationalDesc": "— Detectie en analyse",
+      "validation": "Validatie",
+      "validationDesc": "— Multi-model consensus",
+      "output": "Output",
+      "outputDesc": "— Rapportage en voorstellen"
+    },
+    "introSection": {
+      "p1": "Traditionele MSP-facturering is <span class=\"emphasis\">forensisch</span>—maandelijkse afstemming, jagen op verloren omzet in oude records. Het Sliver-model is <span class=\"emphasis\">cultivatie</span>—dagelijkse verzorging van de omzettuin.",
+      "p2": "Elke dag bij een MSP plant zaden: een technicus neemt een oproep aan (factureerbare tijd), een klant voegt een gebruiker toe (licentieomzet), een apparaat meldt zich (beheerde servicewaarde), een back-up draait (contractuele verplichting).",
+      "p3": "Onverzorgd rotten zaden. <span class=\"emphasis\">De Slivers zorgen dat elk zaad een oogst wordt.</span>"
+    },
+    "fleet": {
+      "title": "De Sliver Vloot",
+      "description": "Elke Sliver is een specialist. Samen vormen ze een compleet omzetintelligentiesysteem."
+    },
+    "agents": {
+      "sensorPSA": {
+        "name": "Sensor:PSA",
+        "role": "Autotask / ConnectWise",
+        "description": "Haalt alle factureringsrelevante data uit uw PSA. Tijdregistraties met factureerbaarheidsstatus, overeenkomstvoorwaarden, factuurgeschiedenis, bedrijfsrecords.",
+        "outputs": ["Tijdregistraties", "Overeenkomsten", "Facturen"]
+      },
+      "sensorDistributor": {
+        "name": "Sensor:Distributeur",
+        "role": "Pax8 / Ingram / TD Synnex",
+        "description": "Haalt abonnements- en gebruiksdata uit distributeurportalen. De bron van waarheid voor welke licenties u betaalt.",
+        "outputs": ["Abonnementen", "Gebruik", "Kosten"]
+      },
+      "sensorAccounting": {
+        "name": "Sensor:Boekhouding",
+        "role": "QuickBooks / Xero",
+        "description": "Leest factuur- en betalingsstatus. Detecteert synchronisatiefouten—PSA-factuur bestaat, boekhoudfactuur ontbreekt.",
+        "outputs": ["Facturen", "Betalingen", "Syncstatus"]
+      },
+      "sensorRMM": {
+        "name": "Sensor:RMM",
+        "role": "Datto / NinjaOne / N-able",
+        "description": "Telt beheerde endpoints, volgt technicus remote sessies, monitort operationele events. Onthult werk dat mogelijk niet gelogd is.",
+        "outputs": ["Apparaten", "Sessies", "Alerts"]
+      },
+      "resolver": {
+        "name": "Resolver",
+        "role": "Entiteitsresolutie",
+        "description": "De kritieke lijm. Matcht \"Acme BV\" in PSA naar \"Acme B.V.\" in distributeur naar \"ACME BV\" in boekhouding. Gebruikt 3-model consensus voor nauwkeurigheid.",
+        "outputs": ["Entiteitsmap", "Betrouwbaarheidsscores", "Niet-gematchte Wachtrij"]
+      },
+      "detector": {
+        "name": "Detector",
+        "role": "Omzetlekkage",
+        "description": "Voert detectieregels uit: niet-gefactureerde tijd ouder dan 7 dagen, licentieaantal-mismatches, apparaatdekkingsgaten, factuursynchronisatiefouten. Kwantificeert elke bevinding.",
+        "outputs": ["Lekkage-alerts", "Ernst", "Bewijs"]
+      },
+      "documentation": {
+        "name": "Documentatie",
+        "role": "Werkverificatie",
+        "description": "Kruisverwijst RMM-activiteit met gelogde tickets en tijdregistraties. Vindt niet-getickette werk, tijdsdiscrepanties, activiteitsmismatches.",
+        "outputs": ["Documentatiegaten", "Tijdsverschillen", "Sessieanalyse"]
+      },
+      "coverage": {
+        "name": "Dekking",
+        "role": "Scope-analyse",
+        "description": "Vergelijkt werkelijke servicelevering met overeenkomstvoorwaarden. Detecteert scope creep (onbetaalde diensten leveren) en dekkingsgaten (overeenkomsten die niet overeenkomen met realiteit).",
+        "outputs": ["Scope Creep", "Dekkingsgaten", "Wijzigingssuggesties"]
+      },
+      "reviewerAmount": {
+        "name": "Reviewer:Bedrag",
+        "role": "Factureringsberekening",
+        "description": "Valideert berekeningen. Uren × Tarief = Bedrag. Verifieert dat tarieven overeenkomen met overeenkomstvoorwaarden. Controleert of hoeveelheidsgaten accuraat zijn.",
+        "outputs": ["Wiskundige Validatie", "Tariefverificatie"]
+      },
+      "reviewerEntity": {
+        "name": "Reviewer:Entiteit",
+        "role": "Identiteitsvalidatie",
+        "description": "Bevestigt dat entiteits-ID's naar echte records verwijzen. Verifieert dat bedrijfsresolutie correct is. Vangt verweesde referenties op.",
+        "outputs": ["ID-Validatie", "Kruisreferentiecontrole"]
+      },
+      "reviewerHistory": {
+        "name": "Reviewer:Geschiedenis",
+        "role": "Patroonmatching",
+        "description": "Vergelijkt met historische patronen. Is dit een bekende false positive? Was een soortgelijke alert eerder opgelost? Komt het patroon overeen met bevestigde true positives?",
+        "outputs": ["False Positive Risico", "Historische Match"]
+      },
+      "reporter": {
+        "name": "Reporter",
+        "role": "Dagelijkse Cultivatie",
+        "description": "Genereert het Dagelijkse Cultivatierapport—alles wat nodig is om de dagomzet in 5-15 minuten te oogsten. Opbrengsten klaar, items die aandacht nodig hebben, uit te geven credits.",
+        "outputs": ["Cultivatierapport", "Bewijsbundel"]
+      },
+      "proposer": {
+        "name": "Proposer",
+        "role": "Factuurconcepten",
+        "description": "Maakt factuurconcepten en correctievoorstellen. Elke regelpost heeft bewijsreferenties. Bevat betrouwbaarheidsscores en terugdraaipaden. Maakt nooit echte facturen aan.",
+        "outputs": ["Factuurconcepten", "Wijzigingen", "Credits"]
+      }
+    },
+    "architecture": {
+      "title": "Veiligheidsarchitectuur",
+      "description": "Slivers opereren in tiers op basis van risico. Hogere tiers vereisen menselijke goedkeuring.",
+      "tier0": {
+        "number": "0",
+        "label": "Tier",
+        "title": "Autonoom",
+        "description": "Alleen-lezen operaties. Sensoren, Resolver, Detectoren, Reviewers. Kunnen geen schade veroorzaken. Draaien continu zonder goedkeuring."
+      },
+      "tier2": {
+        "number": "2",
+        "label": "Tier",
+        "title": "HIL-Gecontroleerd",
+        "description": "Interne schrijfoperaties. Factuuraanmaak, overeenkomstupdates. Vereist menselijke goedkeuring. Elke actie gelogd."
+      },
+      "tier3": {
+        "number": "3",
+        "label": "Tier",
+        "title": "Extern",
+        "description": "Operaties die externe systemen beïnvloeden. Synchroniseren naar boekhouding, facturen versturen. Vereist expliciete extra goedkeuring."
+      }
+    },
+    "yields": {
+      "title": "Opbrengsten",
+      "description": "Elke omzetkans gedetecteerd door de Slivers heet een <span class=\"emphasis\">Opbrengst</span>. Opbrengsten worden gecategoriseerd, gekwantificeerd en gepresenteerd voor oogst.",
+      "reportHeader": "═══ DAGELIJKS CULTIVATIERAPPORT ═══",
+      "yieldsReady": "OPBRENGSTEN KLAAR VOOR OOGST",
+      "needsAttention": "HEEFT UW AANDACHT NODIG",
+      "item1Title": "1. Licentie True-Up: Acme BV",
+      "item1Detail": "+3 Microsoft 365 E3 licenties (15 Dec - 31 Dec)",
+      "item1Amount": "Bedrag:",
+      "item1AmountValue": "€126,00",
+      "item1AmountNote": "(naar rato)",
+      "item2Title": "2. Tier Upgrade: Gamma BV",
+      "item2Detail": "15 gebruikers: Business Basic → Business Premium",
+      "item2Amount": "Maandelijkse verhoging:",
+      "item2AmountValue": "€97,50",
+      "attention1Title": "⚠ Documentatiegat: Marcus @ Acme BV",
+      "attention1Detail": "Logde 3,0 uur, RMM toont 3,55 uur",
+      "attention1Delta": "Delta: 33 minuten",
+      "attention1DeltaValue": "€96,25",
+      "reportFooter": "═══ Geschatte oogstbare:",
+      "reportTotal": "€319,75",
+      "actionApprove": "[Goedkeuren]",
+      "actionModify": "[Wijzigen]",
+      "actionDefer": "[Uitstellen]",
+      "actionReviewAmendment": "[Bekijk Wijziging]",
+      "actionUpdateEntry": "[Update Invoer]",
+      "actionAcceptAsIs": "[Accepteer Zoals Is]",
+      "actionDiscuss": "[Bespreken]"
+    },
+    "safety": {
+      "title": "Veiligheidsgaranties",
+      "iso": "ISO 27001 Gecertificeerd",
+      "isoDesc": "Elke Sliver-operatie draait binnen een continu ISMS. Geen momentopname-audit—een permanent beveiligingsmanagementsysteem.",
+      "automatic": "Automatisch (Veilig)",
+      "automaticDesc": "Data lezen, entiteiten matchen, lekkagedetectie, validatie, rapportgeneratie, conceptvoorbereiding.",
+      "approval": "Goedkeuring Vereist",
+      "approvalDesc": "Factuuraanmaak, overeenkomstwijziging, klantrecordwijzigingen, boekhoudsynchronisatie, externe communicatie.",
+      "escalates": "Escaleert Altijd",
+      "escalatesDesc": "Vertrouwen onder 80%, reviewers oneens, eerste patronen, bedragen boven drempel, onzekere identiteit.",
+      "consensus": "3-Model Consensus",
+      "consensusDesc": "Kritieke beslissingen gebruiken drie onafhankelijke modellen. Onenigheid escaleert altijd naar mensen. Geen enkel punt van redeneringsfalen.",
+      "rails": "AI op Rails",
+      "railsDesc": "Als een bobslee op een rodelbaan. Doe wat u wilt met uw slee—u springt er niet uit. Enterprise-grade vangrails voor iedereen."
+    },
+    "hil": {
+      "checkpoint": "Het Controlepunt",
+      "title": "Mens-in-de-Loop Poort",
+      "description": "Slivers detecteren, valideren en stellen voor. <span class=\"emphasis\">Mensen keuren goed.</span> Geen factuur wordt aangemaakt, geen overeenkomst gewijzigd, geen actie ondernomen zonder expliciete menselijke autorisatie."
+    },
+    "cta": {
+      "title": "Intelligentie die cultiveert",
+      "description": "Slivers werken terwijl u slaapt. Elke ochtend is de oogst klaar.",
+      "viewPlatform": "Bekijk Platform",
+      "readManifesto": "Lees Manifest"
+    },
+    "footer": "MSPI × Slivers"
+  },
+  "demo": {
+    "getStarted": "Aan de Slag",
+    "title": "Demo Aanvragen",
+    "subtitle": "Ontdek hoe MSPI MSP-operaties transformeert door AI-gestuurde intelligentie",
+    "form": {
+      "title": "Uw Informatie",
+      "name": "Naam",
+      "namePlaceholder": "Uw naam",
+      "email": "E-mail",
+      "emailPlaceholder": "u@bedrijf.nl",
+      "company": "Bedrijf",
+      "companyPlaceholder": "Uw MSP-naam",
+      "size": "Bedrijfsgrootte",
+      "sizePlaceholder": "Selecteer teamgrootte",
+      "sizeOptions": {
+        "1-10": "1-10 medewerkers",
+        "11-25": "11-25 medewerkers",
+        "26-50": "26-50 medewerkers",
+        "51-100": "51-100 medewerkers",
+        "100+": "100+ medewerkers"
+      },
+      "interest": "Primaire Interesse",
+      "interestPlaceholder": "Wat interesseert u het meest?",
+      "interestOptions": {
+        "revenue": "Omzetintelligentie / Facturering",
+        "service": "Service Desk Automatisering",
+        "compliance": "Compliance & ISO 27001",
+        "vcaio": "vCAIO / Strategisch Advies",
+        "full": "Volledige Platform Demo"
+      },
+      "message": "Bericht (Optioneel)",
+      "messagePlaceholder": "Vertel ons over uw huidige uitdagingen of wat u wilt zien...",
+      "submit": "Demo Aanvragen",
+      "submitting": "Verzenden..."
+    },
+    "success": {
+      "title": "Aanvraag Ontvangen",
+      "message": "We nemen binnen 24 uur contact met u op om uw demo te plannen."
+    },
+    "expect": {
+      "title": "Wat te Verwachten",
+      "personalized": {
+        "title": "Gepersonaliseerde Demo",
+        "description": "Geen generiek slidedeck. We laten u precies zien hoe MSPI <strong>uw specifieke uitdagingen</strong> aanpakt op basis van uw huidige stack en operaties."
+      },
+      "walkthrough": {
+        "title": "Live Platform Doorloop",
+        "description": "Zie de Slivers in actie. Bekijk real-time omzetcultivatie, entiteitsresolutie en AI-gestuurde detectie werkend op echte MSP-data.",
+        "item1": "Omzetintelligentie & factureringscultivatie",
+        "item2": "Service Desk Autopilot & AI-triage",
+        "item3": "Compliance Factory & ISO 27001",
+        "item4": "vCAIO & Strategy Studio"
+      },
+      "roi": {
+        "title": "ROI-Beoordeling",
+        "description": "We helpen u de <strong>specifieke financiële impact</strong> te begrijpen die MSPI kan hebben op uw operaties op basis van uw huidige metrics."
+      },
+      "response": "We reageren doorgaans binnen 24 uur."
+    },
+    "footer": "MSPI × Intelligentie Vermenigvuldigd"
+  },
+  "manifesto": {
+    "title": "Het MSPI Manifest",
+    "fiveForces": "Vijf Krachten",
+    "principle01": "Principe 01",
+    "principle02": "Principe 02",
+    "principle03": "Principe 03",
+    "principle04": "Principe 04",
+    "principle05": "Principe 05",
+    "opening": {
+      "lead": "De MSP-industrie is niet traag. Ze is <span class=\"emphasis\">statisch</span>.",
+      "p1": "Twintig jaar lang volgden managed services dezelfde fysica: voeg personeel toe, voeg tools toe, voeg tickets toe. Lineaire schaling. Constante snelheid. De wiskunde veranderde nooit omdat het model nooit evolueerde.",
+      "p2": "MSPI verwerpt constante snelheid. Wij streven naar <span class=\"emphasis\">versnelling</span>.",
+      "p3": "MSPI is niet zomaar een platform. Het is een veranderingssnelheid. Waar traditionele MSP's vooruitgang meten in beheerde endpoints, meten wij de <span class=\"emphasis\">snelheid waarmee capaciteit zelf cumuleert</span>.",
+      "p4": "Wij zijn niet lineair. Wij zijn exponentieel."
+    },
+    "principles": {
+      "inward": {
+        "title": "Intelligentie naar Binnen",
+        "body": "Traditionele MSP's jagen op elke nieuwe tool, elke glimmende feature. Hun capaciteiten verspreiden naar buiten. MSPI trekt intelligentie <span class=\"emphasis\">naar binnen</span>—consoliderend in AI-systemen die leren, aanpassen en cumuleren. Elk opgelost ticket maakt de volgende oplossing sneller. Elk gedocumenteerd proces maakt de volgende documentatie automatisch. Centripetale kracht creëert capaciteitscentra."
+      },
+      "leverage": {
+        "title": "Hefboom Boven Arbeid",
+        "body": "Kracht is nog een technicus inhuren. Hefboom is een agent bouwen die het werk van tien doet. Traditionele MSP's duwen harder. MSPI vindt draaipunten. Wij vragen niet \"hoeveel engineers hebben we nodig?\" Wij vragen \"waar wordt één engineer oneindig?\" Het antwoord is altijd de hefboom."
+      },
+      "momentum": {
+        "title": "Momentum Behouden, Traagheid Vernietigd",
+        "body": "Behoud wat werkt: klantvertrouwen, diepe relaties, institutionele kennis. Vernietig wat weerstand biedt: handmatige processen, tribale kennisopsparing, \"zo hebben we het altijd gedaan.\" Conservering is intentioneel. Sloop ook. MSPI kent het verschil."
+      },
+      "friction": {
+        "title": "Frictie is een Keuze",
+        "body": "Elke goedkeuringsketen is gekozen. Elke handmatige overdracht is gekozen. Elke niet-gefactureerde minuut is gekozen. Frictie is niet inherent aan servicelevering—het is <span class=\"emphasis\">erin ontworpen</span>. MSPI ontwerpt het eruit. Wij elimineren de barrières tussen probleem en oplossing, tussen intentie en uitvoering. Wat overblijft is pure snelheid."
+      },
+      "compound": {
+        "title": "Samengestelde Curves",
+        "body": "Simpele operaties herhalen. Samengestelde operaties <span class=\"emphasis\">spiralen</span>. Elke automatisering maakt de volgende automatisering mogelijk. Elk inzicht voedt het volgende inzicht. Elk klantsuccespatroon wordt een template voor de volgende klant. De curve vlakt niet af—hij wordt steiler. Dit is geen groei. Dit is versnelling van groei."
+      }
+    },
+    "flywheel": {
+      "label": "Het Vliegwieleffect",
+      "visual": "<span>data</span> → inzichten → <span>modellen</span> → automatisering → <span>resultaten</span> → data",
+      "description": "Elke rotatie van het vliegwiel versnelt de volgende. De kloof tussen inname en actie comprimeert. Uiteindelijk verdwijnt hij."
+    },
+    "antiPatterns": {
+      "title": "Wat Wij Afwijzen",
+      "items": [
+        "Vijfjarige technologie-roadmaps in steen geschreven",
+        "Constante snelheidsoperaties: \"We zijn altijd 10% per jaar gegroeid\"",
+        "Tool-wildgroei vermomd als innovatie",
+        "Tribale kennis als baanzekerheid",
+        "SOC 2-theater zonder continue governance",
+        "De overtuiging dat klanten AI meer vrezen dan irrelevantie"
+      ]
+    },
+    "practices": {
+      "title": "Onze Praktijken",
+      "items": [
+        { "text": "<strong>Cultiveer, graaf niet op.</strong> Dagelijkse verzorging van de omzettuin verslaat maandelijkse forensische boekhouding." },
+        { "text": "<strong>Automatiseer de automatisering.</strong> Als u nog steeds handmatig runbooks bouwt, bouwt u ze verkeerd." },
+        { "text": "<strong>Vertrouw maar verifieer—met consensus.</strong> Drie modellen zijn het eens vóór actie. Onenigheid escaleert." },
+        { "text": "<strong>Mens-in-de-loop, niet mens-in-de-weg.</strong> Goedkeuringspoorten bestaan voor uitvoering, niet voor observatie." },
+        { "text": "<strong>Meet de snelheid, niet het getal.</strong> Hoe snel u verbetert is belangrijker dan waar u begint." }
+      ]
+    },
+    "accelerations": {
+      "title": "De Drie Versnellingen",
+      "technical": {
+        "title": "Technische Versnelling",
+        "description": "Niet hoeveel systemen we beheren, maar hoe snel onze beheercapaciteit zelf verbetert. AI-agenten die betere runbooks schrijven dan vorige week. Automatiseringen die automatiseringen spawnen. De stack evolueert sneller dan welke roadmap ook voorspelde."
+      },
+      "operational": {
+        "title": "Operationele Versnelling",
+        "description": "Niet hoeveel tickets we sluiten, maar hoe snel onze oplossingssnelheid toeneemt. Responstijden die kwartaal na kwartaal halveren. Escalatiepercentages die asymptotisch naar nul gaan. Operaties die lichter worden naarmate schaal toeneemt."
+      },
+      "strategic": {
+        "title": "Strategische Versnelling",
+        "description": "Niet hoeveel klanten we bedienen, maar hoe snel onze waardecumulatie groeit. QBR's die zichzelf genereren. Roadmaps die voorspellen voordat klanten vragen. Vertrouwen dat verdiept omdat wij om hoeken kijken die zij niet kunnen."
+      }
+    },
+    "isoSection": {
+      "lead1": "Al deze versnelling. Al deze intelligentie. Al deze autonomie. Het vereist <span class=\"emphasis\">vangrails die nooit falen</span>.",
+      "lead2": "MSPI is <span class=\"emphasis\">ISO 27001 gecertificeerd</span>. Niet uw SOC 2-attestatie—een momentopname, compliance-theater dat verloopt zodra de auditor vertrekt. Wij hebben het over een <span class=\"emphasis\">continu</span>, internationaal erkend informatiebeveiligingsmanagementsysteem.",
+      "lead3": "Wij hebben enterprise-grade beveiligingsgovernance uitgebreid naar elke klant die we raken. Wij verschijnen bij audits. Want dat is wat echte fiduciairs doen.",
+      "quote": "Wij geven u de Ferrari en laten u vol gas geven zonder doodsangst, omdat we hem op <span class=\"emphasis\">redundante veiligheidsrails</span> hebben gezet. Dat is wat echte fiduciairs doen—ze beschermen hun klanten tegen bekende en onbekende gevaren."
+    },
+    "quote": {
+      "text": "\"Geef mij een hefboom lang genoeg en een steunpunt om hem op te plaatsen, en ik zal de wereld bewegen.\"",
+      "cite": "— Archimedes"
+    },
+    "commitment": {
+      "title": "Onze Toezegging",
+      "description": "Wij committeren ons aan het bouwen van intelligentie die cumuleert, systemen die zichzelf onderwijzen en partnerschappen die samen versnellen. De toekomst behoort aan degenen die ernaartoe versnellen."
+    },
+    "cta": {
+      "lead": "De oproep tot actie",
+      "title": "Stop met groeien.<br>Begin uw groei te versnellen.",
+      "description": "De MSP's die winnen zullen niet de grootste zijn. Ze zullen de snelste zijn—en versnellen. De kloof tussen degenen die AI omarmen en degenen die weerstand bieden wordt niet gemeten in marktaandeel. Het wordt gemeten in <span class=\"emphasis\">overleving</span>.",
+      "tagline": "MSPI: Intelligentie Vermenigvuldigd",
+      "viewPlatform": "Bekijk Platform",
+      "meetSlivers": "Ontmoet de Slivers"
+    },
+    "footer": "MSPI × rad/s²"
+  },
+  "footer": {
+    "tagline": "Intelligentie Vermenigvuldigd"
+  },
+  "common": {
+    "learnMore": "Meer Weten",
+    "getStarted": "Aan de Slag",
+    "viewAll": "Alles Bekijken",
+    "readMore": "Lees Meer"
+  }
+}

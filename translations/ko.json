@@ -1,0 +1,582 @@
+{
+  "meta": {
+    "title": "MSPI — 인텔리전스 배가",
+    "description": "MSPI는 AI 기반 인텔리전스를 통해 MSP 운영을 혁신합니다. 청구 최적화부터 에이전트 서비스 제공까지."
+  },
+  "nav": {
+    "platform": "플랫폼",
+    "slivers": "슬라이버",
+    "manifesto": "매니페스토",
+    "demo": "데모 요청",
+    "back": "뒤로"
+  },
+  "home": {
+    "badge": "ISO 27001 인증",
+    "formula": "MSP + AI = MSP<sup>i</sup>",
+    "tagline": "인텔리전스 배가",
+    "problem": {
+      "line1": "미청구 시간. 라이선스 드리프트. 스코프 크리프.",
+      "line2": "평균 MSP는 <strong>청구 가능 매출의 8-12%</strong>를 놓치고 있습니다.",
+      "line3": "도구들이 서로 소통하지 않습니다. 데이터가 분산되어 있습니다. <strong>돈을 잃고 있습니다.</strong>"
+    },
+    "metrics": {
+      "revenue": "회수된 매출",
+      "tickets": "자동 분류된 티켓",
+      "hours": "주간 절약 시간"
+    },
+    "cycle": {
+      "title": "경작 주기",
+      "sense": "감지",
+      "senseDesc": "모든 소스에서 수집",
+      "unify": "통합",
+      "unifyDesc": "엔티티 매칭",
+      "detect": "탐지",
+      "detectDesc": "갭과 누수 발견",
+      "validate": "검증",
+      "validateDesc": "정확성 확인",
+      "harvest": "수확",
+      "harvestDesc": "매출 확보"
+    },
+    "integrations": "귀사의 스택에 연결",
+    "sliversHint": "<span>슬라이버</span> 함대가 매출 정원을 가꿉니다"
+  },
+  "platform": {
+    "architecture": "아키텍처",
+    "title": "MSPI 플랫폼",
+    "subtitle": "18개의 통합 모듈. 하나의 통합 인텔리전스 레이어. 모든 MSP 운영이 혁신됩니다.",
+    "description": "MSP를 위한 완전한 AI 기반 운영 시스템",
+    "core": {
+      "badge": "모듈 00",
+      "title": "코어 플랫폼",
+      "description": "기반 레이어: ID 우선 테넌시, 정규 데이터 그래프, 정책 가드레일, 그리고 다른 모든 모듈을 구동하는 오케스트레이션 엔진.",
+      "features": {
+        "identity": "ID 및 테넌시",
+        "connector": "커넥터 허브",
+        "dataGraph": "데이터 그래프",
+        "policy": "정책 레이어",
+        "orchestration": "오케스트레이션"
+      }
+    },
+    "modulesIntro": {
+      "title": "운영 모듈",
+      "subtitle": "각 모듈이 다른 모든 모듈의 인텔리전스를 복리로 증가시킵니다"
+    },
+    "modules": {
+      "m01": {
+        "name": "매출 인텔리전스",
+        "description": "수익 엔진. 라이선스 조정, 계약 누수 탐지, 청구 무결성 자동화. 모든 달러를 찾고, 모든 마진을 보호합니다.",
+        "features": ["라이선스 조정", "계약 분석", "클라우드 FinOps"]
+      },
+      "m02": {
+        "name": "데이터 품질 팩토리",
+        "description": "위생 엔진. 중복 제거, 엔티티 해결, 오래된 자산 정리. 깨끗한 데이터가 정확한 인텔리전스의 기반입니다.",
+        "features": ["중복 제거", "엔티티 해결", "데이터 점수화"]
+      },
+      "m03": {
+        "name": "서비스 데스크 오토파일럿",
+        "description": "노동 절약 엔진. AI 기반 분류, 기술 기반 배정, 기술자 코파일럿, 에이전트 해결. 스스로 해결되는 티켓.",
+        "features": ["AI 분류", "스마트 라우팅", "자동 해결"]
+      },
+      "m04": {
+        "name": "기술 서비스 제공",
+        "description": "플릿 명령 및 제어. 알림 집계, 드리프트 탐지, 패치 관리, 백업 검증. 모든 장치, 모든 시스템, 매 순간.",
+        "features": ["알림 관리", "드리프트 탐지", "패치 준수"]
+      },
+      "m05": {
+        "name": "고객 경험 포털",
+        "description": "MSP의 얼굴. 브랜드 셀프 서비스, 승인 워크플로우, 임원 대시보드. 신뢰를 구축하는 투명성.",
+        "features": ["셀프 서비스", "승인", "임원 대시보드"]
+      },
+      "m06": {
+        "name": "ID 및 보안",
+        "description": "방패. ITDR, SSPM, 지속적인 위험 점수화, 인시던트 대응 오케스트레이션. 잠들지 않는 보안 태세.",
+        "features": ["ITDR", "SSPM", "위험 점수화"]
+      },
+      "m07": {
+        "name": "컴플라이언스 팩토리",
+        "description": "감사 대비 완료. 프레임워크 매핑, 증거 자동 수집, 지속적인 컴플라이언스 태세. 특정 시점이 아닌 실시간.",
+        "features": ["프레임워크 매핑", "증거 보관소", "감사 팩"]
+      },
+      "m08": {
+        "name": "문서화 팩토리",
+        "description": "두뇌. 스스로 업데이트되는 동적 문서, 해결에서 생성되는 SOP, 자동으로 성장하는 지식 베이스.",
+        "features": ["동적 문서", "SOP 생성기", "자동 KB"]
+      },
+      "m09": {
+        "name": "라이프사이클 팩토리",
+        "description": "온보딩부터 오프보딩까지. 30일 스프린트 추적, 프로비저닝 워크플로우, 표준 채택. 모든 전환을 처리.",
+        "features": ["온보딩", "프로비저닝", "마이그레이션"]
+      },
+      "m10": {
+        "name": "전략 스튜디오",
+        "description": "업마켓 엔진. vCIO 자동화, QBR 내러티브 생성, AI 자문(vCAIO), 로드맵 계획. 확장되는 전략.",
+        "features": ["QBR 자동화", "vCIO 도구", "AI 자문"]
+      },
+      "m11": {
+        "name": "자산 라이프사이클",
+        "description": "하드웨어 및 소프트웨어. 보증 추적, 교체 예측, 폐기 컴플라이언스. 모든 자산을 파악.",
+        "features": ["보증", "교체 주기", "폐기"]
+      },
+      "m12": {
+        "name": "고객 성공",
+        "description": "유지 엔진. 계정 건강 점수화, 이탈 예측, 갱신 관리. 복리로 성장하는 관계.",
+        "features": ["건강 점수화", "이탈 탐지", "갱신"]
+      },
+      "m13": {
+        "name": "확장 툴킷",
+        "description": "영업 및 마케팅 출력. 업셀 레이더, 제안서 생성, 사례 연구 자동화. 내부에서의 성장.",
+        "features": ["업셀 레이더", "제안서", "사례 연구"]
+      },
+      "m14": {
+        "name": "조달",
+        "description": "상업 엔진. 벤더 카탈로그, 조달 워크플로우, 마진 추적. 모든 구매 최적화.",
+        "features": ["벤더 카탈로그", "가격 비교", "이행"]
+      },
+      "m15": {
+        "name": "인력 및 실행",
+        "description": "내부 MSP 운영. 역할 스코어카드, 채용 플레이북, 운영 케이던스. 증폭된 팀.",
+        "features": ["역할 스코어카드", "채용", "케이던스"]
+      },
+      "m16": {
+        "name": "리포팅 및 분석",
+        "description": "통합 BI. 맞춤형 리포트 빌더, 벤치마크 팩, 예측 분석. 결정을 이끄는 데이터.",
+        "features": ["리포트 빌더", "벤치마크", "예측"]
+      },
+      "m17": {
+        "name": "마켓플레이스",
+        "description": "생태계 해자. 템플릿 라이브러리, 커뮤니티 패턴, 파트너 통합. 산업 전체에 걸쳐 복리로 성장하는 인텔리전스.",
+        "features": ["템플릿", "커뮤니티", "확장"]
+      }
+    },
+    "differentiators": {
+      "title": "핵심 차별화 요소",
+      "identity": {
+        "title": "ID 우선 아키텍처",
+        "description": "Entra/Okta 네이티브 통합으로 교차 테넌트 RBAC + 위임. 확장되는 보안."
+      },
+      "dataGraph": {
+        "title": "정규 데이터 그래프",
+        "description": "사용자 ↔ 장치 ↔ 라이선스 ↔ 티켓 ↔ 알림 ↔ 계약 관계가 교차 도메인 인텔리전스를 가능하게 합니다."
+      },
+      "roi": {
+        "title": "ROI 계측",
+        "description": "터치, 절약된 시간, 발견/보호된 매출이 자동으로 추적됩니다. 증명할 수 있는 가치."
+      },
+      "agentic": {
+        "title": "에이전트 해결",
+        "description": "AI가 적절한 가드레일과 함께 인간 개입 전에 승인된 런북을 실행합니다. 행동하는 자동화."
+      },
+      "compliance": {
+        "title": "지속적인 컴플라이언스",
+        "description": "특정 시점 감사가 아닌 실시간 태세. 신선도 추적과 함께 증거 자동 수집."
+      },
+      "documentation": {
+        "title": "동적 문서화",
+        "description": "자산이 자체 문서 페이지를 자동으로 업데이트합니다. 스스로 유지되는 지식."
+      }
+    },
+    "iso": {
+      "title": "레일 위의 AI",
+      "subtitle": "ISO 27001 인증",
+      "description": "MSPI는 <span class=\"emphasis\">ISO 27001 인증</span>을 받았습니다. 우리가 제공하는 모든 서비스, 관리하는 모든 인프라, 달성하는 모든 결과—모두 지속적이고 국제적으로 인정받는 정보 보안 관리 시스템 내에 있습니다.",
+      "theirApproach": "그들의 접근 방식",
+      "theirApproachDesc": "SOC 2 증명. 특정 시점의 스냅샷. 감사자가 떠나는 순간 만료되는 준수 연극.",
+      "mspiApproach": "MSPI 접근 방식",
+      "mspiApproachDesc": "ISO 27001. 지속적인 ISMS. 모든 고객에게 확장된 엔터프라이즈급 보안 거버넌스. 우리는 감사에 참석합니다.",
+      "quote": "우리는 페라리를 드리고 죽음에 대한 두려움 없이 가속하게 해드립니다. 왜냐하면 <span class=\"emphasis\">중복 안전 레일</span> 위에 올려놓았기 때문입니다. 이것이 진정한 수탁자가 하는 일입니다—알려진 그리고 알려지지 않은 위험으로부터 고객을 보호합니다."
+    },
+    "cta": {
+      "title": "복리로 성장하는 인텔리전스",
+      "description": "각 모듈이 다른 모든 모듈을 공급합니다. 전체는 부분의 합을 초과합니다.",
+      "readManifesto": "매니페스토 읽기"
+    },
+    "footer": "MSPI × 18 모듈"
+  },
+  "slivers": {
+    "agents": "AI 에이전트",
+    "title": "슬라이버",
+    "subtitle": "매출 정원을 가꾸는 전문 AI 에이전트 함대",
+    "intro": {
+      "forensic": "포렌식",
+      "cultivation": "경작",
+      "description": "기존 MSP 청구는 {{forensic}}입니다—월간 조정, 오래된 기록에서 잃어버린 매출 찾기. 슬라이버 모델은 {{cultivation}}입니다—매출 정원의 일일 관리."
+    },
+    "introSection": {
+      "p1": "기존 MSP 청구는 <span class=\"emphasis\">포렌식</span>입니다—월간 조정, 오래된 기록에서 잃어버린 매출 찾기. 슬라이버 모델은 <span class=\"emphasis\">경작</span>입니다—매출 정원의 일일 관리.",
+      "p2": "MSP에서 매일 씨앗이 뿌려집니다: 기술자가 전화를 받고(청구 가능 시간), 고객이 사용자를 추가하고(라이선스 매출), 장치가 체크인하고(관리 서비스 가치), 백업이 실행됩니다(계약 의무).",
+      "p3": "방치되면 씨앗은 썩습니다. <span class=\"emphasis\">슬라이버는 모든 씨앗이 수확이 되도록 보장합니다.</span>"
+    },
+    "fleet": {
+      "title": "슬라이버 함대",
+      "description": "각 슬라이버는 전문가입니다. 함께, 완전한 매출 인텔리전스 시스템을 형성합니다."
+    },
+    "model": {
+      "label": "모델",
+      "title": "경작, 포렌식이 아님",
+      "description": "슬라이버는 지속적으로 작업합니다—변경 사항 감지, 시스템 간 엔티티 통합, 기회 탐지, 발견 검증, 인간 승인을 위한 일일 수확 제시.",
+      "traditional": "기존 방식",
+      "traditionalValue": "월간 조정",
+      "mspi": "MSPI",
+      "mspiValue": "일일 경작"
+    },
+    "cycle": {
+      "sense": "감지",
+      "senseDesc": "모든 소스에서 수집",
+      "unify": "통합",
+      "unifyDesc": "시스템 간 엔티티 매칭",
+      "detect": "탐지",
+      "detectDesc": "갭과 기회 발견",
+      "validate": "검증",
+      "validateDesc": "3-모델 합의로 확인",
+      "harvest": "수확",
+      "harvestDesc": "모든 미수금 확보"
+    },
+    "layers": {
+      "layer1": "레이어 1",
+      "layer2": "레이어 2",
+      "layer3": "레이어 3",
+      "layer4": "레이어 4",
+      "layer5": "레이어 5"
+    },
+    "categories": {
+      "sensors": "센서",
+      "sensorsDesc": "— 소스 시스템에서 데이터 수집",
+      "infrastructure": "인프라",
+      "infrastructureDesc": "— 엔티티 해결 및 상관관계",
+      "operational": "운영",
+      "operationalDesc": "— 탐지 및 분석",
+      "validation": "검증",
+      "validationDesc": "— 다중 모델 합의",
+      "output": "출력",
+      "outputDesc": "— 보고서 및 제안"
+    },
+    "sensorPSA": {
+      "name": "센서:PSA",
+      "role": "Autotask / ConnectWise",
+      "description": "PSA에서 모든 청구 관련 데이터를 가져옵니다. 청구 가능 상태가 있는 시간 항목, 계약 조건, 송장 이력, 회사 기록.",
+      "outputs": ["시간 항목", "계약", "송장"]
+    },
+    "sensorDistributor": {
+      "name": "센서:유통사",
+      "role": "Pax8 / Ingram / TD Synnex",
+      "description": "유통사 포털에서 구독 및 사용량 데이터를 가져옵니다. 지불하고 있는 라이선스에 대한 진실의 원천.",
+      "outputs": ["구독", "사용량", "비용"]
+    },
+    "sensorAccounting": {
+      "name": "센서:회계",
+      "role": "QuickBooks / Xero",
+      "description": "송장 및 결제 상태를 읽습니다. 동기화 실패 탐지—PSA 송장은 존재하지만 회계 송장이 누락됨.",
+      "outputs": ["송장", "결제", "동기화 상태"]
+    },
+    "sensorRMM": {
+      "name": "센서:RMM",
+      "role": "Datto / NinjaOne / N-able",
+      "description": "관리 엔드포인트 수 계산, 기술자 원격 세션 추적, 운영 이벤트 모니터링. 기록되지 않았을 수 있는 작업을 발견.",
+      "outputs": ["장치", "세션", "알림"]
+    },
+    "resolver": {
+      "name": "리졸버",
+      "role": "엔티티 해결",
+      "description": "핵심 접착제. PSA의 \"Acme Corp\"를 유통사의 \"Acme Corporation\"과 회계의 \"ACME CORP.\"와 매칭. 정확성을 위해 3-모델 합의 사용.",
+      "outputs": ["엔티티 맵", "신뢰도 점수", "미매칭 큐"]
+    },
+    "detector": {
+      "name": "탐지기",
+      "role": "매출 누수",
+      "description": "탐지 규칙 실행: 7일 이상 된 미청구 시간, 라이선스 수 불일치, 장치 커버리지 갭, 송장 동기화 실패. 모든 발견을 정량화.",
+      "outputs": ["누수 알림", "심각도", "증거"]
+    },
+    "documentation": {
+      "name": "문서화",
+      "role": "작업 검증",
+      "description": "RMM 활동을 기록된 티켓 및 시간 항목과 교차 참조. 티켓 없는 작업, 시간 불일치, 활동 불일치를 발견.",
+      "outputs": ["문서화 갭", "시간 델타", "세션 분석"]
+    },
+    "coverage": {
+      "name": "커버리지",
+      "role": "스코프 분석",
+      "description": "실제 서비스 제공을 계약 조건과 비교. 스코프 크리프(미지불 서비스 제공) 및 커버리지 갭(현실과 맞지 않는 계약) 탐지.",
+      "outputs": ["스코프 크리프", "커버리지 갭", "수정 제안"]
+    },
+    "reviewerAmount": {
+      "name": "검토자:금액",
+      "role": "청구 계산",
+      "description": "계산 검증. 시간 × 요율 = 금액. 요율이 계약 조건과 일치하는지 확인. 수량 갭의 정확성 확인.",
+      "outputs": ["계산 검증", "요율 확인"]
+    },
+    "reviewerEntity": {
+      "name": "검토자:엔티티",
+      "role": "ID 검증",
+      "description": "엔티티 ID가 실제 기록을 참조하는지 확인. 회사 해결이 올바른지 확인. 고아 참조 포착.",
+      "outputs": ["ID 검증", "교차 참조 확인"]
+    },
+    "reviewerHistory": {
+      "name": "검토자:이력",
+      "role": "패턴 매칭",
+      "description": "이력 패턴과 비교. 알려진 오탐인가? 유사한 알림이 이전에 해결되었는가? 패턴이 확인된 진양성과 일치하는가?",
+      "outputs": ["오탐 위험", "이력 매칭"]
+    },
+    "reporter": {
+      "name": "리포터",
+      "role": "일일 경작",
+      "description": "일일 경작 보고서 생성—5-15분 내에 당일 매출을 수확하는 데 필요한 모든 것. 준비된 수확물, 주의가 필요한 항목, 발행할 크레딧.",
+      "outputs": ["경작 보고서", "증거 번들"]
+    },
+    "proposer": {
+      "name": "제안자",
+      "role": "송장 초안",
+      "description": "송장 초안 및 수정 제안 생성. 모든 라인 항목에 증거 참조. 신뢰도 점수 및 취소 경로 포함. 실제 송장은 절대 생성하지 않음.",
+      "outputs": ["송장 초안", "수정", "크레딧"]
+    },
+    "architecture": {
+      "title": "안전 아키텍처",
+      "description": "슬라이버는 위험에 따라 계층별로 운영됩니다. 상위 계층은 인간 승인이 필요합니다.",
+      "tier0": {
+        "number": "0",
+        "label": "계층",
+        "title": "자율",
+        "description": "읽기 전용 작업. 센서, 리졸버, 탐지기, 검토자. 해를 끼칠 수 없음. 승인 없이 지속적으로 실행."
+      },
+      "tier2": {
+        "number": "2",
+        "label": "계층",
+        "title": "HIL 게이트",
+        "description": "내부 쓰기 작업. 송장 생성, 계약 업데이트. 인간 승인 필요. 모든 작업이 기록됨."
+      },
+      "tier3": {
+        "number": "3",
+        "label": "계층",
+        "title": "외부",
+        "description": "외부 시스템에 영향을 미치는 작업. 회계 동기화, 송장 발송. 명시적인 추가 승인 필요."
+      }
+    },
+    "yields": {
+      "title": "수확물",
+      "description": "슬라이버가 탐지한 모든 매출 기회를 <span class=\"emphasis\">수확물</span>이라고 합니다. 수확물은 분류, 정량화되어 수확을 위해 제시됩니다.",
+      "reportHeader": "═══ 일일 경작 보고서 ═══",
+      "yieldsReady": "수확 준비 완료",
+      "needsAttention": "주의 필요",
+      "item1Title": "1. 라이선스 트루업: Acme Corp",
+      "item1Detail": "+3 Microsoft 365 E3 라이선스 (12월 15일 - 12월 31일)",
+      "item1Amount": "금액:",
+      "item1AmountValue": "$126.00",
+      "item1AmountNote": "(일할 계산)",
+      "item2Title": "2. 등급 업그레이드: Gamma LLC",
+      "item2Detail": "15명 사용자: Business Basic → Business Premium",
+      "item2Amount": "월간 증가:",
+      "item2AmountValue": "$97.50",
+      "attention1Title": "⚠ 문서화 갭: Marcus @ Acme Corp",
+      "attention1Detail": "3.0시간 기록, RMM은 3.55시간 표시",
+      "attention1Delta": "차이: 33분",
+      "attention1DeltaValue": "$96.25",
+      "reportFooter": "═══ 예상 수확 가능:",
+      "reportTotal": "$319.75",
+      "actionApprove": "[승인]",
+      "actionModify": "[수정]",
+      "actionDefer": "[보류]",
+      "actionReviewAmendment": "[수정 검토]",
+      "actionUpdateEntry": "[항목 업데이트]",
+      "actionAcceptAsIs": "[현재대로 수락]",
+      "actionDiscuss": "[논의]"
+    },
+    "safety": {
+      "title": "안전 보장",
+      "iso": "ISO 27001 인증",
+      "isoDesc": "모든 슬라이버 작업은 지속적인 ISMS 내에서 실행됩니다. 특정 시점 감사가 아닌—영구적인 보안 관리 시스템.",
+      "automatic": "자동 (안전)",
+      "automaticDesc": "데이터 읽기, 엔티티 매칭, 누수 탐지, 검증, 보고서 생성, 초안 준비.",
+      "approval": "승인 필요",
+      "approvalDesc": "송장 생성, 계약 수정, 고객 기록 변경, 회계 동기화, 외부 통신.",
+      "escalates": "항상 에스컬레이션",
+      "escalatesDesc": "신뢰도 80% 미만, 검토자 불일치, 최초 패턴, 임계값 초과 금액, 불확실한 신원.",
+      "consensus": "3-모델 합의",
+      "consensusDesc": "중요한 결정은 세 개의 독립적인 모델을 사용합니다. 불일치는 항상 인간에게 에스컬레이션됩니다. 추론의 단일 실패 지점 없음.",
+      "rails": "레일 위의 AI",
+      "railsDesc": "루지 트랙 위의 봅슬레이처럼. 썰매로 무엇을 하든—튀어나가지 않습니다. 모든 사람을 위한 엔터프라이즈급 가드레일."
+    },
+    "hil": {
+      "checkpoint": "체크포인트",
+      "title": "휴먼-인-더-루프 게이트",
+      "description": "슬라이버는 탐지, 검증, 제안합니다. <span class=\"emphasis\">인간이 승인합니다.</span> 명시적인 인간 승인 없이는 송장이 생성되지 않고, 계약이 수정되지 않으며, 어떤 조치도 취해지지 않습니다."
+    },
+    "cta": {
+      "title": "경작하는 인텔리전스",
+      "description": "슬라이버는 당신이 잠자는 동안 일합니다. 매일 아침, 수확이 준비됩니다.",
+      "viewPlatform": "플랫폼 보기",
+      "readManifesto": "매니페스토 읽기"
+    },
+    "footer": "MSPI × 슬라이버"
+  },
+  "demo": {
+    "getStarted": "시작하기",
+    "title": "데모 요청",
+    "subtitle": "MSPI가 AI 기반 인텔리전스로 MSP 운영을 어떻게 혁신하는지 확인하세요",
+    "form": {
+      "title": "귀하의 정보",
+      "name": "이름",
+      "namePlaceholder": "이름",
+      "email": "이메일",
+      "emailPlaceholder": "you@company.co.kr",
+      "company": "회사",
+      "companyPlaceholder": "MSP 이름",
+      "size": "회사 규모",
+      "sizePlaceholder": "팀 규모 선택",
+      "sizeOptions": {
+        "1-10": "1-10명",
+        "11-25": "11-25명",
+        "26-50": "26-50명",
+        "51-100": "51-100명",
+        "100+": "100명 이상"
+      },
+      "interest": "주요 관심사",
+      "interestPlaceholder": "가장 관심 있는 것은?",
+      "interestOptions": {
+        "revenue": "매출 인텔리전스 / 청구",
+        "service": "서비스 데스크 자동화",
+        "compliance": "컴플라이언스 & ISO 27001",
+        "vcaio": "vCAIO / 전략 자문",
+        "full": "전체 플랫폼 데모"
+      },
+      "message": "메시지 (선택)",
+      "messagePlaceholder": "현재 과제나 보고 싶은 것을 알려주세요...",
+      "submit": "데모 요청",
+      "submitting": "전송 중..."
+    },
+    "success": {
+      "title": "요청이 접수되었습니다",
+      "message": "24시간 이내에 데모 일정 조율을 위해 연락드리겠습니다."
+    },
+    "expect": {
+      "title": "기대할 수 있는 것",
+      "personalized": {
+        "title": "맞춤형 데모",
+        "description": "일반적인 슬라이드 데크가 아닙니다. 현재 스택과 운영을 기반으로 MSPI가 <strong>귀하의 특정 과제</strong>를 어떻게 해결하는지 정확히 보여드립니다."
+      },
+      "walkthrough": {
+        "title": "라이브 플랫폼 워크스루",
+        "description": "슬라이버가 작동하는 것을 보세요. 실제 MSP 데이터로 실시간 매출 경작, 엔티티 해결 및 AI 기반 탐지를 확인하세요.",
+        "item1": "매출 인텔리전스 & 청구 경작",
+        "item2": "서비스 데스크 오토파일럿 & AI 분류",
+        "item3": "컴플라이언스 팩토리 & ISO 27001",
+        "item4": "vCAIO & 전략 스튜디오"
+      },
+      "roi": {
+        "title": "ROI 평가",
+        "description": "현재 메트릭을 기반으로 MSPI가 귀하의 운영에 미칠 수 있는 <strong>구체적인 재정적 영향</strong>을 이해하도록 도와드립니다."
+      },
+      "response": "일반적으로 24시간 이내에 답변드립니다."
+    },
+    "footer": "MSPI × 인텔리전스 배가"
+  },
+  "manifesto": {
+    "title": "MSPI 매니페스토",
+    "fiveForces": "다섯 가지 힘",
+    "principle01": "원칙 01",
+    "principle02": "원칙 02",
+    "principle03": "원칙 03",
+    "principle04": "원칙 04",
+    "principle05": "원칙 05",
+    "opening": {
+      "lead": "MSP 산업은 느린 것이 아닙니다. <span class=\"emphasis\">정체</span>되어 있습니다.",
+      "p1": "20년간 관리 서비스는 같은 물리법칙을 따랐습니다: 인력 추가, 도구 추가, 티켓 추가. 선형 확장. 일정한 속도. 모델이 진화하지 않았기에 수학은 결코 변하지 않았습니다.",
+      "p2": "MSPI는 일정한 속도를 거부합니다. 우리는 <span class=\"emphasis\">가속</span>을 추구합니다.",
+      "p3": "MSPI는 단순한 플랫폼이 아닙니다. 변화의 속도입니다. 기존 MSP가 관리하는 엔드포인트로 진전을 측정하는 반면, 우리는 <span class=\"emphasis\">역량 자체가 복리로 성장하는 속도</span>를 측정합니다.",
+      "p4": "우리는 선형이 아닙니다. 우리는 기하급수적입니다."
+    },
+    "principles": {
+      "inward": {
+        "title": "내향적 인텔리전스",
+        "body": "기존 MSP는 모든 새로운 도구, 모든 반짝이는 기능을 쫓습니다. 역량이 바깥으로 흩어집니다. MSPI는 인텔리전스를 <span class=\"emphasis\">안으로</span> 끌어당깁니다—배우고, 적응하고, 복리로 성장하는 AI 시스템으로 통합합니다. 해결된 모든 티켓이 다음 해결을 더 빠르게 만듭니다. 문서화된 모든 프로세스가 다음 문서화를 자동으로 만듭니다. 구심력이 역량 센터를 만듭니다."
+      },
+      "leverage": {
+        "title": "노동보다 레버리지",
+        "body": "힘은 또 다른 기술자를 고용하는 것입니다. 토크는 열 명의 일을 하는 에이전트를 구축하는 것입니다. 기존 MSP는 더 세게 밀어붙입니다. MSPI는 지렛점을 찾습니다. \"엔지니어가 몇 명 필요한가?\"라고 묻지 않습니다. \"한 명의 엔지니어가 무한해지는 곳은 어디인가?\"라고 묻습니다. 답은 항상 지렛대입니다."
+      },
+      "momentum": {
+        "title": "모멘텀 유지, 관성 파괴",
+        "body": "작동하는 것을 유지하세요: 고객 신뢰, 깊은 관계, 기관 지식. 저항하는 것을 파괴하세요: 수동 프로세스, 부족 지식 독점, \"항상 그렇게 해왔어.\" 보존은 의도적입니다. 철거도 마찬가지입니다. MSPI는 차이를 압니다."
+      },
+      "friction": {
+        "title": "마찰은 선택",
+        "body": "모든 승인 체인은 선택됩니다. 모든 수동 핸드오프는 선택됩니다. 모든 미청구 분은 선택됩니다. 마찰은 서비스 제공에 내재된 것이 아닙니다—<span class=\"emphasis\">설계된 것</span>입니다. MSPI는 이를 설계에서 제거합니다. 문제와 해결 사이, 의도와 실행 사이의 장벽을 제거합니다. 남는 것은 순수한 속도입니다."
+      },
+      "compound": {
+        "title": "복리 곡선",
+        "body": "단순한 작업은 반복됩니다. 복리 작업은 <span class=\"emphasis\">나선형</span>입니다. 각 자동화가 다음 자동화를 가능하게 합니다. 각 인사이트가 다음 인사이트를 공급합니다. 각 고객 성공 패턴이 다음 고객을 위한 템플릿이 됩니다. 곡선은 평평해지지 않습니다—가팔라집니다. 이것은 성장이 아닙니다. 성장의 가속입니다."
+      }
+    },
+    "flywheel": {
+      "label": "플라이휠 효과",
+      "visual": "<span>데이터</span> → 인사이트 → <span>모델</span> → 자동화 → <span>결과</span> → 데이터",
+      "description": "플라이휠의 각 회전이 다음 회전을 가속합니다. 수집과 행동 사이의 격차가 압축됩니다. 결국, 사라집니다."
+    },
+    "antiPatterns": {
+      "title": "우리가 거부하는 것",
+      "items": [
+        "돌에 새겨진 5년 기술 로드맵",
+        "일정한 속도 운영: \"매년 10% 성장해왔어\"",
+        "혁신으로 가장한 도구 난립",
+        "직업 보장으로서의 부족 지식",
+        "지속적인 거버넌스 없는 SOC 2 연극",
+        "고객이 비관련성보다 AI를 더 두려워한다는 믿음"
+      ]
+    },
+    "practices": {
+      "title": "우리의 실천",
+      "items": [
+        { "text": "<strong>발굴하지 말고 경작하세요.</strong> 매출 정원의 일일 관리가 월간 포렌식 회계를 이깁니다." },
+        { "text": "<strong>자동화를 자동화하세요.</strong> 아직 수작업으로 런북을 만들고 있다면, 잘못 만들고 있는 겁니다." },
+        { "text": "<strong>신뢰하되 검증하세요—합의로.</strong> 행동 전에 세 모델이 동의합니다. 불일치는 에스컬레이션됩니다." },
+        { "text": "<strong>휴먼-인-더-루프, 휴먼-인-더-웨이가 아닌.</strong> 승인 게이트는 실행을 위해 존재하지, 관찰을 위해 존재하지 않습니다." },
+        { "text": "<strong>숫자가 아닌 속도를 측정하세요.</strong> 얼마나 빨리 개선되는지가 어디서 시작하는지보다 중요합니다." }
+      ]
+    },
+    "accelerations": {
+      "title": "세 가지 가속",
+      "technical": {
+        "title": "기술적 가속",
+        "description": "얼마나 많은 시스템을 관리하는지가 아니라, 관리 역량 자체가 얼마나 빨리 개선되는지. 지난주보다 더 나은 런북을 작성하는 AI 에이전트. 자동화를 생성하는 자동화. 어떤 로드맵도 예측하지 못한 속도로 진화하는 스택."
+      },
+      "operational": {
+        "title": "운영적 가속",
+        "description": "얼마나 많은 티켓을 닫는지가 아니라, 해결 속도가 얼마나 빨리 증가하는지. 분기마다 절반으로 줄어드는 응답 시간. 제로에 점근하는 에스컬레이션 비율. 규모가 커질수록 가벼워지는 운영."
+      },
+      "strategic": {
+        "title": "전략적 가속",
+        "description": "얼마나 많은 고객에게 서비스하는지가 아니라, 가치 전달이 얼마나 빨리 복리로 성장하는지. 스스로 생성되는 QBR. 고객이 묻기 전에 예측하는 로드맵. 그들이 볼 수 없는 모퉁이를 우리가 보기 때문에 깊어지는 신뢰."
+      }
+    },
+    "isoSection": {
+      "lead1": "이 모든 가속. 이 모든 인텔리전스. 이 모든 자율성. <span class=\"emphasis\">절대 실패하지 않는 가드레일</span>이 필요합니다.",
+      "lead2": "MSPI는 <span class=\"emphasis\">ISO 27001 인증</span>을 받았습니다. SOC 2 증명이 아닙니다—특정 시점의 스냅샷, 감사자가 떠나는 순간 만료되는 준수 연극. <span class=\"emphasis\">지속적인</span>, 국제적으로 인정받는 정보 보안 관리 시스템입니다.",
+      "lead3": "우리는 접촉하는 모든 고객에게 엔터프라이즈급 보안 거버넌스를 확장했습니다. 우리는 감사에 참석합니다. 진정한 수탁자가 하는 일이기 때문입니다.",
+      "quote": "우리는 페라리를 드리고 죽음에 대한 두려움 없이 가속하게 해드립니다. 왜냐하면 <span class=\"emphasis\">중복 안전 레일</span> 위에 올려놓았기 때문입니다. 이것이 진정한 수탁자가 하는 일입니다—알려진 그리고 알려지지 않은 위험으로부터 고객을 보호합니다."
+    },
+    "quote": {
+      "text": "\"충분히 긴 지렛대와 그것을 놓을 받침점을 주면, 세상을 움직여 보이겠다.\"",
+      "cite": "— 아르키메데스"
+    },
+    "commitment": {
+      "title": "우리의 약속",
+      "description": "복리로 성장하는 인텔리전스, 스스로 가르치는 시스템, 함께 가속하는 파트너십을 구축할 것을 약속합니다. 미래는 그것을 향해 가속하는 자의 것입니다."
+    },
+    "cta": {
+      "lead": "행동 촉구",
+      "title": "성장을 멈춰라.<br>성장 가속을 시작하라.",
+      "description": "승리하는 MSP는 가장 큰 곳이 아닐 것입니다. 가장 빠르고—가속하는 곳일 것입니다. AI를 채택하는 자와 저항하는 자 사이의 격차는 시장 점유율로 측정되지 않을 것입니다. <span class=\"emphasis\">생존</span>으로 측정될 것입니다.",
+      "tagline": "MSPI: 인텔리전스 배가",
+      "viewPlatform": "플랫폼 보기",
+      "meetSlivers": "슬라이버 만나기"
+    },
+    "footer": "MSPI × rad/s²"
+  },
+  "footer": {
+    "tagline": "인텔리전스 배가"
+  },
+  "common": {
+    "learnMore": "더 알아보기",
+    "getStarted": "시작하기",
+    "viewAll": "모두 보기",
+    "readMore": "더 읽기"
+  }
+}

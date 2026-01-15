@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSPI - The Intelligence Layer Your MSP Deserves</title>
+    <meta name="description" content="AI-powered revenue cultivation, compliance automation, and strategic advisory that transforms MSP operations overnight.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mspintelligence.ai/">
+    <meta property="og:title" content="MSPI - The Intelligence Layer Your MSP Deserves">
+    <meta property="og:description" content="AI-powered revenue cultivation, compliance automation, and strategic advisory that transforms MSP operations overnight.">
+    <meta property="og:image" content="https://mspintelligence.ai/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mspintelligence.ai/">
+    <meta name="twitter:title" content="MSPI - The Intelligence Layer Your MSP Deserves">
+    <meta name="twitter:description" content="AI-powered revenue cultivation, compliance automation, and strategic advisory that transforms MSP operations overnight.">
+    <meta name="twitter:image" content="https://mspintelligence.ai/og-image.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="/css/design-system.css">
+
+    <style>
+        /* Canvas particle system - positioned behind hero */
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hero image placeholder */
+        .hero-image-placeholder {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background: linear-gradient(135deg, var(--color-gray-100) 0%, var(--color-accent-light) 100%);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-2xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image-placeholder::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg, transparent 0%, rgba(6, 214, 160, 0.1) 50%, transparent 100%);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .hero-image-placeholder-content {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-image-placeholder-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--color-accent);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-4);
+            color: var(--color-primary);
+        }
+
+        .hero-image-placeholder-text {
+            font-size: var(--text-sm);
+            color: var(--color-gray-500);
+            font-weight: var(--font-medium);
+        }
+
+        /* How it works step numbers */
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--color-accent);
+            color: var(--color-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: var(--text-xl);
+            font-weight: var(--font-bold);
+            margin-bottom: var(--space-4);
+        }
+
+        .step-card {
+            text-align: center;
+            padding: var(--space-8);
+        }
+
+        .step-card h4 {
+            margin-bottom: var(--space-3);
+        }
+
+        /* Testimonial quote icon */
+        .quote-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-4);
+        }
+
+        /* CTA section button styles */
+        .cta-section .btn-secondary {
+            border-color: var(--color-gray-600);
+            color: var(--color-gray-300);
+        }
+
+        .cta-section .btn-secondary:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" data-i18n="nav.logo">MSPI</a>
+            <ul class="nav-menu">
+                <li><a href="/platform" class="nav-link" data-i18n="nav.platform">Platform</a></li>
+                <li><a href="/slivers" class="nav-link" data-i18n="nav.slivers">Slivers</a></li>
+                <li><a href="/manifesto" class="nav-link" data-i18n="nav.manifesto">Manifesto</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="/contact" class="btn btn-primary" data-i18n="nav.demo">Request Demo</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="canvas"></canvas>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-eyebrow" data-i18n="hero.eyebrow">AI-POWERED MSP INTELLIGENCE</span>
+                <h1 class="hero-title" data-i18n="hero.title">The intelligence layer your MSP deserves</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">AI-powered revenue cultivation, compliance automation, and strategic advisory that transforms MSP operations overnight.</p>
+                <div class="hero-actions">
+                    <a href="/contact" class="btn btn-primary btn-lg" data-i18n="hero.cta.primary">Request Demo</a>
+                    <a href="/platform" class="btn btn-secondary btn-lg" data-i18n="hero.cta.secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Watch Demo
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <div class="hero-image-placeholder-content">
+                        <div class="hero-image-placeholder-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <p class="hero-image-placeholder-text">Platform Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value" data-i18n="stats.revenue.value">$2.4M</div>
+                    <div class="stat-label" data-i18n="stats.revenue.label">Revenue Recovered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-i18n="stats.margin.value">47%</div>
+                    <div class="stat-label" data-i18n="stats.margin.label">Margin Improvement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-i18n="stats.time.value">15 min</div>
+                    <div class="stat-label" data-i18n="stats.time.label">Daily Review</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" data-i18n="stats.accuracy.value">99.7%</div>
+                    <div class="stat-label" data-i18n="stats.accuracy.label">Detection Accuracy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow" data-i18n="platform.eyebrow">PLATFORM</span>
+                <h2 class="section-title" data-i18n="platform.title">Everything you need to run a profitable MSP</h2>
+                <p class="section-subtitle" data-i18n="platform.subtitle">Four powerful modules working together to maximize your revenue and minimize operational overhead.</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h4 class="card-title" data-i18n="platform.revenue.title">Revenue Intelligence</h4>
+                    <p class="card-text" data-i18n="platform.revenue.desc">Automatically detect unbilled hours, license drift, and scope creep. Recover revenue you didn't know you were losing.</p>
+                    <a href="/platform#revenue" class="card-link" data-i18n="platform.revenue.link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="card-title" data-i18n="platform.autopilot.title">Service Autopilot</h4>
+                    <p class="card-text" data-i18n="platform.autopilot.desc">AI-powered ticket triage, smart routing, and automated responses. Resolve issues faster while your team focuses on high-value work.</p>
+                    <a href="/platform#autopilot" class="card-link" data-i18n="platform.autopilot.link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="card-title" data-i18n="platform.compliance.title">Compliance Factory</h4>
+                    <p class="card-text" data-i18n="platform.compliance.desc">Continuous compliance monitoring for SOC 2, HIPAA, and CMMC. Generate audit-ready reports in minutes, not weeks.</p>
+                    <a href="/platform#compliance" class="card-link" data-i18n="platform.compliance.link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h4 class="card-title" data-i18n="platform.vcaio.title">vCAIO Studio</h4>
+                    <p class="card-text" data-i18n="platform.vcaio.desc">Strategic advisory tools for QBRs and roadmap planning. Deliver executive-level insights that win and retain clients.</p>
+                    <a href="/platform#vcaio" class="card-link" data-i18n="platform.vcaio.link">
+                        Learn more
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow" data-i18n="howitworks.eyebrow">HOW IT WORKS</span>
+                <h2 class="section-title" data-i18n="howitworks.title">From setup to ROI in three simple steps</h2>
+                <p class="section-subtitle" data-i18n="howitworks.subtitle">Our Slivers work autonomously to find and recover revenue while you focus on growing your business.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4 data-i18n="howitworks.step1.title">Connect your stack</h4>
+                    <p class="card-text" data-i18n="howitworks.step1.desc">Integrate with ConnectWise, Autotask, HaloPSA, Datto, NinjaOne, and more. Setup takes less than 30 minutes with our secure API connections.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4 data-i18n="howitworks.step2.title">Slivers analyze daily</h4>
+                    <p class="card-text" data-i18n="howitworks.step2.desc">Our AI agents continuously monitor your operations, detecting billing gaps, compliance issues, and optimization opportunities around the clock.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4 data-i18n="howitworks.step3.title">Harvest your revenue</h4>
+                    <p class="card-text" data-i18n="howitworks.step3.desc">Review findings in your daily 15-minute brief, approve recommendations, and watch your recovered revenue grow week over week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow" data-i18n="testimonials.eyebrow">TESTIMONIALS</span>
+                <h2 class="section-title" data-i18n="testimonials.title">Trusted by MSPs worldwide</h2>
+            </div>
+            <div class="testimonial-card" style="max-width: 800px; margin: 0 auto;">
+                <div class="quote-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg>
+                </div>
+                <p class="testimonial-quote" data-i18n="testimonials.quote">"MSPI recovered $127,000 in our first quarter alone. The unbilled hours we were missing were staggering. Now our revenue matches our actual service delivery, and our margins have never been healthier."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar"></div>
+                    <div>
+                        <div class="testimonial-name" data-i18n="testimonials.name">Michael Chen</div>
+                        <div class="testimonial-role" data-i18n="testimonials.role">CEO, TechForce Solutions - 45 employees, $8M ARR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="cta.title">Ready to transform your MSP?</h2>
+                <p class="section-subtitle" data-i18n="cta.subtitle">Join hundreds of MSPs who have already discovered the revenue they were leaving on the table.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="/contact" class="btn btn-primary btn-lg" data-i18n="cta.primary">Request Demo</a>
+                <a href="/platform" class="btn btn-secondary btn-lg" data-i18n="cta.secondary">Explore Platform</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo" data-i18n="footer.logo">MSPI</div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">AI-powered intelligence for modern MSPs. Recover revenue, automate compliance, and scale your operations.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.platform.title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="/platform#revenue" data-i18n="footer.platform.revenue">Revenue Intelligence</a></li>
+                        <li><a href="/platform#autopilot" data-i18n="footer.platform.autopilot">Service Autopilot</a></li>
+                        <li><a href="/platform#compliance" data-i18n="footer.platform.compliance">Compliance Factory</a></li>
+                        <li><a href="/platform#vcaio" data-i18n="footer.platform.vcaio">vCAIO Studio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.company.title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/manifesto" data-i18n="nav.manifesto">Manifesto</a></li>
+                        <li><a href="/contact" data-i18n="footer.company.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.resources.title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/slivers" data-i18n="nav.slivers">Slivers</a></li>
+                        <li><a href="/contact" data-i18n="nav.demo">Request Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.legal.title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+                        <li><a href="/terms" data-i18n="footer.legal.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-i18n="footer.copyright">&copy; 2024 MSPI. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/company/mspi" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/mspi" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@mspi" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Particle system
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        let width, height;
+        let particles = [];
+        let mouse = { x: null, y: null };
+
+        function resize() {
+            const hero = document.querySelector('.hero');
+            width = canvas.width = hero.offsetWidth;
+            height = canvas.height = hero.offsetHeight;
+        }
+
+        function createParticles() {
+            particles = [];
+            const count = Math.min(60, Math.floor((width * height) / 25000));
+
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.2,
+                    vy: (Math.random() - 0.5) * 0.2,
+                    radius: Math.random() * 2 + 1,
+                    opacity: 0.1 // 10% opacity as specified
+                });
+            }
+        }
+
+        function drawParticle(p) {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            // Using the accent color #06d6a0 at 10% opacity
+            ctx.fillStyle = `rgba(6, 214, 160, ${p.opacity})`;
+            ctx.fill();
+        }
+
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 150) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        // Subtle connection lines with accent color
+                        ctx.strokeStyle = `rgba(6, 214, 160, ${0.05 * (1 - distance / 150)})`;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function update() {
+            for (let p of particles) {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (mouse.x !== null && mouse.y !== null) {
+                    const dx = mouse.x - p.x;
+                    const dy = mouse.y - p.y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 200) {
+                        const force = (200 - distance) / 200 * 0.008;
+                        p.vx += dx * force * 0.03;
+                        p.vy += dy * force * 0.03;
+                    }
+                }
+
+                p.vx *= 0.99;
+                p.vy *= 0.99;
+                p.vx += (Math.random() - 0.5) * 0.005;
+                p.vy += (Math.random() - 0.5) * 0.005;
+
+                if (p.x < 0) p.x = width;
+                if (p.x > width) p.x = 0;
+                if (p.y < 0) p.y = height;
+                if (p.y > height) p.y = 0;
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            drawConnections();
+            for (let p of particles) {
+                drawParticle(p);
+            }
+            update();
+            requestAnimationFrame(animate);
+        }
+
+        // Event listeners
+        window.addEventListener('resize', () => {
+            resize();
+            createParticles();
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            mouse.x = e.clientX - rect.left;
+            mouse.y = e.clientY - rect.top;
+        });
+
+        // Initialize
+        resize();
+        createParticles();
+        animate();
+    </script>
+
+    <script src="/js/analytics.js"></script>
+    <script src="/js/i18n.js"></script>
+</body>
+</html>

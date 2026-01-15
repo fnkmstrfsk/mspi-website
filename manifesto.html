@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSPI Manifesto</title>
+    <meta name="description" content="The MSPI Manifesto: A declaration for MSP owners ready to evolve with AI-powered intelligence.">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mspintelligence.ai/manifesto">
+    <meta property="og:title" content="MSPI Manifesto — Intelligence Multiplied">
+    <meta property="og:description" content="The MSPI Manifesto: A declaration for MSP owners ready to evolve with AI-powered intelligence.">
+    <meta property="og:image" content="https://mspintelligence.ai/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mspintelligence.ai/manifesto">
+    <meta name="twitter:title" content="MSPI Manifesto — Intelligence Multiplied">
+    <meta name="twitter:description" content="The MSPI Manifesto: A declaration for MSP owners ready to evolve with AI-powered intelligence.">
+    <meta name="twitter:image" content="https://mspintelligence.ai/og-image.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #000;
+            color: #fff;
+            line-height: 1.8;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .back-link {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            font-size: 14px;
+            color: #888;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        .iso-badge {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+
+        .iso-badge a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #666;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 8px 14px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .iso-badge a:hover {
+            color: #fff;
+            border-color: #555;
+        }
+
+        .iso-badge .iso-shield {
+            font-size: 12px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 40px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 100px;
+            opacity: 0;
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .symbol {
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #888;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 64px);
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #888;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 200;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            margin-top: 40px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 24px;
+            font-weight: 300;
+        }
+
+        .lead {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 1.9;
+        }
+
+        .emphasis {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        /* Opening */
+        .opening {
+            border-left: 1px solid #444;
+            padding-left: 40px;
+            margin: 60px 0;
+        }
+
+        .opening p {
+            font-size: 20px;
+            color: #999;
+        }
+
+        /* Principles */
+        .principle {
+            margin: 50px 0;
+            padding: 40px;
+            border: 1px solid #333;
+            background: rgba(255, 255, 255, 0.01);
+            opacity: 0;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .principle-number {
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: #666;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .principle h3 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .principle p {
+            margin-bottom: 0;
+        }
+
+        /* Anti-patterns */
+        .anti-patterns {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 50px;
+            margin: 60px 0;
+            border: 1px solid #222;
+        }
+
+        .anti-patterns h2 {
+            color: #888;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .anti-patterns ul {
+            list-style: none;
+        }
+
+        .anti-patterns li {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 16px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .anti-patterns li::before {
+            content: '×';
+            position: absolute;
+            left: 0;
+            color: #666;
+            font-weight: 300;
+        }
+
+        /* Practices */
+        .practices {
+            margin: 80px 0;
+        }
+
+        .practices h2 {
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        .practice-list {
+            display: grid;
+            gap: 24px;
+        }
+
+        .practice {
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .practice:last-child {
+            border-bottom: none;
+        }
+
+        .practice-num {
+            font-size: 14px;
+            color: #555;
+            font-weight: 300;
+        }
+
+        .practice-text {
+            font-size: 18px;
+            color: #999;
+            margin: 0;
+        }
+
+        .practice-text strong {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        /* Flywheel */
+        .flywheel {
+            text-align: center;
+            padding: 80px 40px;
+            margin: 80px 0;
+            border: 1px solid #333;
+        }
+
+        .flywheel-label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #666;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .flywheel-visual {
+            font-size: 16px;
+            letter-spacing: 4px;
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .flywheel-visual span {
+            color: #fff;
+        }
+
+        .flywheel p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Quote */
+        .quote {
+            text-align: center;
+            padding: 80px 40px;
+            margin: 80px 0;
+        }
+
+        .quote blockquote {
+            font-size: 24px;
+            font-weight: 200;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .quote cite {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #555;
+            font-style: normal;
+        }
+
+        /* Commitment */
+        .commitment {
+            text-align: center;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid #333;
+            margin: 80px 0;
+        }
+
+        .commitment h2 {
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .commitment p {
+            font-size: 20px;
+            color: #999;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 100px 0;
+            border-top: 1px solid #333;
+        }
+
+        .cta-lead {
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .cta h2 {
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 200;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-bottom: 50px;
+            text-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+        }
+
+        .cta p {
+            color: #999;
+        }
+
+        .cta-tagline {
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .cta-links {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-link {
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: #888;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 16px 32px;
+            border: 1px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        .cta-link:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        /* Divider */
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #444;
+            margin: 80px auto;
+        }
+
+        /* ISO Section */
+        .iso-section {
+            text-align: center;
+            padding: 80px 40px;
+            margin: 80px 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid #444;
+        }
+
+        .iso-section .iso-badge-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #888;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            border: 1px solid #444;
+            margin-bottom: 30px;
+        }
+
+        .iso-section .iso-badge-inline .shield {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .iso-section h2 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            opacity: 1;
+            animation: none;
+        }
+
+        .iso-section .iso-lead {
+            font-size: 20px;
+            color: #999;
+            max-width: 650px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+        }
+
+        .iso-section .iso-lead .emphasis {
+            color: #fff;
+        }
+
+        .iso-section .iso-quote {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-left: 2px solid #555;
+            text-align: left;
+        }
+
+        .iso-section .iso-quote p {
+            font-size: 18px;
+            color: #888;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        .iso-section .iso-quote .emphasis {
+            color: #fff;
+            font-style: normal;
+        }
+
+        @media (max-width: 600px) {
+            .iso-section {
+                padding: 60px 24px;
+            }
+
+            .iso-section .iso-quote {
+                padding: 20px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #222;
+        }
+
+        footer p {
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1.0s; }
+
+        /* Selection */
+        ::selection {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 80px 24px;
+            }
+
+            .principle {
+                padding: 30px;
+            }
+
+            .anti-patterns {
+                padding: 30px;
+            }
+
+            .opening {
+                padding-left: 24px;
+            }
+
+            .back-link {
+                top: 20px;
+                left: 20px;
+            }
+
+            .practice {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .flywheel {
+                padding: 60px 24px;
+            }
+
+            .commitment {
+                padding: 40px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link" data-i18n="nav.back">← Back</a>
+
+    <div class="iso-badge">
+        <a href="/platform#iso27001">
+            <span class="iso-shield">◆</span>
+            <span data-i18n="home.badge">ISO 27001</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <p class="symbol" data-i18n-html="home.formula">MSP + AI = MSP<sup>i</sup></p>
+            <h1 data-i18n="manifesto.title">The MSPI Manifesto</h1>
+            <p class="subtitle" data-i18n="home.tagline">Intelligence Multiplied</p>
+        </header>
+
+        <section>
+            <p class="lead" data-i18n-html="manifesto.opening.lead">The MSP industry is not slow. It is <span class="emphasis">static</span>.</p>
+
+            <div class="opening">
+                <p data-i18n="manifesto.opening.p1">For twenty years, managed services followed the same physics: add headcount, add tools, add tickets. Linear scaling. Constant velocity. The math never changed because the model never evolved.</p>
+                <p data-i18n-html="manifesto.opening.p2">MSPI rejects constant velocity. We pursue <span class="emphasis">acceleration</span>.</p>
+            </div>
+
+            <p data-i18n-html="manifesto.opening.p3">MSPI is not just a platform. It's a rate of change. Where traditional MSPs measure progress in endpoints managed, we measure the <span class="emphasis">rate at which capability itself compounds</span>.</p>
+
+            <p data-i18n="manifesto.opening.p4">We are not linear. We are exponential.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <h2 class="delay-1" data-i18n="manifesto.fiveForces">Five Forces</h2>
+
+            <div class="principle delay-2">
+                <p class="principle-number" data-i18n="manifesto.principle01">Principle 01</p>
+                <h3 data-i18n="manifesto.principles.inward.title">Intelligence Inward</h3>
+                <p data-i18n-html="manifesto.principles.inward.body">Traditional MSPs chase every new tool, every shiny feature. Their capabilities scatter outward. MSPI pulls intelligence <span class="emphasis">inward</span>—consolidating into AI systems that learn, adapt, and compound. Every ticket resolved makes the next resolution faster. Every process documented makes the next documentation automatic. Centripetal force creates capability centers.</p>
+            </div>
+
+            <div class="principle delay-3">
+                <p class="principle-number" data-i18n="manifesto.principle02">Principle 02</p>
+                <h3 data-i18n="manifesto.principles.leverage.title">Leverage Over Labor</h3>
+                <p data-i18n="manifesto.principles.leverage.body">Force is hiring another technician. Torque is building an agent that does the work of ten. Traditional MSPs push harder. MSPI finds pivot points. We don't ask "how many engineers do we need?" We ask "where does one engineer become infinite?" The answer is always the lever.</p>
+            </div>
+
+            <div class="principle delay-4">
+                <p class="principle-number" data-i18n="manifesto.principle03">Principle 03</p>
+                <h3 data-i18n="manifesto.principles.momentum.title">Momentum Preserved, Inertia Destroyed</h3>
+                <p data-i18n="manifesto.principles.momentum.body">Keep what works: client trust, deep relationships, institutional knowledge. Destroy what resists: manual processes, tribal knowledge hoarding, "that's how we've always done it." Conservation is intentional. So is demolition. MSPI knows the difference.</p>
+            </div>
+
+            <div class="principle delay-5">
+                <p class="principle-number" data-i18n="manifesto.principle04">Principle 04</p>
+                <h3 data-i18n="manifesto.principles.friction.title">Friction is a Choice</h3>
+                <p data-i18n-html="manifesto.principles.friction.body">Every approval chain is chosen. Every manual handoff is chosen. Every unbilled minute is chosen. Friction is not inherent to service delivery—it is <span class="emphasis">designed into it</span>. MSPI designs it out. We eliminate the barriers between problem and resolution, between intent and execution. What remains is pure velocity.</p>
+            </div>
+
+            <div class="principle">
+                <p class="principle-number" data-i18n="manifesto.principle05">Principle 05</p>
+                <h3 data-i18n="manifesto.principles.compound.title">Compound Curves</h3>
+                <p data-i18n-html="manifesto.principles.compound.body">Simple operations repeat. Compound operations <span class="emphasis">spiral</span>. Each automation enables the next automation. Each insight feeds the next insight. Each client success pattern becomes a template for the next client. The curve doesn't flatten—it steepens. This is not growth. This is acceleration of growth.</p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="flywheel">
+            <p class="flywheel-label" data-i18n="manifesto.flywheel.label">The Flywheel Effect</p>
+            <p class="flywheel-visual" data-i18n-html="manifesto.flywheel.visual">
+                <span>data</span> → insights → <span>models</span> → automation → <span>outcomes</span> → data
+            </p>
+            <p data-i18n="manifesto.flywheel.description">Each rotation of the flywheel accelerates the next. The gap between ingestion and action compresses. Eventually, it disappears.</p>
+        </section>
+
+        <div class="anti-patterns">
+            <h2 data-i18n="manifesto.antiPatterns.title">What We Reject</h2>
+            <ul>
+                <li data-i18n="manifesto.antiPatterns.items.0">Five-year technology roadmaps written in stone</li>
+                <li data-i18n="manifesto.antiPatterns.items.1">Constant velocity operations: "We've always grown 10% per year"</li>
+                <li data-i18n="manifesto.antiPatterns.items.2">Tool sprawl masquerading as innovation</li>
+                <li data-i18n="manifesto.antiPatterns.items.3">Tribal knowledge as job security</li>
+                <li data-i18n="manifesto.antiPatterns.items.4">SOC 2 theater without continuous governance</li>
+                <li data-i18n="manifesto.antiPatterns.items.5">The belief that clients fear AI more than they fear irrelevance</li>
+            </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <section class="practices">
+            <h2 data-i18n="manifesto.practices.title">Our Practices</h2>
+            <div class="practice-list">
+                <div class="practice">
+                    <span class="practice-num">01</span>
+                    <p class="practice-text" data-i18n-html="manifesto.practices.items.0.text"><strong>Cultivate, don't excavate.</strong> Daily tending of the revenue garden beats monthly forensic accounting.</p>
+                </div>
+                <div class="practice">
+                    <span class="practice-num">02</span>
+                    <p class="practice-text" data-i18n-html="manifesto.practices.items.1.text"><strong>Automate the automation.</strong> If you're still building runbooks by hand, you're building them wrong.</p>
+                </div>
+                <div class="practice">
+                    <span class="practice-num">03</span>
+                    <p class="practice-text" data-i18n-html="manifesto.practices.items.2.text"><strong>Trust but verify—with consensus.</strong> Three models agree before action. Disagreement escalates.</p>
+                </div>
+                <div class="practice">
+                    <span class="practice-num">04</span>
+                    <p class="practice-text" data-i18n-html="manifesto.practices.items.3.text"><strong>Human-in-the-loop, not human-in-the-way.</strong> Approval gates exist for execution, not for observation.</p>
+                </div>
+                <div class="practice">
+                    <span class="practice-num">05</span>
+                    <p class="practice-text" data-i18n-html="manifesto.practices.items.4.text"><strong>Measure the rate, not the number.</strong> How fast you improve matters more than where you start.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <h2 data-i18n="manifesto.accelerations.title">The Three Accelerations</h2>
+
+            <h3 data-i18n="manifesto.accelerations.technical.title">Technical Acceleration</h3>
+            <p data-i18n="manifesto.accelerations.technical.description">Not how many systems we manage, but how fast our management capability itself improves. AI agents that write better runbooks than last week. Automations that spawn automations. The stack evolves faster than any roadmap predicted.</p>
+
+            <h3 data-i18n="manifesto.accelerations.operational.title">Operational Acceleration</h3>
+            <p data-i18n="manifesto.accelerations.operational.description">Not how many tickets we close, but how fast our resolution velocity increases. Response times that halve quarterly. Escalation rates that asymptote toward zero. Operations that get lighter as scale increases.</p>
+
+            <h3 data-i18n="manifesto.accelerations.strategic.title">Strategic Acceleration</h3>
+            <p data-i18n="manifesto.accelerations.strategic.description">Not how many clients we serve, but how fast our value delivery compounds. QBRs that generate themselves. Roadmaps that predict before clients ask. Trust that deepens because we see around corners they can't.</p>
+        </section>
+
+        <section class="iso-section">
+            <div class="iso-badge-inline">
+                <span class="shield">◆</span>
+                <span data-i18n="platform.iso.subtitle">ISO 27001 Certified</span>
+            </div>
+
+            <h2 data-i18n="platform.iso.title">AI on Rails</h2>
+
+            <p class="iso-lead" data-i18n-html="manifesto.isoSection.lead1">
+                All this acceleration. All this intelligence. All this autonomy. It demands <span class="emphasis">guardrails that never fail</span>.
+            </p>
+
+            <p class="iso-lead" data-i18n-html="manifesto.isoSection.lead2">
+                MSPI is <span class="emphasis">ISO 27001 certified</span>. Not your SOC 2 attestation—a point-in-time snapshot, compliance theater that expires the moment the auditor leaves. We're talking about a <span class="emphasis">continuous</span>, internationally recognized information security management system.
+            </p>
+
+            <p class="iso-lead" data-i18n="manifesto.isoSection.lead3">
+                We extended enterprise-grade security governance to every client we touch. We show up for audits. Because that's what real fiduciaries do.
+            </p>
+
+            <div class="iso-quote">
+                <p data-i18n-html="manifesto.isoSection.quote">
+                    We hand you the Ferrari and let you floor it without fear of death, because we put it on <span class="emphasis">redundant safety rails</span>. That's what real fiduciaries do—they keep their clients safe from harm known and unknown.
+                </p>
+            </div>
+        </section>
+
+        <section class="quote">
+            <blockquote data-i18n="manifesto.quote.text">"Give me a lever long enough and a fulcrum on which to place it, and I shall move the world."</blockquote>
+            <cite data-i18n="manifesto.quote.cite">— Archimedes</cite>
+        </section>
+
+        <section class="commitment">
+            <h2 data-i18n="manifesto.commitment.title">Our Commitment</h2>
+            <p data-i18n="manifesto.commitment.description">We commit to building intelligence that compounds, systems that teach themselves, and partnerships that accelerate together. The future belongs to those who accelerate toward it.</p>
+        </section>
+
+        <section class="cta">
+            <p class="cta-lead" data-i18n="manifesto.cta.lead">The call to action</p>
+            <h2 data-i18n-html="manifesto.cta.title">Stop growing.<br>Start accelerating your growth.</h2>
+            <p data-i18n-html="manifesto.cta.description">The MSPs that win will not be the largest. They will be the fastest—and accelerating. The gap between those who adopt AI and those who resist will not be measured in market share. It will be measured in <span class="emphasis">survival</span>.</p>
+            <p class="cta-tagline" data-i18n="manifesto.cta.tagline">MSPI: Intelligence Multiplied</p>
+            <div class="cta-links">
+                <a href="/contact" class="cta-link" data-i18n="nav.demo">Request Demo</a>
+                <a href="/platform" class="cta-link" data-i18n="manifesto.cta.viewPlatform">View Platform</a>
+                <a href="/slivers" class="cta-link" data-i18n="manifesto.cta.meetSlivers">Meet the Slivers</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p data-i18n="manifesto.footer">MSPI × rad/s²</p>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('h2, .principle').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+
+    <!-- Analytics & i18n -->
+    <script src="/js/analytics.js"></script>
+    <script src="/js/i18n.js"></script>
+</body>
+</html>

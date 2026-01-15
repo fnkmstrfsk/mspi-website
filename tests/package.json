@@ -1,0 +1,16 @@
+{
+  "name": "mspi-website-tests",
+  "version": "1.0.0",
+  "description": "Automated test suite for MSPI website",
+  "scripts": {
+    "test": "node test-all.js",
+    "test:i18n": "node test-i18n.js",
+    "test:links": "node test-links.js",
+    "test:html": "node test-html.js",
+    "test:live": "node test-live.js",
+    "test:e2e": "cd .. && npx playwright test site.spec.cjs --project='Desktop Chrome'",
+    "test:e2e:ui": "cd .. && npx playwright test site.spec.cjs --ui",
+    "test:all": "npm test && npm run test:live && npm run test:e2e"
+  },
+  "type": "module"
+}

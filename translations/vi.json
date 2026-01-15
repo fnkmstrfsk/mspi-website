@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "title": "MSPI — Tri Tue Nhan Boi",
+    "description": "MSPI chuyen doi hoat dong MSP thong qua tri tue duoc ho tro boi AI. Tu toi uu hoa thanh toan den cung cap dich vu tu dong."
+  },
+  "nav": {
+    "platform": "Nen Tang",
+    "slivers": "Slivers",
+    "manifesto": "Tuyen Ngon",
+    "demo": "Yeu Cau Demo",
+    "back": "Quay Lai"
+  },
+  "home": {
+    "badge": "Chung Nhan ISO 27001",
+    "formula": "MSP + AI = MSP<sup>i</sup>",
+    "tagline": "Tri Tue Nhan Boi",
+    "problem": {
+      "line1": "Gio chua thanh toan. Troi dat giay phep. Scope creep.",
+      "line2": "MSP trung binh mat <strong>8-12% doanh thu co the thanh toan</strong>.",
+      "line3": "Cac cong cu cua ban khong giao tiep. Du lieu cua ban phan tan. <strong>Ban dang mat tien.</strong>"
+    },
+    "metrics": {
+      "revenue": "Doanh Thu Phuc Hoi",
+      "tickets": "Tickets Tu Dong Phan Loai",
+      "hours": "Tiet Kiem Hang Tuan"
+    },
+    "cycle": {
+      "title": "Chu Trinh Canh Tac",
+      "sense": "cam nhan",
+      "senseDesc": "lay tu tat ca nguon",
+      "unify": "hop nhat",
+      "unifyDesc": "khop thuc the",
+      "detect": "phat hien",
+      "detectDesc": "tim lo hong & ro ri",
+      "validate": "xac nhan",
+      "validateDesc": "xac minh do chinh xac",
+      "harvest": "thu hoach",
+      "harvestDesc": "nam bat doanh thu"
+    },
+    "integrations": "Ket noi voi stack cua ban",
+    "sliversHint": "Mot doi <span>Slivers</span> cham soc vuon doanh thu cua ban"
+  },
+  "platform": {
+    "architecture": "Kien Truc",
+    "title": "Nen Tang MSPI",
+    "subtitle": "18 mo-dun tich hop. Mot lop tri tue thong nhat. Moi hoat dong MSP duoc chuyen doi.",
+    "description": "He dieu hanh hoan chinh duoc ho tro boi AI cho MSP",
+    "core": {
+      "badge": "Mo-dun 00",
+      "title": "Nen Tang Loi",
+      "description": "Lop nen tang: thue bao uu tien danh tinh, do thi du lieu chuan, ray chinh sach, va dong co dieu phoi cung cap nang luong cho moi mo-dun khac.",
+      "features": {
+        "identity": "Danh Tinh & Thue Bao",
+        "connector": "Trung Tam Ket Noi",
+        "dataGraph": "Do Thi Du Lieu",
+        "policy": "Lop Chinh Sach",
+        "orchestration": "Dieu Phoi"
+      }
+    },
+    "modulesIntro": {
+      "title": "Cac Mo-dun Van Hanh",
+      "subtitle": "Moi mo-dun nhan boi tri tue cua moi mo-dun khac"
+    },
+    "modules": {
+      "m01": {
+        "name": "Tri Tue Doanh Thu",
+        "description": "Dong co loi nhuan. Doi chieu giay phep, phat hien ro ri hop dong, tu dong hoa tinh toan hoan chinh thanh toan. Moi do la tim thay, moi bien loi nhuan duoc bao ve.",
+        "features": ["Doi Chieu Giay Phep", "Phan Tich Hop Dong", "FinOps Dam May"]
+      },
+      "m02": {
+        "name": "Nha May Chat Luong Du Lieu",
+        "description": "Dong co ve sinh. Khu trung lap, giai quyet thuc the, xoa tai san cu. Du lieu sach la nen tang cua tri tue chinh xac.",
+        "features": ["Khu Trung Lap", "Giai Quyet Thuc The", "Cham Diem Du Lieu"]
+      },
+      "m03": {
+        "name": "Tu Dong Lai Service Desk",
+        "description": "Tiet kiem lao dong. Phan loai ho tro boi AI, dieu phoi dua tren ky nang, tro ly ky thuat vien, giai quyet tu dong. Tickets tu giai quyet.",
+        "features": ["Phan Loai AI", "Dinh Tuyen Thong Minh", "Tu Dong Khac Phuc"]
+      },
+      "m04": {
+        "name": "Cung Cap Dich Vu Ky Thuat",
+        "description": "Chi huy & kiem soat doi. Tong hop canh bao, phat hien lenh, quan ly ban va, xac minh sao luu. Moi thiet bi, moi he thong, moi thoi diem.",
+        "features": ["Quan Ly Canh Bao", "Phat Hien Lenh", "Tuan Thu Ban Va"]
+      },
+      "m05": {
+        "name": "Cong Trai Nghiem Khach Hang",
+        "description": "Bo mat cua MSP cua ban. Tu phuc vu co thuong hieu, quy trinh phe duyet, bang dieu khien dieu hanh. Minh bach xay dung long tin.",
+        "features": ["Tu Phuc Vu", "Phe Duyet", "Bang Dieu Khien Dieu Hanh"]
+      },
+      "m06": {
+        "name": "Danh Tinh & Bao Mat",
+        "description": "La chan. ITDR, SSPM, cham diem rui ro lien tuc, dieu phoi ung pho su co. Tu the bao mat khong bao gio ngu.",
+        "features": ["ITDR", "SSPM", "Cham Diem Rui Ro"]
+      },
+      "m07": {
+        "name": "Nha May Tuan Thu",
+        "description": "Bang chung kiem toan. Anh xa khung, tu dong thu thap bang chung, tu the tuan thu lien tuc. Thoi gian thuc, khong phai mot thoi diem.",
+        "features": ["Anh Xa Khung", "Kho Bang Chung", "Goi Kiem Toan"]
+      },
+      "m08": {
+        "name": "Nha May Tai Lieu",
+        "description": "Bo nao. Tai lieu dong tu dong cap nhat, tao SOP tu cac giai quyet, co so kien thuc tu dong phat trien.",
+        "features": ["Tai Lieu Dong", "Tao SOP", "Tu Dong KB"]
+      },
+      "m09": {
+        "name": "Nha May Vong Doi",
+        "description": "Tu gia nhap den roi di. Theo doi sprint 30 ngay, quy trinh cung cap, ap dung tieu chuan. Moi chuyen doi duoc xu ly.",
+        "features": ["Gia Nhap", "Cung Cap", "Di Chuyen"]
+      },
+      "m10": {
+        "name": "Xuong Chien Luoc",
+        "description": "Dong co thi truong cao cap. Tu dong hoa vCIO, tao tu su QBR, tu van AI (vCAIO), lap ke hoach lo trinh. Chien luoc mo rong.",
+        "features": ["Tu Dong QBR", "Cong Cu vCIO", "Tu Van AI"]
+      },
+      "m11": {
+        "name": "Vong Doi Tai San",
+        "description": "Phan cung & phan mem. Theo doi bao hanh, du bao lam moi, tuan thu xu ly. Moi tai san duoc tinh toan.",
+        "features": ["Bao Hanh", "Chu Ky Lam Moi", "Xu Ly"]
+      },
+      "m12": {
+        "name": "Thanh Cong Khach Hang",
+        "description": "Dong co giu chan. Cham diem suc khoe tai khoan, du doan roi bo, quan ly gia han. Moi quan he tich luy.",
+        "features": ["Cham Diem Suc Khoe", "Phat Hien Roi Bo", "Gia Han"]
+      },
+      "m13": {
+        "name": "Bo Cong Cu Mo Rong",
+        "description": "Dau ra ban hang & tiep thi. Ra-da ban them, tao de xuat, tu dong hoa case study. Tang truong tu ben trong.",
+        "features": ["Ra-da Ban Them", "De Xuat", "Case Studies"]
+      },
+      "m14": {
+        "name": "Mua Sam",
+        "description": "Dong co thuong mai. Danh muc nha cung cap, quy trinh mua sam, theo doi bien loi. Moi giao dich mua duoc toi uu.",
+        "features": ["Danh Muc Nha Cung Cap", "So Sanh Gia", "Hoan Thanh"]
+      },
+      "m15": {
+        "name": "Nhan Su & Thuc Thi",
+        "description": "Van hanh MSP noi bo. The diem vai tro, so tay tuyen dung, nhip do van hanh. Doi ngu cua ban, duoc khuech dai.",
+        "features": ["The Diem Vai Tro", "Tuyen Dung", "Nhip Do"]
+      },
+      "m16": {
+        "name": "Bao Cao & Phan Tich",
+        "description": "BI thong nhat. Trinh tao bao cao tuy chinh, goi tieu chuan, phan tich du doan. Du lieu dieu huong quyet dinh.",
+        "features": ["Trinh Tao Bao Cao", "Tieu Chuan", "Du Doan"]
+      },
+      "m17": {
+        "name": "Cho Ung Dung",
+        "description": "Hao nuoc he sinh thai. Thu vien mau, mau cong dong, tich hop doi tac. Tri tue tich luy tren toan nganh.",
+        "features": ["Mau", "Cong Dong", "Mo Rong"]
+      }
+    },
+    "differentiators": {
+      "title": "Cac Diem Khac Biet Chinh",
+      "identity": {
+        "title": "Kien Truc Uu Tien Danh Tinh",
+        "description": "RBAC xuyen thue bao + uy quyen voi tich hop goc Entra/Okta. Bao mat mo rong."
+      },
+      "dataGraph": {
+        "title": "Do Thi Du Lieu Chuan",
+        "description": "Nguoi dung <-> Thiet bi <-> Giay phep <-> Ticket <-> Canh bao <-> Hop dong tao kha nang tri tue xuyen mien."
+      },
+      "roi": {
+        "title": "Do Luong ROI",
+        "description": "Tuong tac, phut tiet kiem, va doanh thu tim thay/bao ve duoc theo doi tu dong. Gia tri ban co the chung minh."
+      },
+      "agentic": {
+        "title": "Giai Quyet Tu Dong",
+        "description": "AI thuc thi runbooks da phe duyet truoc khi con nguoi tham gia, voi ray bao ve phu hop. Tu dong hoa hanh dong."
+      },
+      "compliance": {
+        "title": "Tuan Thu Lien Tuc",
+        "description": "Tu the thoi gian thuc, khong phai kiem toan mot thoi diem. Tu dong thu thap bang chung voi theo doi do tuoi."
+      },
+      "documentation": {
+        "title": "Tai Lieu Dong",
+        "description": "Tai san tu dong cap nhat trang tai lieu cua chinh no. Kien thuc tu duy tri."
+      }
+    },
+    "iso": {
+      "title": "AI Tren Duong Ray",
+      "subtitle": "Chung Nhan ISO 27001",
+      "description": "MSPI duoc <span class=\"emphasis\">chung nhan ISO 27001</span>. Moi dich vu chung toi cung cap, moi co so ha tang chung toi quan ly, moi ket qua chung toi dat duoc—tat ca trong mot he thong quan ly an ninh thong tin lien tuc, duoc cong nhan quoc te.",
+      "theirApproach": "Cach Tiep Can Cua Ho",
+      "theirApproachDesc": "Chung nhan SOC 2. Anh chup tai mot thoi diem. San khau tuan thu het han ngay khi kiem toan vien roi di.",
+      "mspiApproach": "Cach Tiep Can MSPI",
+      "mspiApproachDesc": "ISO 27001. ISMS lien tuc. Quan tri bao mat cap doanh nghiep mo rong cho moi khach hang. Chung toi co mat tai cac cuoc kiem toan.",
+      "quote": "Chung toi giao cho ban chiec Ferrari va de ban tang toc ma khong so chet, vi chung toi da dat no tren <span class=\"emphasis\">duong ray an toan du phong</span>. Do la nhung gi nhung nguoi uy thac thuc su lam—ho bao ve khach hang khoi nhung nguy hiem da biet va chua biet."
+    },
+    "cta": {
+      "title": "Tri tue tich luy",
+      "description": "Moi mo-dun cung cap cho nhau. Tong the vuot qua tong cac phan.",
+      "readManifesto": "Doc Tuyen Ngon"
+    },
+    "footer": "MSPI x 18 Mo-dun"
+  },
+  "slivers": {
+    "agents": "Dai Ly AI",
+    "title": "Slivers",
+    "subtitle": "Mot doi dai ly AI chuyen biet cham soc vuon doanh thu cua ban",
+    "intro": {
+      "forensic": "phap y",
+      "cultivation": "canh tac",
+      "description": "Thanh toan MSP truyen thong la {{forensic}}—doi chieu hang thang, san lung doanh thu bi mat trong ho so cu. Mo hinh Sliver la {{cultivation}}—cham soc hang ngay vuon doanh thu."
+    },
+    "introSection": {
+      "p1": "Thanh toan MSP truyen thong la <span class=\"emphasis\">phap y</span>—doi chieu hang thang, san lung doanh thu bi mat trong ho so cu. Mo hinh Sliver la <span class=\"emphasis\">canh tac</span>—cham soc hang ngay vuon doanh thu.",
+      "p2": "Moi ngay tai mot MSP gieo hat: mot ky thuat vien nhan cuoc goi (thoi gian co the thanh toan), mot khach hang them nguoi dung (doanh thu giay phep), mot thiet bi check in (gia tri dich vu quan ly), mot sao luu chay (nghia vu hop dong).",
+      "p3": "Khong duoc cham soc, hat giong se thoi. <span class=\"emphasis\">Cac Sliver dam bao moi hat giong tro thanh mot vu thu hoach.</span>"
+    },
+    "fleet": {
+      "title": "Doi Sliver",
+      "description": "Moi Sliver la mot chuyen gia. Cung nhau, chung tao thanh mot he thong tri tue doanh thu hoan chinh."
+    },
+    "model": {
+      "label": "Mo Hinh",
+      "title": "Canh Tac, Khong Phai Phap Y",
+      "description": "Slivers hoat dong lien tuc—cam nhan thay doi, hop nhat thuc the giua cac he thong, phat hien co hoi, xac nhan phat hien va trinh bay vu thu hoach hang ngay de con nguoi phe duyet.",
+      "traditional": "Truyen Thong",
+      "traditionalValue": "Doi chieu hang thang",
+      "mspi": "MSPI",
+      "mspiValue": "Canh tac hang ngay"
+    },
+    "cycle": {
+      "sense": "Cam Nhan",
+      "senseDesc": "Lay tu tat ca nguon",
+      "unify": "Hop Nhat",
+      "unifyDesc": "Khop thuc the giua cac he thong",
+      "detect": "Phat Hien",
+      "detectDesc": "Tim lo hong & co hoi",
+      "validate": "Xac Nhan",
+      "validateDesc": "Xac minh voi dong thuan 3 mo hinh",
+      "harvest": "Thu Hoach",
+      "harvestDesc": "Nam bat moi do la no"
+    },
+    "layers": {
+      "layer1": "Lop 1",
+      "layer2": "Lop 2",
+      "layer3": "Lop 3",
+      "layer4": "Lop 4",
+      "layer5": "Lop 5"
+    },
+    "categories": {
+      "sensors": "Cam Bien",
+      "sensorsDesc": "— Nhap du lieu tu he thong nguon",
+      "infrastructure": "Co So Ha Tang",
+      "infrastructureDesc": "— Giai quyet va tuong quan thuc the",
+      "operational": "Van Hanh",
+      "operationalDesc": "— Phat hien va phan tich",
+      "validation": "Xac Nhan",
+      "validationDesc": "— Dong thuan da mo hinh",
+      "output": "Dau Ra",
+      "outputDesc": "— Bao cao va de xuat"
+    },
+    "agents": {
+      "sensorPSA": {
+        "name": "Sensor:PSA",
+        "role": "Autotask / ConnectWise",
+        "description": "Lay tat ca du lieu lien quan thanh toan tu PSA cua ban. Muc thoi gian voi trang thai co the thanh toan, dieu khoan thoa thuan, lich su hoa don, ho so cong ty.",
+        "outputs": ["Muc Thoi Gian", "Thoa Thuan", "Hoa Don"]
+      },
+      "sensorDistributor": {
+        "name": "Sensor:Distributor",
+        "role": "Pax8 / Ingram / TD Synnex",
+        "description": "Lay du lieu dang ky va su dung tu cong nha phan phoi. Nguon su that cho nhung giay phep ban dang tra tien.",
+        "outputs": ["Dang Ky", "Su Dung", "Chi Phi"]
+      },
+      "sensorAccounting": {
+        "name": "Sensor:Accounting",
+        "role": "QuickBooks / Xero",
+        "description": "Doc trang thai hoa don va thanh toan. Phat hien loi dong bo—hoa don PSA ton tai, hoa don ke toan thieu.",
+        "outputs": ["Hoa Don", "Thanh Toan", "Trang Thai Dong Bo"]
+      },
+      "sensorRMM": {
+        "name": "Sensor:RMM",
+        "role": "Datto / NinjaOne / N-able",
+        "description": "Dem diem cuoi quan ly, theo doi phien lam viec tu xa cua ky thuat vien, giam sat su kien van hanh. Tiet lo cong viec co the chua duoc ghi nhan.",
+        "outputs": ["Thiet Bi", "Phien", "Canh Bao"]
+      },
+      "resolver": {
+        "name": "Resolver",
+        "role": "Giai Quyet Thuc The",
+        "description": "Keo dan quan trong. Khop \"Acme Corp\" trong PSA voi \"Acme Corporation\" trong nha phan phoi voi \"ACME CORP.\" trong ke toan. Su dung dong thuan 3 mo hinh de dam bao chinh xac.",
+        "outputs": ["Ban Do Thuc The", "Diem Tin Cay", "Hang Doi Chua Khop"]
+      },
+      "detector": {
+        "name": "Detector",
+        "role": "Ro Ri Doanh Thu",
+        "description": "Chay cac quy tac phat hien: thoi gian chua thanh toan cu hon 7 ngay, khong khop so luong giay phep, khoang trong bao phu thiet bi, loi dong bo hoa don. Luong hoa moi phat hien.",
+        "outputs": ["Canh Bao Ro Ri", "Muc Do Nghiem Trong", "Bang Chung"]
+      },
+      "documentation": {
+        "name": "Documentation",
+        "role": "Xac Minh Cong Viec",
+        "description": "Tham chieu cheo hoat dong RMM voi tickets va muc thoi gian da ghi. Tim cong viec chua co ticket, khac biet thoi gian, khong khop hoat dong.",
+        "outputs": ["Khoang Trong Tai Lieu", "Chenh Lech Thoi Gian", "Phan Tich Phien"]
+      },
+      "coverage": {
+        "name": "Coverage",
+        "role": "Phan Tich Pham Vi",
+        "description": "So sanh cung cap dich vu thuc te voi dieu khoan thoa thuan. Phat hien scope creep (cung cap dich vu khong tra tien) va khoang trong bao phu (thoa thuan khong khop thuc te).",
+        "outputs": ["Scope Creep", "Khoang Trong Bao Phu", "De Xuat Sua Doi"]
+      },
+      "reviewerAmount": {
+        "name": "Reviewer:Amount",
+        "role": "Toan Thanh Toan",
+        "description": "Xac nhan tinh toan. Gio x Gia = So Tien. Xac minh gia khop dieu khoan thoa thuan. Kiem tra khoang trong so luong chinh xac.",
+        "outputs": ["Xac Nhan Toan", "Xac Minh Gia"]
+      },
+      "reviewerEntity": {
+        "name": "Reviewer:Entity",
+        "role": "Xac Nhan Danh Tinh",
+        "description": "Xac nhan ID thuc the tham chieu ho so thuc. Xac minh giai quyet cong ty chinh xac. Bat tham chieu mo coi.",
+        "outputs": ["Xac Nhan ID", "Kiem Tra Tham Chieu Cheo"]
+      },
+      "reviewerHistory": {
+        "name": "Reviewer:History",
+        "role": "Khop Mau",
+        "description": "So sanh voi cac mau lich su. Day co phai la duong tinh gia da biet? Mot canh bao tuong tu truoc day da duoc giai quyet? Mau co khop voi duong tinh thuc da xac nhan?",
+        "outputs": ["Rui Ro Duong Tinh Gia", "Khop Lich Su"]
+      },
+      "reporter": {
+        "name": "Reporter",
+        "role": "Canh Tac Hang Ngay",
+        "description": "Tao Bao Cao Canh Tac Hang Ngay—tat ca nhung gi can de thu hoach doanh thu trong ngay trong 5-15 phut. San luong san sang, muc can chu y, tin dung can phat hanh.",
+        "outputs": ["Bao Cao Canh Tac", "Goi Bang Chung"]
+      },
+      "proposer": {
+        "name": "Proposer",
+        "role": "Ban Nhap Hoa Don",
+        "description": "Tao ban nhap hoa don va de xuat sua chua. Moi muc co tham chieu bang chung. Bao gom diem tin cay va duong hoan nguyen. Khong bao gio tao hoa don thuc.",
+        "outputs": ["Ban Nhap Hoa Don", "Sua Doi", "Tin Dung"]
+      }
+    },
+    "architecture": {
+      "title": "Kien Truc An Toan",
+      "description": "Slivers hoat dong theo tang dua tren rui ro. Tang cao hon yeu cau phe duyet cua con nguoi.",
+      "tier0": {
+        "number": "0",
+        "label": "Tang",
+        "title": "Tu Dong",
+        "description": "Hoat dong chi doc. Cam bien, Resolver, Detector, Reviewer. Khong the gay hai. Chay lien tuc khong can phe duyet."
+      },
+      "tier2": {
+        "number": "2",
+        "label": "Tang",
+        "title": "Cong HIL",
+        "description": "Hoat dong ghi noi bo. Tao hoa don, cap nhat thoa thuan. Yeu cau phe duyet cua con nguoi. Moi hanh dong duoc ghi nhan."
+      },
+      "tier3": {
+        "number": "3",
+        "label": "Tang",
+        "title": "Ben Ngoai",
+        "description": "Hoat dong anh huong he thong ben ngoai. Dong bo voi ke toan, gui hoa don. Yeu cau phe duyet bo sung ro rang."
+      }
+    },
+    "yields": {
+      "title": "San Luong",
+      "description": "Moi co hoi doanh thu duoc Slivers phat hien duoc goi la <span class=\"emphasis\">San Luong</span>. San luong duoc phan loai, luong hoa, va trinh bay de thu hoach.",
+      "reportHeader": "=== BAO CAO CANH TAC HANG NGAY ===",
+      "yieldsReady": "SAN LUONG SAN SANG THU HOACH",
+      "needsAttention": "CAN SU CHU Y CUA BAN",
+      "item1Title": "1. Cap Nhat Giay Phep: Acme Corp",
+      "item1Detail": "+3 giay phep Microsoft 365 E3 (15/12 - 31/12)",
+      "item1Amount": "So tien:",
+      "item1AmountValue": "$126.00",
+      "item1AmountNote": "(tinh theo ty le)",
+      "item2Title": "2. Nang Cap Tang: Gamma LLC",
+      "item2Detail": "15 nguoi dung: Business Basic -> Business Premium",
+      "item2Amount": "Tang hang thang:",
+      "item2AmountValue": "$97.50",
+      "attention1Title": "! Khoang Trong Tai Lieu: Marcus @ Acme Corp",
+      "attention1Detail": "Ghi nhan 3.0 gio, RMM cho thay 3.55 gio",
+      "attention1Delta": "Chenh lech: 33 phut",
+      "attention1DeltaValue": "$96.25",
+      "reportFooter": "=== Uoc tinh co the thu hoach:",
+      "reportTotal": "$319.75",
+      "actionApprove": "[Phe Duyet]",
+      "actionModify": "[Sua Doi]",
+      "actionDefer": "[Hoan]",
+      "actionReviewAmendment": "[Xem Xet Sua Doi]",
+      "actionUpdateEntry": "[Cap Nhat Muc]",
+      "actionAcceptAsIs": "[Chap Nhan Hien Trang]",
+      "actionDiscuss": "[Thao Luan]"
+    },
+    "safety": {
+      "title": "Bao Dam An Toan",
+      "iso": "Chung Nhan ISO 27001",
+      "isoDesc": "Moi hoat dong Sliver chay trong ISMS lien tuc. Khong phai kiem toan mot thoi diem—mot he thong quan ly bao mat vinh vien.",
+      "automatic": "Tu Dong (An Toan)",
+      "automaticDesc": "Doc du lieu, khop thuc the, phat hien ro ri, xac nhan, tao bao cao, chuan bi ban nhap.",
+      "approval": "Yeu Cau Phe Duyet",
+      "approvalDesc": "Tao hoa don, sua doi thoa thuan, thay doi ho so khach hang, dong bo ke toan, giao tiep ben ngoai.",
+      "escalates": "Luon Leo Thang",
+      "escalatesDesc": "Do tin cay duoi 80%, nguoi danh gia khong dong y, mau lan dau, so tien vuot nguong, danh tinh khong chac chan.",
+      "consensus": "Dong Thuan 3 Mo Hinh",
+      "consensusDesc": "Quyet dinh quan trong su dung ba mo hinh doc lap. Bat dong luon leo thang den con nguoi. Khong co diem that bai ly luan don le.",
+      "rails": "AI Tren Duong Ray",
+      "railsDesc": "Nhu xe truot bang tren duong truot luge. Lam gi ban muon voi xe truot—ban se khong nhay ra. Lan can cap doanh nghiep cho tat ca moi nguoi."
+    },
+    "hil": {
+      "checkpoint": "Diem Kiem Tra",
+      "title": "Cong Nguoi-Trong-Vong-Lap",
+      "description": "Slivers phat hien, xac nhan va de xuat. <span class=\"emphasis\">Con nguoi phe duyet.</span> Khong co hoa don nao duoc tao, khong co thoa thuan nao duoc sua doi, khong co hanh dong nao duoc thuc hien ma khong co su cho phep ro rang cua con nguoi."
+    },
+    "cta": {
+      "title": "Tri tue canh tac",
+      "description": "Slivers lam viec trong khi ban ngu. Moi sang, vu thu hoach da san sang.",
+      "viewPlatform": "Xem Nen Tang",
+      "readManifesto": "Doc Tuyen Ngon"
+    },
+    "footer": "MSPI x Slivers"
+  },
+  "demo": {
+    "getStarted": "Bat Dau",
+    "title": "Yeu Cau Demo",
+    "subtitle": "Xem MSPI chuyen doi hoat dong MSP nhu the nao thong qua tri tue duoc ho tro boi AI",
+    "form": {
+      "title": "Thong Tin Cua Ban",
+      "name": "Ten",
+      "namePlaceholder": "Ten cua ban",
+      "email": "Email",
+      "emailPlaceholder": "ban@congty.vn",
+      "company": "Cong Ty",
+      "companyPlaceholder": "Ten MSP cua ban",
+      "size": "Quy Mo Cong Ty",
+      "sizePlaceholder": "Chon quy mo nhom",
+      "sizeOptions": {
+        "1-10": "1-10 nhan vien",
+        "11-25": "11-25 nhan vien",
+        "26-50": "26-50 nhan vien",
+        "51-100": "51-100 nhan vien",
+        "100+": "100+ nhan vien"
+      },
+      "interest": "Quan Tam Chinh",
+      "interestPlaceholder": "Ban quan tam dieu gi nhat?",
+      "interestOptions": {
+        "revenue": "Tri Tue Doanh Thu / Thanh Toan",
+        "service": "Tu Dong Hoa Service Desk",
+        "compliance": "Tuan Thu & ISO 27001",
+        "vcaio": "vCAIO / Tu Van Chien Luoc",
+        "full": "Demo Toan Bo Nen Tang"
+      },
+      "message": "Tin Nhan (Tuy Chon)",
+      "messagePlaceholder": "Cho chung toi biet ve nhung thach thuc hien tai hoac nhung gi ban muon xem...",
+      "submit": "Yeu Cau Demo",
+      "submitting": "Dang gui..."
+    },
+    "success": {
+      "title": "Da Nhan Yeu Cau",
+      "message": "Chung toi se lien he trong vong 24 gio de len lich demo cua ban."
+    },
+    "expect": {
+      "title": "Dieu Gi Mong Doi",
+      "personalized": {
+        "title": "Demo Ca Nhan Hoa",
+        "description": "Khong phai bai thuyet trinh chung chung. Chung toi se cho ban thay chinh xac MSPI giai quyet <strong>nhung thach thuc cu the cua ban</strong> dua tren stack va hoat dong hien tai."
+      },
+      "walkthrough": {
+        "title": "Huong Dan Truc Tiep",
+        "description": "Xem Slivers hoat dong. Quan sat canh tac doanh thu thoi gian thuc, giai quyet thuc the va phat hien duoc ho tro boi AI lam viec tren du lieu MSP thuc.",
+        "item1": "Tri Tue Doanh Thu & canh tac thanh toan",
+        "item2": "Service Desk Autopilot & phan loai AI",
+        "item3": "Nha May Tuan Thu & ISO 27001",
+        "item4": "vCAIO & Xuong Chien Luoc"
+      },
+      "roi": {
+        "title": "Danh Gia ROI",
+        "description": "Chung toi se giup ban hieu <strong>tac dong tai chinh cu the</strong> ma MSPI co the co doi voi hoat dong cua ban dua tren cac chi so hien tai."
+      },
+      "response": "Chung toi thuong phan hoi trong vong 24 gio."
+    },
+    "footer": "MSPI x Tri Tue Nhan Boi"
+  },
+  "manifesto": {
+    "title": "Tuyen Ngon MSPI",
+    "fiveForces": "Nam Luc Luong",
+    "principle01": "Nguyen Tac 01",
+    "principle02": "Nguyen Tac 02",
+    "principle03": "Nguyen Tac 03",
+    "principle04": "Nguyen Tac 04",
+    "principle05": "Nguyen Tac 05",
+    "opening": {
+      "lead": "Nganh MSP khong cham. No la <span class=\"emphasis\">tinh</span>.",
+      "p1": "Trong hai muoi nam, dich vu quan ly di theo cung vat ly: them nhan su, them cong cu, them tickets. Mo rong tuyen tinh. Van toc khong doi. Toan hoc khong bao gio thay doi vi mo hinh khong bao gio phat trien.",
+      "p2": "MSPI tu choi van toc khong doi. Chung toi theo duoi <span class=\"emphasis\">gia toc</span>.",
+      "p3": "MSPI khong chi la mot nen tang. No la mot toc do thay doi. Trong khi MSP truyen thong do tien bo bang diem cuoi quan ly, chung toi do <span class=\"emphasis\">toc do ma chinh kha nang tich luy</span>.",
+      "p4": "Chung toi khong tuyen tinh. Chung toi theo ham mu."
+    },
+    "principles": {
+      "inward": {
+        "title": "Tri Tue Huong Noi",
+        "body": "MSP truyen thong duoi theo moi cong cu moi, moi tinh nang sang bong. Kha nang cua ho phan tan ra ngoai. MSPI keo tri tue <span class=\"emphasis\">vao trong</span>—tap trung vao cac he thong AI hoc, thich nghi, va tich luy. Moi ticket duoc giai quyet lam cho giai quyet tiep theo nhanh hon. Moi quy trinh duoc tai lieu hoa lam cho tai lieu tiep theo tu dong. Luc huong tam tao ra cac trung tam kha nang."
+      },
+      "leverage": {
+        "title": "Don Bay Thay Vi Lao Dong",
+        "body": "Luc la tuyen them mot ky thuat vien. Momen xoan la xay dung mot dai ly lam cong viec cua muoi nguoi. MSP truyen thong day manh hon. MSPI tim diem tru. Chung toi khong hoi \"chung toi can bao nhieu ky su?\" Chung toi hoi \"dau mot ky su tro thanh vo han?\" Cau tra loi luon la don bay."
+      },
+      "momentum": {
+        "title": "Dong Luong Duoc Bao Ton, Quan Tinh Bi Pha Huy",
+        "body": "Giu lai nhung gi hieu qua: long tin khach hang, moi quan he sau sac, kien thuc to chuc. Pha huy nhung gi khang cu: quy trinh thu cong, tich tru kien thuc bo lac, \"do la cach chung toi luon lam.\" Bao ton la co y. Pha huy cung vay. MSPI biet su khac biet."
+      },
+      "friction": {
+        "title": "Ma Sat La Mot Lua Chon",
+        "body": "Moi chuoi phe duyet duoc chon. Moi ban giao thu cong duoc chon. Moi phut chua thanh toan duoc chon. Ma sat khong von co trong cung cap dich vu—no duoc <span class=\"emphasis\">thiet ke vao</span>. MSPI thiet ke no ra. Chung toi loai bo cac rao can giua van de va giai quyet, giua y dinh va thuc hien. Nhung gi con lai la van toc thuan tuy."
+      },
+      "compound": {
+        "title": "Duong Cong Tich Luy",
+        "body": "Hoat dong don gian lap lai. Hoat dong tich luy <span class=\"emphasis\">xoan oc</span>. Moi tu dong hoa tao dieu kien cho tu dong hoa tiep theo. Moi kien thuc cung cap cho kien thuc tiep theo. Moi mau thanh cong khach hang tro thanh mau cho khach hang tiep theo. Duong cong khong phan bang—no doc hon. Day khong phai la tang truong. Day la gia toc cua tang truong."
+      }
+    },
+    "flywheel": {
+      "label": "Hieu Ung Banh Da",
+      "visual": "<span>du lieu</span> -> kien thuc -> <span>mo hinh</span> -> tu dong hoa -> <span>ket qua</span> -> du lieu",
+      "description": "Moi vong quay cua banh da gia toc vong tiep theo. Khoang cach giua nhap va hanh dong nen lai. Cuoi cung, no bien mat."
+    },
+    "antiPatterns": {
+      "title": "Nhung Gi Chung Toi Tu Choi",
+      "items": [
+        "Lo trinh cong nghe nam nam duoc khac tren da",
+        "Van hanh van toc khong doi: \"Chung toi luon tang truong 10% moi nam\"",
+        "Lan tran cong cu gia dang la doi moi",
+        "Kien thuc bo lac nhu bao dam cong viec",
+        "San khau SOC 2 khong co quan tri lien tuc",
+        "Niem tin rang khach hang so AI hon ho so su vo nghia"
+      ]
+    },
+    "practices": {
+      "title": "Thuc Hanh Cua Chung Toi",
+      "items": [
+        { "text": "<strong>Canh tac, khong khai quat.</strong> Cham soc hang ngay vuon doanh thu thang ke toan phap y hang thang." },
+        { "text": "<strong>Tu dong hoa tu dong hoa.</strong> Neu ban van xay runbook bang tay, ban dang xay sai." },
+        { "text": "<strong>Tin tuong nhung xac minh—voi dong thuan.</strong> Ba mo hinh dong y truoc khi hanh dong. Bat dong leo thang." },
+        { "text": "<strong>Con nguoi trong vong lap, khong phai con nguoi can duong.</strong> Cong phe duyet ton tai cho thuc thi, khong phai cho quan sat." },
+        { "text": "<strong>Do toc do, khong phai con so.</strong> Ban cai thien nhanh nhu the nao quan trong hon ban bat dau o dau." }
+      ]
+    },
+    "accelerations": {
+      "title": "Ba Gia Toc",
+      "technical": {
+        "title": "Gia Toc Ky Thuat",
+        "description": "Khong phai bao nhieu he thong chung toi quan ly, ma la kha nang quan ly cua chung toi tu cai thien nhanh nhu the nao. Dai ly AI viet runbook tot hon tuan truoc. Tu dong hoa sinh ra tu dong hoa. Stack phat trien nhanh hon bat ky lo trinh nao du doan."
+      },
+      "operational": {
+        "title": "Gia Toc Van Hanh",
+        "description": "Khong phai bao nhieu tickets chung toi dong, ma la van toc giai quyet cua chung toi tang nhanh nhu the nao. Thoi gian phan hoi giam mot nua moi quy. Ty le leo thang tiem can ve khong. Van hanh tro nen nhe hon khi quy mo tang."
+      },
+      "strategic": {
+        "title": "Gia Toc Chien Luoc",
+        "description": "Khong phai bao nhieu khach hang chung toi phuc vu, ma la cung cap gia tri cua chung toi tich luy nhanh nhu the nao. QBR tu tao. Lo trinh du doan truoc khi khach hang hoi. Long tin sau sac vi chung toi nhin thay nhung goc khach hang khong the."
+      }
+    },
+    "isoSection": {
+      "lead1": "Tat ca gia toc nay. Tat ca tri tue nay. Tat ca su tu chu nay. No doi hoi <span class=\"emphasis\">lan can khong bao gio that bai</span>.",
+      "lead2": "MSPI duoc <span class=\"emphasis\">chung nhan ISO 27001</span>. Khong phai chung nhan SOC 2 cua ban—mot anh chup mot thoi diem, san khau tuan thu het han ngay khi kiem toan vien roi di. Chung toi dang noi ve mot he thong quan ly an ninh thong tin <span class=\"emphasis\">lien tuc</span>, duoc cong nhan quoc te.",
+      "lead3": "Chung toi mo rong quan tri bao mat cap doanh nghiep cho moi khach hang chung toi tiep xuc. Chung toi co mat tai cac cuoc kiem toan. Vi do la nhung gi nguoi uy thac thuc su lam."
+    },
+    "quote": {
+      "text": "\"Cho toi mot don bay du dai va mot diem tua de dat no, va toi se di chuyen ca the gioi.\"",
+      "cite": "— Archimedes"
+    },
+    "commitment": {
+      "title": "Cam Ket Cua Chung Toi",
+      "description": "Chung toi cam ket xay dung tri tue tich luy, he thong tu hoc, va quan he doi tac cung gia toc. Tuong lai thuoc ve nhung nguoi gia toc huong toi no."
+    },
+    "cta": {
+      "lead": "Loi keu goi hanh dong",
+      "title": "Ngung tang truong.<br>Bat dau gia toc tang truong cua ban.",
+      "description": "Cac MSP chien thang se khong phai la lon nhat. Ho se la nhanh nhat—va dang gia toc. Khoang cach giua nhung nguoi ap dung AI va nhung nguoi chong lai se khong duoc do bang thi phan. No se duoc do bang <span class=\"emphasis\">su song con</span>.",
+      "tagline": "MSPI: Tri Tue Nhan Boi",
+      "viewPlatform": "Xem Nen Tang",
+      "meetSlivers": "Gap Slivers"
+    },
+    "footer": "MSPI x rad/s2"
+  },
+  "footer": {
+    "tagline": "Tri Tue Nhan Boi"
+  },
+  "common": {
+    "learnMore": "Tim Hieu Them",
+    "getStarted": "Bat Dau",
+    "viewAll": "Xem Tat Ca",
+    "readMore": "Doc Them"
+  }
+}

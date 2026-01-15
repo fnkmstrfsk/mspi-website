@@ -1,0 +1,584 @@
+{
+  "meta": {
+    "title": "MSPI — Intelligenza Moltiplicata",
+    "description": "MSPI trasforma le operazioni MSP attraverso l'intelligenza alimentata dall'IA. Dall'ottimizzazione della fatturazione alla fornitura di servizi agentici."
+  },
+  "nav": {
+    "platform": "Piattaforma",
+    "slivers": "Slivers",
+    "manifesto": "Manifesto",
+    "demo": "Richiedi Demo",
+    "back": "Indietro"
+  },
+  "home": {
+    "badge": "Certificato ISO 27001",
+    "formula": "MSP + IA = MSP<sup>i</sup>",
+    "tagline": "Intelligenza Moltiplicata",
+    "problem": {
+      "line1": "Ore non fatturate. Deriva delle licenze. Scope creep.",
+      "line2": "L'MSP medio perde <strong>8-12% dei ricavi fatturabili</strong>.",
+      "line3": "I tuoi strumenti non comunicano. I tuoi dati sono dispersi. <strong>Stai perdendo soldi.</strong>"
+    },
+    "metrics": {
+      "revenue": "Ricavi Recuperati",
+      "tickets": "Ticket Auto-Smistati",
+      "hours": "Risparmiate Settimanalmente"
+    },
+    "cycle": {
+      "title": "Il Ciclo di Coltivazione",
+      "sense": "rilevare",
+      "senseDesc": "estrarre da tutte le fonti",
+      "unify": "unificare",
+      "unifyDesc": "abbinare entità",
+      "detect": "identificare",
+      "detectDesc": "trovare lacune e perdite",
+      "validate": "validare",
+      "validateDesc": "verificare accuratezza",
+      "harvest": "raccogliere",
+      "harvestDesc": "catturare ricavi"
+    },
+    "integrations": "Si connette al tuo stack",
+    "sliversHint": "Una flotta di <span>Slivers</span> che coltiva il tuo giardino di ricavi"
+  },
+  "platform": {
+    "architecture": "Architettura",
+    "title": "La Piattaforma MSPI",
+    "subtitle": "18 moduli integrati. Uno strato di intelligenza unificato. Ogni operazione MSP trasformata.",
+    "description": "Un sistema operativo completo alimentato dall'IA per MSP",
+    "core": {
+      "badge": "Modulo 00",
+      "title": "Piattaforma Core",
+      "description": "Il livello fondamentale: tenancy identity-first, grafo dati canonico, guardrail di policy e motore di orchestrazione che alimenta ogni altro modulo.",
+      "features": {
+        "identity": "Identità e Tenancy",
+        "connector": "Hub Connettori",
+        "dataGraph": "Grafo Dati",
+        "policy": "Livello Policy",
+        "orchestration": "Orchestrazione"
+      }
+    },
+    "modulesIntro": {
+      "title": "Moduli Operativi",
+      "subtitle": "Ogni modulo amplifica l'intelligenza di tutti gli altri"
+    },
+    "modules": {
+      "m01": {
+        "name": "Intelligence dei Ricavi",
+        "description": "Il motore del profitto. Riconciliazione licenze, rilevamento perdite contrattuali, automazione integrità fatturazione. Ogni dollaro trovato, ogni margine protetto.",
+        "features": ["Riconciliazione Licenze", "Analisi Contratti", "Cloud FinOps"]
+      },
+      "m02": {
+        "name": "Fabbrica Qualità Dati",
+        "description": "Il motore dell'igiene. Deduplicazione, risoluzione entità, eliminazione asset obsoleti. Dati puliti sono la base di un'intelligence accurata.",
+        "features": ["Deduplicazione", "Risoluzione Entità", "Scoring Dati"]
+      },
+      "m03": {
+        "name": "Autopilota Service Desk",
+        "description": "Il risparmio di lavoro. Triage alimentato dall'IA, dispatch basato su competenze, copilota per tecnici, risoluzione agentica. Ticket che si risolvono da soli.",
+        "features": ["Triage IA", "Routing Intelligente", "Auto-Risoluzione"]
+      },
+      "m04": {
+        "name": "Erogazione Servizi Tecnici",
+        "description": "Comando e controllo della flotta. Aggregazione alert, rilevamento drift, gestione patch, verifica backup. Ogni dispositivo, ogni sistema, ogni momento.",
+        "features": ["Gestione Alert", "Rilevamento Drift", "Conformità Patch"]
+      },
+      "m05": {
+        "name": "Portale Esperienza Cliente",
+        "description": "Il volto del tuo MSP. Self-service brandizzato, workflow di approvazione, dashboard executive. Trasparenza che costruisce fiducia.",
+        "features": ["Self-Service", "Approvazioni", "Dashboard Executive"]
+      },
+      "m06": {
+        "name": "Identità e Sicurezza",
+        "description": "Lo scudo. ITDR, SSPM, scoring del rischio continuo, orchestrazione risposta incidenti. Postura di sicurezza che non dorme mai.",
+        "features": ["ITDR", "SSPM", "Scoring Rischio"]
+      },
+      "m07": {
+        "name": "Fabbrica della Conformità",
+        "description": "A prova di audit. Mappatura framework, cattura automatica evidenze, postura di conformità continua. In tempo reale, non puntuale.",
+        "features": ["Mappatura Framework", "Archivio Evidenze", "Pacchetti Audit"]
+      },
+      "m08": {
+        "name": "Fabbrica della Documentazione",
+        "description": "Il cervello. Documenti dinamici che si aggiornano da soli, generazione SOP dalle risoluzioni, knowledge base che cresce automaticamente.",
+        "features": ["Documenti Dinamici", "Generatore SOP", "KB Automatica"]
+      },
+      "m09": {
+        "name": "Fabbrica del Ciclo di Vita",
+        "description": "Dall'onboarding all'offboarding. Tracciamento sprint 30 giorni, workflow di provisioning, adozione standard. Ogni transizione gestita.",
+        "features": ["Onboarding", "Provisioning", "Migrazione"]
+      },
+      "m10": {
+        "name": "Studio Strategia",
+        "description": "Il motore upmarket. Automazione vCIO, generazione narrative QBR, advisory IA (vCAIO), pianificazione roadmap. Strategia che scala.",
+        "features": ["Automazione QBR", "Strumenti vCIO", "Advisory IA"]
+      },
+      "m11": {
+        "name": "Ciclo di Vita Asset",
+        "description": "Hardware e software. Tracciamento garanzie, previsione rinnovi, conformità dismissioni. Ogni asset contabilizzato.",
+        "features": ["Garanzie", "Cicli Rinnovo", "Dismissione"]
+      },
+      "m12": {
+        "name": "Successo Cliente",
+        "description": "Il motore della retention. Scoring salute account, previsione churn, gestione rinnovi. Relazioni che si compongono.",
+        "features": ["Scoring Salute", "Rilevamento Churn", "Rinnovi"]
+      },
+      "m13": {
+        "name": "Toolkit Espansione",
+        "description": "Output vendite e marketing. Radar upsell, generazione proposte, automazione case study. Crescita dall'interno.",
+        "features": ["Radar Upsell", "Proposte", "Case Study"]
+      },
+      "m14": {
+        "name": "Procurement",
+        "description": "Il motore commerciale. Catalogo fornitori, workflow procurement, tracciamento margini. Ogni acquisto ottimizzato.",
+        "features": ["Catalogo Fornitori", "Confronto Prezzi", "Fulfillment"]
+      },
+      "m15": {
+        "name": "Persone e Esecuzione",
+        "description": "Operazioni MSP interne. Scorecard ruoli, playbook assunzioni, cadenza operativa. Il tuo team, amplificato.",
+        "features": ["Scorecard Ruoli", "Assunzioni", "Cadenza"]
+      },
+      "m16": {
+        "name": "Reporting e Analytics",
+        "description": "BI unificata. Costruttore report personalizzati, pacchetti benchmark, analytics predittive. Dati che guidano le decisioni.",
+        "features": ["Costruttore Report", "Benchmark", "Predittivo"]
+      },
+      "m17": {
+        "name": "Marketplace",
+        "description": "Il fossato dell'ecosistema. Libreria template, pattern community, integrazioni partner. Intelligence che si compone nell'industria.",
+        "features": ["Template", "Community", "Estensioni"]
+      }
+    },
+    "differentiators": {
+      "title": "Differenziatori Chiave",
+      "identity": {
+        "title": "Architettura Identity-First",
+        "description": "RBAC cross-tenant + delega con integrazione nativa Entra/Okta. Sicurezza che scala."
+      },
+      "dataGraph": {
+        "title": "Grafo Dati Canonico",
+        "description": "Relazioni Utente ↔ Dispositivo ↔ Licenza ↔ Ticket ↔ Alert ↔ Contratto abilitano intelligence cross-dominio."
+      },
+      "roi": {
+        "title": "Strumentazione ROI",
+        "description": "Touch, minuti risparmiati e ricavi trovati/protetti tracciati automaticamente. Valore che puoi dimostrare."
+      },
+      "agentic": {
+        "title": "Risoluzione Agentica",
+        "description": "L'IA esegue runbook approvati prima del coinvolgimento umano, con guardrail appropriati. Automazione che agisce."
+      },
+      "compliance": {
+        "title": "Conformità Continua",
+        "description": "Postura in tempo reale, non audit puntuali. Cattura automatica evidenze con tracciamento freschezza."
+      },
+      "documentation": {
+        "title": "Documentazione Dinamica",
+        "description": "Gli asset aggiornano automaticamente le proprie pagine di documentazione. Conoscenza che si mantiene da sola."
+      }
+    },
+    "iso": {
+      "title": "IA sui Binari",
+      "subtitle": "Certificato ISO 27001",
+      "description": "MSPI è <span class=\"emphasis\">certificato ISO 27001</span>. Ogni servizio che forniamo, ogni infrastruttura che gestiamo, ogni risultato che raggiungiamo—tutto all'interno di un sistema di gestione della sicurezza delle informazioni continuo e riconosciuto a livello internazionale.",
+      "theirApproach": "Il Loro Approccio",
+      "theirApproachDesc": "Attestazione SOC 2. Un'istantanea puntuale. Teatro di conformità che scade nel momento in cui l'auditor se ne va.",
+      "mspiApproach": "Approccio MSPI",
+      "mspiApproachDesc": "ISO 27001. SGSI continuo. Governance della sicurezza di livello enterprise estesa a ogni cliente. Ci presentiamo agli audit.",
+      "quote": "Ti consegniamo la Ferrari e ti lasciamo accelerare senza paura della morte, perché l'abbiamo messa su <span class=\"emphasis\">binari di sicurezza ridondanti</span>. Questo è ciò che fanno i veri fiduciari—proteggono i loro clienti da pericoli noti e sconosciuti."
+    },
+    "cta": {
+      "title": "Intelligenza che si compone",
+      "description": "Ogni modulo alimenta gli altri. Il tutto supera la somma delle parti.",
+      "readManifesto": "Leggi il Manifesto"
+    },
+    "footer": "MSPI × 18 Moduli"
+  },
+  "slivers": {
+    "agents": "Agenti IA",
+    "title": "Slivers",
+    "subtitle": "Una flotta di agenti IA specializzati che coltiva il tuo giardino di ricavi",
+    "intro": {
+      "forensic": "forense",
+      "cultivation": "coltivazione",
+      "description": "La fatturazione MSP tradizionale è {{forensic}}—riconciliazione mensile, caccia ai ricavi persi nei vecchi registri. Il modello Sliver è {{cultivation}}—cura quotidiana del giardino dei ricavi."
+    },
+    "introSection": {
+      "p1": "La fatturazione MSP tradizionale è <span class=\"emphasis\">forense</span>—riconciliazione mensile, caccia ai ricavi persi nei vecchi registri. Il modello Sliver è <span class=\"emphasis\">coltivazione</span>—cura quotidiana del giardino dei ricavi.",
+      "p2": "Ogni giorno in un MSP pianta semi: un tecnico risponde a una chiamata (tempo fatturabile), un cliente aggiunge un utente (ricavo licenze), un dispositivo fa check-in (valore servizio gestito), un backup viene eseguito (obbligo contrattuale).",
+      "p3": "Lasciati incustoditi, i semi marciscono. <span class=\"emphasis\">Gli Slivers garantiscono che ogni seme diventi raccolto.</span>"
+    },
+    "fleet": {
+      "title": "La Flotta Sliver",
+      "description": "Ogni Sliver è uno specialista. Insieme, formano un sistema completo di intelligence dei ricavi."
+    },
+    "agents": {
+      "sensorPSA": {
+        "name": "Sensor:PSA",
+        "role": "Autotask / ConnectWise",
+        "description": "Estrae tutti i dati rilevanti per la fatturazione dal tuo PSA. Voci di tempo con stato fatturabile, termini accordi, storico fatture, record aziende.",
+        "outputs": ["Voci Tempo", "Accordi", "Fatture"]
+      },
+      "sensorDistributor": {
+        "name": "Sensor:Distributore",
+        "role": "Pax8 / Ingram / TD Synnex",
+        "description": "Estrae dati di abbonamento e utilizzo dai portali distributori. La fonte di verità per le licenze che stai pagando.",
+        "outputs": ["Abbonamenti", "Utilizzo", "Costi"]
+      },
+      "sensorAccounting": {
+        "name": "Sensor:Contabilità",
+        "role": "QuickBooks / Xero",
+        "description": "Legge stato fatture e pagamenti. Rileva fallimenti di sincronizzazione—fattura PSA esiste, fattura contabilità mancante.",
+        "outputs": ["Fatture", "Pagamenti", "Stato Sincronizzazione"]
+      },
+      "sensorRMM": {
+        "name": "Sensor:RMM",
+        "role": "Datto / NinjaOne / N-able",
+        "description": "Conta endpoint gestiti, traccia sessioni remote dei tecnici, monitora eventi operativi. Rivela lavoro che potrebbe non essere stato registrato.",
+        "outputs": ["Dispositivi", "Sessioni", "Alert"]
+      },
+      "resolver": {
+        "name": "Resolver",
+        "role": "Risoluzione Entità",
+        "description": "Il collante critico. Abbina \"Acme Corp\" nel PSA a \"Acme Corporation\" nel distributore a \"ACME CORP.\" in contabilità. Usa consenso di 3 modelli per accuratezza.",
+        "outputs": ["Mappa Entità", "Punteggi Confidenza", "Coda Non Abbinati"]
+      },
+      "detector": {
+        "name": "Detector",
+        "role": "Perdita Ricavi",
+        "description": "Esegue regole di rilevamento: tempo non fatturato oltre 7 giorni, discrepanze conteggio licenze, gap copertura dispositivi, fallimenti sincronizzazione fatture. Quantifica ogni scoperta.",
+        "outputs": ["Alert Perdite", "Severità", "Evidenze"]
+      },
+      "documentation": {
+        "name": "Documentation",
+        "role": "Verifica Lavoro",
+        "description": "Incrocia attività RMM con ticket registrati e voci di tempo. Trova lavoro non tickettato, discrepanze temporali, mismatch attività.",
+        "outputs": ["Gap Documentazione", "Delta Tempo", "Analisi Sessioni"]
+      },
+      "coverage": {
+        "name": "Coverage",
+        "role": "Analisi Scope",
+        "description": "Confronta erogazione servizio effettiva con termini accordo. Rileva scope creep (fornire servizi non pagati) e gap di copertura (accordi che non corrispondono alla realtà).",
+        "outputs": ["Scope Creep", "Gap Copertura", "Suggerimenti Modifica"]
+      },
+      "reviewerAmount": {
+        "name": "Reviewer:Importo",
+        "role": "Matematica Fatturazione",
+        "description": "Valida i calcoli. Ore × Tariffa = Importo. Verifica che le tariffe corrispondano ai termini dell'accordo. Controlla che i gap di quantità siano accurati.",
+        "outputs": ["Validazione Matematica", "Verifica Tariffe"]
+      },
+      "reviewerEntity": {
+        "name": "Reviewer:Entità",
+        "role": "Validazione Identità",
+        "description": "Conferma che gli ID entità fanno riferimento a record reali. Verifica che la risoluzione azienda sia corretta. Cattura riferimenti orfani.",
+        "outputs": ["Validazione ID", "Controllo Riferimenti Incrociati"]
+      },
+      "reviewerHistory": {
+        "name": "Reviewer:Storico",
+        "role": "Pattern Matching",
+        "description": "Confronta con pattern storici. È un falso positivo noto? Un alert simile è stato risolto precedentemente? Il pattern corrisponde a veri positivi confermati?",
+        "outputs": ["Rischio Falso Positivo", "Corrispondenza Storica"]
+      },
+      "reporter": {
+        "name": "Reporter",
+        "role": "Coltivazione Giornaliera",
+        "description": "Genera il Report di Coltivazione Giornaliero—tutto il necessario per raccogliere i ricavi del giorno in 5-15 minuti. Raccolti pronti, elementi che richiedono attenzione, crediti da emettere.",
+        "outputs": ["Report Coltivazione", "Bundle Evidenze"]
+      },
+      "proposer": {
+        "name": "Proposer",
+        "role": "Bozze Fatture",
+        "description": "Crea bozze fatture e proposte di correzione. Ogni voce ha riferimenti alle evidenze. Include punteggi di confidenza e percorsi di reversal. Non crea mai fatture effettive.",
+        "outputs": ["Bozze Fatture", "Modifiche", "Crediti"]
+      }
+    },
+    "architecture": {
+      "title": "Architettura di Sicurezza",
+      "description": "Gli Slivers operano in livelli basati sul rischio. Livelli superiori richiedono approvazione umana.",
+      "tier0": {
+        "number": "0",
+        "label": "Livello",
+        "title": "Autonomo",
+        "description": "Operazioni di sola lettura. Sensori, Resolver, Detector, Reviewer. Non possono causare danni. Eseguono continuamente senza approvazione."
+      },
+      "tier2": {
+        "number": "2",
+        "label": "Livello",
+        "title": "Gate HIL",
+        "description": "Operazioni di scrittura interna. Creazione fatture, aggiornamenti accordi. Richiede approvazione umana. Ogni azione registrata."
+      },
+      "tier3": {
+        "number": "3",
+        "label": "Livello",
+        "title": "Esterno",
+        "description": "Operazioni che impattano sistemi esterni. Sincronizzazione con contabilità, invio fatture. Richiede approvazione aggiuntiva esplicita."
+      }
+    },
+    "yields": {
+      "title": "Raccolti",
+      "description": "Ogni opportunità di ricavo rilevata dagli Slivers è chiamata <span class=\"emphasis\">Raccolto</span>. I Raccolti sono categorizzati, quantificati e presentati per la raccolta.",
+      "reportHeader": "═══ REPORT COLTIVAZIONE GIORNALIERO ═══",
+      "yieldsReady": "RACCOLTI PRONTI PER LA RACCOLTA",
+      "needsAttention": "RICHIEDE LA TUA ATTENZIONE",
+      "item1Title": "1. True-Up Licenze: Acme Corp",
+      "item1Detail": "+3 licenze Microsoft 365 E3 (15 Dic - 31 Dic)",
+      "item1Amount": "Importo:",
+      "item1AmountValue": "€126,00",
+      "item1AmountNote": "(prorata)",
+      "item2Title": "2. Upgrade Tier: Gamma LLC",
+      "item2Detail": "15 utenti: Business Basic → Business Premium",
+      "item2Amount": "Aumento mensile:",
+      "item2AmountValue": "€97,50",
+      "attention1Title": "⚠ Gap Documentazione: Marcus @ Acme Corp",
+      "attention1Detail": "Registrate 3,0 ore, RMM mostra 3,55 ore",
+      "attention1Delta": "Delta: 33 minuti",
+      "attention1DeltaValue": "€96,25",
+      "reportFooter": "═══ Stimato raccoglibile:",
+      "reportTotal": "€319,75",
+      "actionApprove": "[Approva]",
+      "actionModify": "[Modifica]",
+      "actionDefer": "[Rinvia]",
+      "actionReviewAmendment": "[Rivedi Modifica]",
+      "actionUpdateEntry": "[Aggiorna Voce]",
+      "actionAcceptAsIs": "[Accetta Com'è]",
+      "actionDiscuss": "[Discuti]"
+    },
+    "model": {
+      "label": "Il Modello",
+      "title": "Coltivazione, Non Forense",
+      "description": "Gli Slivers lavorano continuamente—rilevando cambiamenti, unificando entità tra sistemi, identificando opportunità, validando scoperte e presentando il raccolto quotidiano per l'approvazione umana.",
+      "traditional": "Tradizionale",
+      "traditionalValue": "Riconciliazione mensile",
+      "mspi": "MSPI",
+      "mspiValue": "Coltivazione quotidiana"
+    },
+    "cycle": {
+      "sense": "Rilevare",
+      "senseDesc": "Estrarre da tutte le fonti",
+      "unify": "Unificare",
+      "unifyDesc": "Abbinare entità tra sistemi",
+      "detect": "Identificare",
+      "detectDesc": "Trovare lacune e opportunità",
+      "validate": "Validare",
+      "validateDesc": "Verificare con consenso di 3 modelli",
+      "harvest": "Raccogliere",
+      "harvestDesc": "Catturare ogni dollaro dovuto"
+    },
+    "layers": {
+      "layer1": "Livello 1",
+      "layer2": "Livello 2",
+      "layer3": "Livello 3",
+      "layer4": "Livello 4",
+      "layer5": "Livello 5"
+    },
+    "categories": {
+      "sensors": "Sensori",
+      "sensorsDesc": "— Acquisizione dati dai sistemi sorgente",
+      "infrastructure": "Infrastruttura",
+      "infrastructureDesc": "— Risoluzione e correlazione delle entità",
+      "operational": "Operativo",
+      "operationalDesc": "— Rilevamento e analisi",
+      "validation": "Validazione",
+      "validationDesc": "— Consenso multi-modello",
+      "output": "Output",
+      "outputDesc": "— Report e proposte"
+    },
+    "safety": {
+      "title": "Garanzie di Sicurezza",
+      "iso": "Certificato ISO 27001",
+      "isoDesc": "Ogni operazione Sliver viene eseguita all'interno di un SGSI continuo. Non è un audit puntuale—è un sistema di gestione della sicurezza permanente.",
+      "automatic": "Automatico (Sicuro)",
+      "automaticDesc": "Lettura dati, abbinamento entità, rilevamento perdite, validazione, generazione report, preparazione bozze.",
+      "approval": "Richiede Approvazione",
+      "approvalDesc": "Creazione fatture, modifica accordi, modifiche ai record clienti, sincronizzazione contabile, comunicazione esterna.",
+      "escalates": "Scala Sempre",
+      "escalatesDesc": "Confidenza sotto l'80%, revisori in disaccordo, pattern nuovi, importi sopra soglia, identità incerta.",
+      "consensus": "Consenso di 3 Modelli",
+      "consensusDesc": "Le decisioni critiche usano tre modelli indipendenti. Il disaccordo scala sempre agli umani. Nessun punto singolo di fallimento del ragionamento.",
+      "rails": "IA sui Binari",
+      "railsDesc": "Come un bob su una pista di slittino. Fai quello che vuoi con la tua slitta—non uscirai. Guardrail di livello enterprise per tutti."
+    },
+    "hil": {
+      "checkpoint": "Il Punto di Controllo",
+      "title": "Porta Umano-nel-Loop",
+      "description": "Gli Slivers rilevano, validano e propongono. <span class=\"emphasis\">Gli umani approvano.</span> Nessuna fattura viene creata, nessun accordo modificato, nessuna azione intrapresa senza autorizzazione umana esplicita."
+    },
+    "cta": {
+      "title": "Intelligenza che coltiva",
+      "description": "Gli Slivers lavorano mentre dormi. Ogni mattina, il raccolto è pronto.",
+      "viewPlatform": "Vedi Piattaforma",
+      "readManifesto": "Leggi il Manifesto"
+    },
+    "footer": "MSPI × Slivers"
+  },
+  "demo": {
+    "getStarted": "Inizia",
+    "title": "Richiedi Demo",
+    "subtitle": "Scopri come MSPI trasforma le operazioni MSP attraverso l'intelligenza alimentata dall'IA",
+    "form": {
+      "title": "Le Tue Informazioni",
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "email": "Email",
+      "emailPlaceholder": "tu@azienda.it",
+      "company": "Azienda",
+      "companyPlaceholder": "Nome del tuo MSP",
+      "size": "Dimensione Azienda",
+      "sizePlaceholder": "Seleziona dimensione team",
+      "sizeOptions": {
+        "1-10": "1-10 dipendenti",
+        "11-25": "11-25 dipendenti",
+        "26-50": "26-50 dipendenti",
+        "51-100": "51-100 dipendenti",
+        "100+": "100+ dipendenti"
+      },
+      "interest": "Interesse Principale",
+      "interestPlaceholder": "Cosa ti interessa di più?",
+      "interestOptions": {
+        "revenue": "Intelligence dei Ricavi / Fatturazione",
+        "service": "Automazione Service Desk",
+        "compliance": "Conformità & ISO 27001",
+        "vcaio": "vCAIO / Consulenza Strategica",
+        "full": "Demo Completa della Piattaforma"
+      },
+      "message": "Messaggio (Opzionale)",
+      "messagePlaceholder": "Parlaci delle tue sfide attuali o cosa vorresti vedere...",
+      "submit": "Richiedi Demo",
+      "submitting": "Invio in corso..."
+    },
+    "success": {
+      "title": "Richiesta Ricevuta",
+      "message": "Ti contatteremo entro 24 ore per programmare la tua demo."
+    },
+    "expect": {
+      "title": "Cosa Aspettarsi",
+      "personalized": {
+        "title": "Demo Personalizzata",
+        "description": "Niente presentazioni generiche. Ti mostreremo esattamente come MSPI affronta <strong>le tue sfide specifiche</strong> basandosi sul tuo stack e operazioni attuali."
+      },
+      "walkthrough": {
+        "title": "Tour dal Vivo",
+        "description": "Guarda gli Slivers in azione. Osserva la coltivazione dei ricavi in tempo reale, la risoluzione delle entità e il rilevamento alimentato dall'IA su dati MSP reali.",
+        "item1": "Intelligence dei Ricavi & coltivazione fatturazione",
+        "item2": "Autopilota Service Desk & triage IA",
+        "item3": "Fabbrica di Conformità & ISO 27001",
+        "item4": "vCAIO & Studio Strategia"
+      },
+      "roi": {
+        "title": "Valutazione ROI",
+        "description": "Ti aiuteremo a capire l'<strong>impatto finanziario specifico</strong> che MSPI può avere sulle tue operazioni basandosi sulle tue metriche attuali."
+      },
+      "response": "Generalmente rispondiamo entro 24 ore."
+    },
+    "footer": "MSPI × Intelligenza Moltiplicata"
+  },
+  "manifesto": {
+    "title": "Il Manifesto MSPI",
+    "fiveForces": "Cinque Forze",
+    "principle01": "Principio 01",
+    "principle02": "Principio 02",
+    "principle03": "Principio 03",
+    "principle04": "Principio 04",
+    "principle05": "Principio 05",
+    "opening": {
+      "lead": "L'industria MSP non è lenta. È <span class=\"emphasis\">statica</span>.",
+      "p1": "Per vent'anni, i servizi gestiti hanno seguito la stessa fisica: aggiungi personale, aggiungi strumenti, aggiungi ticket. Scalabilità lineare. Velocità costante. La matematica non è mai cambiata perché il modello non si è mai evoluto.",
+      "p2": "MSPI rifiuta la velocità costante. Noi perseguiamo l'<span class=\"emphasis\">accelerazione</span>.",
+      "p3": "MSPI non è solo una piattaforma. È un tasso di cambiamento. Dove gli MSP tradizionali misurano il progresso in endpoint gestiti, noi misuriamo il <span class=\"emphasis\">tasso a cui la capacità stessa si compone</span>.",
+      "p4": "Non siamo lineari. Siamo esponenziali."
+    },
+    "principles": {
+      "inward": {
+        "title": "Intelligenza verso l'Interno",
+        "body": "Gli MSP tradizionali inseguono ogni nuovo strumento, ogni funzionalità brillante. Le loro capacità si disperdono verso l'esterno. MSPI attira l'intelligenza <span class=\"emphasis\">verso l'interno</span>—consolidando in sistemi IA che apprendono, si adattano e si compongono. Ogni ticket risolto rende la prossima risoluzione più veloce. Ogni processo documentato rende la prossima documentazione automatica. La forza centripeta crea centri di capacità."
+      },
+      "leverage": {
+        "title": "Leva sul Lavoro",
+        "body": "La forza è assumere un altro tecnico. La coppia è costruire un agente che fa il lavoro di dieci. Gli MSP tradizionali spingono più forte. MSPI trova punti di leva. Non chiediamo \"quanti ingegneri ci servono?\" Chiediamo \"dove un ingegnere diventa infinito?\" La risposta è sempre la leva."
+      },
+      "momentum": {
+        "title": "Slancio Preservato, Inerzia Distrutta",
+        "body": "Mantieni ciò che funziona: fiducia del cliente, relazioni profonde, conoscenza istituzionale. Distruggi ciò che resiste: processi manuali, accaparramento di conoscenza tribale, \"abbiamo sempre fatto così.\" La conservazione è intenzionale. Lo è anche la demolizione. MSPI conosce la differenza."
+      },
+      "friction": {
+        "title": "L'Attrito è una Scelta",
+        "body": "Ogni catena di approvazione è scelta. Ogni passaggio manuale è scelto. Ogni minuto non fatturato è scelto. L'attrito non è inerente all'erogazione del servizio—è <span class=\"emphasis\">progettato al suo interno</span>. MSPI lo progetta fuori. Eliminiamo le barriere tra problema e risoluzione, tra intento ed esecuzione. Ciò che rimane è pura velocità."
+      },
+      "compound": {
+        "title": "Curve Composte",
+        "body": "Le operazioni semplici si ripetono. Le operazioni composte <span class=\"emphasis\">spiraleggiano</span>. Ogni automazione abilita l'automazione successiva. Ogni insight alimenta l'insight successivo. Ogni pattern di successo cliente diventa un template per il cliente successivo. La curva non si appiattisce—si impenna. Questa non è crescita. Questa è accelerazione della crescita."
+      }
+    },
+    "flywheel": {
+      "label": "L'Effetto Volano",
+      "visual": "<span>dati</span> → insight → <span>modelli</span> → automazione → <span>risultati</span> → dati",
+      "description": "Ogni rotazione del volano accelera la successiva. Il divario tra acquisizione e azione si comprime. Alla fine, scompare."
+    },
+    "antiPatterns": {
+      "title": "Cosa Rifiutiamo",
+      "items": [
+        "Roadmap tecnologiche quinquennali scolpite nella pietra",
+        "Operazioni a velocità costante: \"Siamo sempre cresciuti del 10% all'anno\"",
+        "Proliferazione di strumenti mascherata da innovazione",
+        "Conoscenza tribale come sicurezza del lavoro",
+        "Teatro SOC 2 senza governance continua",
+        "La convinzione che i clienti temano l'IA più dell'irrilevanza"
+      ]
+    },
+    "practices": {
+      "title": "Le Nostre Pratiche",
+      "items": [
+        { "text": "<strong>Coltiva, non scavare.</strong> La cura quotidiana del giardino dei ricavi batte la contabilità forense mensile." },
+        { "text": "<strong>Automatizza l'automazione.</strong> Se stai ancora costruendo runbook a mano, li stai costruendo nel modo sbagliato." },
+        { "text": "<strong>Fidati ma verifica—con consenso.</strong> Tre modelli concordano prima dell'azione. Il disaccordo scala." },
+        { "text": "<strong>Umano-nel-loop, non umano-di-intralcio.</strong> I gate di approvazione esistono per l'esecuzione, non per l'osservazione." },
+        { "text": "<strong>Misura il tasso, non il numero.</strong> Quanto velocemente migliori conta più di dove inizi." }
+      ]
+    },
+    "accelerations": {
+      "title": "Le Tre Accelerazioni",
+      "technical": {
+        "title": "Accelerazione Tecnica",
+        "description": "Non quanti sistemi gestiamo, ma quanto velocemente migliora la nostra capacità di gestione stessa. Agenti IA che scrivono runbook migliori della settimana scorsa. Automazioni che generano automazioni. Lo stack evolve più velocemente di qualsiasi roadmap prevista."
+      },
+      "operational": {
+        "title": "Accelerazione Operativa",
+        "description": "Non quanti ticket chiudiamo, ma quanto velocemente aumenta la nostra velocità di risoluzione. Tempi di risposta che si dimezzano trimestralmente. Tassi di escalation che tendono asintoticamente a zero. Operazioni che diventano più leggere mentre la scala aumenta."
+      },
+      "strategic": {
+        "title": "Accelerazione Strategica",
+        "description": "Non quanti clienti serviamo, ma quanto velocemente si compone la nostra consegna di valore. QBR che si generano da sole. Roadmap che prevedono prima che i clienti chiedano. Fiducia che si approfondisce perché vediamo oltre gli angoli che loro non possono."
+      }
+    },
+    "isoSection": {
+      "lead1": "Tutta questa accelerazione. Tutta questa intelligenza. Tutta questa autonomia. Richiede <span class=\"emphasis\">guardrail che non falliscono mai</span>.",
+      "lead2": "MSPI è <span class=\"emphasis\">certificato ISO 27001</span>. Non la vostra attestazione SOC 2—un'istantanea puntuale, teatro di conformità che scade nel momento in cui l'auditor se ne va. Parliamo di un sistema di gestione della sicurezza delle informazioni <span class=\"emphasis\">continuo</span>, riconosciuto a livello internazionale.",
+      "lead3": "Abbiamo esteso la governance della sicurezza di livello enterprise a ogni cliente che serviamo. Ci presentiamo agli audit. Perché è questo che fanno i veri fiduciari.",
+      "quote": "Ti consegniamo la Ferrari e ti lasciamo accelerare senza paura della morte, perché l'abbiamo messa su <span class=\"emphasis\">binari di sicurezza ridondanti</span>. Questo è ciò che fanno i veri fiduciari—proteggono i loro clienti da pericoli noti e sconosciuti."
+    },
+    "quote": {
+      "text": "\"Datemi una leva abbastanza lunga e un fulcro su cui appoggiarla, e solleverò il mondo.\"",
+      "cite": "— Archimede"
+    },
+    "commitment": {
+      "title": "Il Nostro Impegno",
+      "description": "Ci impegniamo a costruire intelligenza che si compone, sistemi che si insegnano da soli, e partnership che accelerano insieme. Il futuro appartiene a coloro che accelerano verso di esso."
+    },
+    "cta": {
+      "lead": "La chiamata all'azione",
+      "title": "Smetti di crescere.<br>Inizia ad accelerare la tua crescita.",
+      "description": "Gli MSP che vinceranno non saranno i più grandi. Saranno i più veloci—e in accelerazione. Il divario tra chi adotta l'IA e chi resiste non sarà misurato in quota di mercato. Sarà misurato in <span class=\"emphasis\">sopravvivenza</span>.",
+      "tagline": "MSPI: Intelligenza Moltiplicata",
+      "viewPlatform": "Vedi Piattaforma",
+      "meetSlivers": "Incontra gli Slivers"
+    },
+    "footer": "MSPI × rad/s²"
+  },
+  "footer": {
+    "tagline": "Intelligenza Moltiplicata"
+  },
+  "common": {
+    "learnMore": "Scopri di Più",
+    "getStarted": "Inizia",
+    "viewAll": "Vedi Tutto",
+    "readMore": "Leggi di Più"
+  }
+}
