@@ -147,6 +147,42 @@ function findEmptyAttributes(content, filename) {
   return issues;
 }
 
+// Check for i18n keys that should use data-i18n-html instead of data-i18n
+function checkI18nHtmlMismatch(content, filename) {
+  const issues = [];
+
+  // Find data-i18n attributes with content that contains HTML tags
+  const dataI18nRegex = /data-i18n="([^"]+)"[^>]*>([^<]*<(?:span|strong|em|br|a)[^>]*>[^<]*<\/(?:span|strong|em|br|a)>[^<]*)</gi;
+  let match;
+  while ((match = dataI18nRegex.exec(content)) !== null) {
+    issues.push(`"${match[1]}" contains HTML but uses data-i18n (should use data-i18n-html)`);
+  }
+
+  return issues;
+}
+
+// Check for dark mode colors that should be light
+function checkThemeConsistency(content, filename) {
+  const issues = [];
+
+  // Check for dark backgrounds (body should not have #000, black, etc.)
+  const darkBgPatterns = [
+    { pattern: /body\s*\{[^}]*background:\s*#000/i, desc: 'body has black (#000) background' },
+    { pattern: /body\s*\{[^}]*background:\s*black/i, desc: 'body has black background' },
+    { pattern: /body\s*\{[^}]*background-color:\s*#000/i, desc: 'body has black (#000) background-color' },
+    { pattern: /body\s*\{[^}]*color:\s*#fff[^f]/i, desc: 'body has white (#fff) text color (dark mode)' },
+    { pattern: /body\s*\{[^}]*color:\s*white/i, desc: 'body has white text color (dark mode)' },
+  ];
+
+  for (const { pattern, desc } of darkBgPatterns) {
+    if (pattern.test(content)) {
+      issues.push(desc);
+    }
+  }
+
+  return issues;
+}
+
 // Check for unclosed tags (basic check)
 function checkUnclosedTags(content, filename) {
   const issues = [];
@@ -263,6 +299,25 @@ async function runTests() {
         console.log(`    - ${issue}`);
       }
       totalWarnings += issues.length;
+    }
+  }
+
+  // Test 5: Theme Consistency (no dark mode)
+  logHeader('Test 5: Theme Consistency');
+
+  for (const htmlFile of htmlFiles) {
+    const content = fs.readFileSync(htmlFile, 'utf8');
+    const relativePath = path.relative(ROOT_DIR, htmlFile);
+    const issues = checkThemeConsistency(content, relativePath);
+
+    if (issues.length === 0) {
+      log('pass', `${relativePath}: Light mode theme`);
+    } else {
+      log('fail', `${relativePath}: Dark mode detected`);
+      for (const issue of issues) {
+        console.log(`    - ${issue}`);
+      }
+      totalErrors += issues.length;
     }
   }
 

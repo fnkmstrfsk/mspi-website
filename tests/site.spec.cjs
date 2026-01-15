@@ -92,6 +92,15 @@ test.describe('Platform Page', () => {
     expect(bodyText).not.toContain('platform.title');
     expect(bodyText).not.toContain('[object Object]');
   });
+
+  test('should not show raw HTML tags in text', async ({ page }) => {
+    await page.waitForTimeout(1000);
+    const bodyText = await page.locator('body').textContent();
+    // Check for escaped HTML that should be rendered
+    expect(bodyText).not.toContain('<span class=');
+    expect(bodyText).not.toContain('</span>');
+    expect(bodyText).not.toContain('&lt;span');
+  });
 });
 
 test.describe('Slivers Page', () => {
