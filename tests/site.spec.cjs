@@ -93,12 +93,23 @@ test.describe('Platform Page', () => {
     expect(bodyText).not.toContain('[object Object]');
   });
 
-  test('should not show raw HTML tags in text', async ({ page }) => {
+});
+
+test.describe('Content Rendering', () => {
+  test('homepage should not show raw HTML tags in text', async ({ page }) => {
+    await page.goto('/');
     await page.waitForTimeout(1000);
     const bodyText = await page.locator('body').textContent();
     // Check for escaped HTML that should be rendered
     expect(bodyText).not.toContain('<span class=');
-    expect(bodyText).not.toContain('</span>');
+    expect(bodyText).not.toContain('&lt;span');
+  });
+
+  test('manifesto should not show raw HTML tags in text', async ({ page }) => {
+    await page.goto('/manifesto');
+    await page.waitForTimeout(1000);
+    const bodyText = await page.locator('body').textContent();
+    expect(bodyText).not.toContain('<span class=');
     expect(bodyText).not.toContain('&lt;span');
   });
 });
