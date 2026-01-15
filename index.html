@@ -188,49 +188,6 @@
             }
         }
 
-        /* Speed Stats Section */
-        .speed-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-6);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .speed-stat {
-            padding: var(--space-6);
-            background: var(--color-white);
-            border-radius: var(--radius-lg);
-            text-align: center;
-        }
-
-        .speed-label {
-            font-size: var(--text-sm);
-            color: var(--color-gray-500);
-            margin-bottom: var(--space-2);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .speed-value {
-            font-size: var(--text-2xl);
-            font-weight: var(--font-bold);
-        }
-
-        .speed-old {
-            color: var(--color-gray-400);
-            text-decoration: line-through;
-        }
-
-        .speed-new {
-            color: var(--color-accent);
-        }
-
-        @media (max-width: 640px) {
-            .speed-grid {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
@@ -457,42 +414,6 @@
                 </div>
             </div>
             <p class="shift-warning">There is no third option. Those who don't jump become obsolete.</p>
-        </div>
-    </section>
-
-    <!-- Speed Stats Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow">SPEED IS THE ONLY MOAT</span>
-                <h2 class="section-title">Your roadmap is our Tuesday.</h2>
-            </div>
-            <div class="speed-grid">
-                <div class="speed-stat">
-                    <div class="speed-label">Traditional Enterprise Team</div>
-                    <div class="speed-value speed-old">47 engineers</div>
-                </div>
-                <div class="speed-stat">
-                    <div class="speed-label">MSPI Operator</div>
-                    <div class="speed-value speed-new">1 person + AI</div>
-                </div>
-                <div class="speed-stat">
-                    <div class="speed-label">Traditional Dev Timeline</div>
-                    <div class="speed-value speed-old">18 months</div>
-                </div>
-                <div class="speed-stat">
-                    <div class="speed-label">MSPI Implementation</div>
-                    <div class="speed-value speed-new">Started after breakfast</div>
-                </div>
-                <div class="speed-stat">
-                    <div class="speed-label">Your Vendor's Feature Requests</div>
-                    <div class="speed-value speed-old">Sitting for 6 months</div>
-                </div>
-                <div class="speed-stat">
-                    <div class="speed-label">Your MSPI Capability</div>
-                    <div class="speed-value speed-new">Built by Tuesday</div>
-                </div>
-            </div>
         </div>
     </section>
 
