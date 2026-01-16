@@ -25,6 +25,12 @@
         // Google Analytics 4
         GA4_MEASUREMENT_ID: 'G-TMRRTDCEDD',
 
+        // Internal IP addresses to exclude from tracking
+        EXCLUDED_IPS: [
+            '72.65.231.125',           // Brian's IPv4
+            '2600:4041:36e:f400:'      // Brian's IPv6 prefix
+        ],
+
         // Custom Analytics Endpoint
         ANALYTICS_ENDPOINT: null, // Set to your endpoint URL when ready
         WEBHOOK_URL: null, // Optional: real-time webhook
@@ -44,8 +50,52 @@
         ENABLE_RAGE_CLICK_DETECTION: true,
 
         // Version
-        VERSION: '2.0.0'
+        VERSION: '2.0.1'
     };
+
+    // ═══════════════════════════════════════════════════════════════════════════
+    // INTERNAL TRAFFIC DETECTION
+    // ═══════════════════════════════════════════════════════════════════════════
+
+    let isInternalTraffic = false;
+
+    async function checkInternalTraffic() {
+        try {
+            // Check localStorage flag first (set by previous check)
+            const cachedInternal = localStorage.getItem('mspi_internal_traffic');
+            if (cachedInternal !== null) {
+                isInternalTraffic = cachedInternal === 'true';
+                return isInternalTraffic;
+            }
+
+            // Fetch user's IP
+            const response = await fetch('https://api.ipify.org?format=json', { timeout: 3000 });
+            const data = await response.json();
+            const userIP = data.ip;
+
+            // Check against excluded IPs
+            isInternalTraffic = CONFIG.EXCLUDED_IPS.some(excludedIP => {
+                if (excludedIP.endsWith(':')) {
+                    // IPv6 prefix match
+                    return userIP.startsWith(excludedIP);
+                }
+                return userIP === excludedIP;
+            });
+
+            // Cache the result for 24 hours
+            localStorage.setItem('mspi_internal_traffic', isInternalTraffic.toString());
+            setTimeout(() => localStorage.removeItem('mspi_internal_traffic'), 24 * 60 * 60 * 1000);
+
+            if (isInternalTraffic) {
+                console.log('[MSPI Analytics] Internal traffic detected - tracking disabled');
+            }
+
+            return isInternalTraffic;
+        } catch (e) {
+            // If IP check fails, proceed with tracking
+            return false;
+        }
+    }
 
     // ═══════════════════════════════════════════════════════════════════════════
     // GOOGLE ANALYTICS 4 INTEGRATION
@@ -541,6 +591,11 @@
 
         // Core tracking method
         track(eventName, properties = {}) {
+            // Skip tracking for internal traffic
+            if (isInternalTraffic) {
+                return { skipped: true, reason: 'internal_traffic' };
+            }
+
             const event = {
                 event: eventName,
                 properties: {
@@ -1254,8 +1309,18 @@
     // INITIALIZATION
     // ═══════════════════════════════════════════════════════════════════════════
 
-    const init = () => {
+    const init = async () => {
         console.log(`[MSPI Analytics] Initializing v${CONFIG.VERSION}`);
+
+        // Check for internal traffic first
+        await checkInternalTraffic();
+
+        if (isInternalTraffic) {
+            console.log('[MSPI Analytics] Internal traffic - minimal tracking enabled');
+            // Still init session manager for basic functionality
+            SessionManager.init();
+            return;
+        }
 
         GA4.init();
         CampaignTracker.init();
