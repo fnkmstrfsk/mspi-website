@@ -23,7 +23,7 @@
 
     const CONFIG = {
         // Google Analytics 4
-        GA4_MEASUREMENT_ID: 'G-XXXXXXXXXX', // Replace with your GA4 ID
+        GA4_MEASUREMENT_ID: 'G-TMRRTDCEDD',
 
         // Custom Analytics Endpoint
         ANALYTICS_ENDPOINT: null, // Set to your endpoint URL when ready
@@ -38,7 +38,7 @@
 
         // Feature Flags
         ENABLE_GA4: true,
-        ENABLE_CONSOLE_LOG: true, // Set false in production
+        ENABLE_CONSOLE_LOG: false, // Production mode
         ENABLE_HEATMAP: true,
         ENABLE_SESSION_RECORDING_META: true,
         ENABLE_RAGE_CLICK_DETECTION: true,
